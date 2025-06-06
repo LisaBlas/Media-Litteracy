@@ -1,0 +1,94 @@
+name: Update News Headlines
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  update-headlines:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Fetch news headlines
+      env:
+        GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
+      run: |
+        # Create a Node.js script to fetch headlines
+        cat << 'EOF' > fetch-headlines.js
+        const https = require('https');
+        const fs = require('fs');
+        
+        const API_KEY = process.env.GNEWS_API_KEY;
+        const API_URL = `https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=10&apikey=${API_KEY}`;
+        
+        https.get(API_URL, (res) => {
+          let data = '';
+          
+          res.on('data', (chunk) => {
+            data += chunk;
+          });
+          
+          res.on('end', () => {
+            try {
+              const newsData = JSON.parse(data);
+              
+              if (newsData.articles) {
+                // Transform the data to match your needs
+                const headlines = newsData.articles.map(article => ({
+                  title: article.title,
+                  description: article.description,
+                  url: article.url,
+                  source: article.source.name,
+                  publishedAt: article.publishedAt,
+                  image: article.image
+                }));
+                
+                // Write to headlines.json
+                const outputData = {
+                  lastUpdated: new Date().toISOString(),
+                  headlines: headlines
+                };
+                
+                fs.writeFileSync('data/headlines.json', JSON.stringify(outputData, null, 2));
+                console.log('Headlines updated successfully!');
+              } else {
+                console.error('No articles found in API response');
+                process.exit(1);
+              }
+            } catch (error) {
+              console.error('Error parsing API response:', error);
+              process.exit(1);
+            }
+          });
+        }).on('error', (error) => {
+          console.error('Error fetching headlines:', error);
+          process.exit(1);
+        });
+        EOF
+        
+        # Run the script
+        node fetch-headlines.js
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/headlines.json
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update news headlines - $(date)"
+          git push
+        fi
