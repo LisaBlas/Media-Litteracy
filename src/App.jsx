@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     // Simulate loading delay for better UX
     const timer = setTimeout(() => {
-      setArticles(headlinesData.articles);
+      setArticles(headlinesData.headlines);
       setLoading(false);
     }, 500);
 
