@@ -1,0 +1,111 @@
+🧠 Project Brief: Interactive Media Literacy Notebook (with GNews Integration)
+🎯 Goal
+Build a React (Vite + Tailwind CSS) static site that teaches critical thinking through real news headlines, using a friendly, informal learning experience. The course is divided into 5 bite-sized, interactive modules.
+
+⚙️ Stack & Structure
+Framework: React + Vite
+Styling: Tailwind CSS
+Routing: React Router
+Responsive: Mobile-first, tablet-friendly, desktop-optimized
+Hosting: GitHub Pages or Netlify
+Backend: None (static site only)
+
+📰 News Headline Integration: GNews API + GitHub Actions
+Purpose: Automatically fetch and update real-world news headlines daily from GNews API.
+
+How it Works:
+
+Data Source: GNews API (filter by relevance, country, language, and date)
+
+Storage: Fetched headlines stored as a local JSON file (headlines.json) in public/data/
+
+Automation: GitHub Action runs on a schedule (e.g. daily at 6AM UTC)
+
+Transform: Data is preprocessed into the format required by card components
+
+Security: API key stored as GitHub Secret (GNEWS_API_KEY)
+
+Error handling: Skip update if GNews API fails; retain last working version
+
+Headline Format: Refer to the api documentation in /attached_assets/GNews-api.txt
+
+🎨 Visual Identity: Sleek Pro-Tech Interface
+Palette:
+
+Dark base: #121212
+
+Accents: Electric Blue #3A9BDC, Mint Cyan #4EFEB3, Graphite Gray #1A1A1A
+
+Backgrounds: Neutral light for content areas (#FAFAF5)
+
+Typography:
+
+Primary: IBM Plex Sans
+
+Secondary: Space Grotesk
+
+Bold for headings, regular for text
+
+UI Elements:
+
+Card-based layout, collapsible panels, sticky sidebar
+
+Smooth transitions using Framer Motion
+
+Custom SVG icons, selective emoji use
+
+🧩 Card Interaction
+Front (headline card):
+
+News headline (Lexend Bold, off-black)
+
+Outlet logo (top-left)
+
+Back (on flip):
+
+Fallacy icon + title
+
+1–2 sentence explanation
+
+CTA: "🧠 Learn this in Module X"
+
+Filters:
+
+Source, Date, Country (dropdowns or pills)
+
+🗺️ /modules → Course Map Page
+Interactive Miro map embed
+
+Node = 1 module
+
+Hover = summary, click = /modules/:id
+
+📚 /modules/:id → Module Detail Page
+Block Format:
+
+Hero Video (YouTube embed or placeholder)
+
+Tabbed lesson cards: Explanation, Examples, Quiz, GPT
+
+Floating or inline GPT Q&A
+
+Progress nav (Prev/Next, unlock gate)
+
+Card Types:
+
+"Lesson" (text + emojis)
+
+"Example" (real news, fallacy annotation)
+
+"Quiz" (emoji feedback)
+
+"GPT" (chat-style responses)
+
+"Unlock Next" (animated CTA)
+
+🧠 GPT Assistant
+Embedded or floating
+
+Prompt examples: “Is this an ad hominem fallacy?”
+
+Friendly tone, contextual awareness
