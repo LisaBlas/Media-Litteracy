@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ArticleCard from './components/ArticleCard';
-import headlinesData from './data/headlines.json';
+import headlinesData from '../data/headlines.json';
 
 function App() {
   const [articles, setArticles] = useState([]);
