@@ -59,6 +59,11 @@ jobs:
                   headlines: headlines
                 };
                 
+                // Create data directory if it doesn't exist
+                if (!fs.existsSync('data')) {
+                  fs.mkdirSync('data', { recursive: true });
+                }
+                
                 fs.writeFileSync('data/headlines.json', JSON.stringify(outputData, null, 2));
                 console.log('Headlines updated successfully!');
               } else {
