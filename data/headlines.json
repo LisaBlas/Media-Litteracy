@@ -1,85 +1,85 @@
 {
-  "lastUpdated": "2025-06-07T13:16:08.788Z",
+  "lastUpdated": "2025-06-07T18:44:52.081Z",
   "headlines": [
     {
-      "title": "Inside the stealth EV production facility backed by Bezos",
-      "description": "Slate Auto hopes its modular, stripped-down vehicle will be the future of affordable EVs, but it has a long road ahead.",
-      "url": "https://www.cnbc.com/2025/06/07/jeff-bezos-slate-auto-ev.html",
-      "source": "CNBC",
-      "publishedAt": "2025-06-07T12:00:01Z",
-      "image": "https://image.cnbcfm.com/api/v1/image/108156199-1749270719458-BETAS_AT_BETA--8.jpg?v=1749270974&w=1920&h=1080"
+      "title": "Trump says Musk will face 'serious consequences' if he funds Democratic candidates",
+      "description": "Trump said there would be “serious consequences” if Elon Musk funds Democratic candidates to run against Republicans.",
+      "url": "https://www.nbcnews.com/politics/donald-trump/trump-elon-musk-consequences-funds-democratic-candidates-rcna211605",
+      "source": "NBC News",
+      "publishedAt": "2025-06-07T16:26:46Z",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-03/250312-musk-trump-ch-1429-be3c9f.jpg"
     },
     {
-      "title": "Body of Thai hostage recovered from Gaza, Israel says",
-      "description": "Nattapong Pinta was captured alive and was likely killed during the first months of captivity, the Israeli military says.",
-      "url": "https://www.bbc.com/news/articles/cev4l7kxdllo",
+      "title": "French Open 2025: Coco Gauff beats Aryna Sabalenka to win first Roland Garros title",
+      "description": "Coco Gauff wins the first French Open singles title of her career by fighting back to beat world number one Aryna Sabalenka in a rollercoaster final.",
+      "url": "https://www.bbc.com/sport/tennis/articles/c20xyyv18d3o",
       "source": "BBC",
-      "publishedAt": "2025-06-07T11:54:05Z",
-      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/cd5c/live/cdfad530-4383-11f0-a417-bf17ecbe9808.png"
+      "publishedAt": "2025-06-07T16:07:42Z",
+      "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/7e70/live/69300f90-43be-11f0-a94a-5950836fe9fa.jpg"
     },
     {
-      "title": "Russian Spies Are Suspicious of China, Even as Putin and Xi Grow Close",
-      "description": "Russia’s spy hunters are increasingly worried about China’s espionage, even as the two countries grow closer.",
-      "url": "https://www.nytimes.com/2025/06/07/world/europe/china-russia-spies-documents-putin-war.html",
-      "source": "The New York Times",
-      "publishedAt": "2025-06-07T11:45:24Z",
-      "image": "https://static01.nyt.com/images/2025/06/05/multimedia/00int-russia-china-spies-01-hcfg/00int-russia-china-spies-01-hcfg-facebookJumbo.jpg"
+      "title": "Elon appears to delete X posts",
+      "description": "It's the latest twist in the public spat between Elon Musk and President Donald Trump that escalated this week.",
+      "url": "https://www.cnbc.com/2025/06/07/trump-musk-x-posts-feud.html",
+      "source": "CNBC",
+      "publishedAt": "2025-06-07T15:39:29Z",
+      "image": "https://image.cnbcfm.com/api/v1/image/108152725-17486300252025-05-30t182921z_1336844546_rc2isea62njl_rtrmadp_0_usa-trump.jpeg?v=1748633377&w=1920&h=1080"
     },
     {
-      "title": "Trump’s agenda bill: GOP senators’ top concerns in their own words",
-      "description": "Republicans have set an ambitious deadline of trying to pass President Donald Trump’s sweeping agenda through Congress by the fourth of July. Hear senators describe in their own words their concerns and what they want to see changed in the weeks ahead.",
-      "url": "https://www.cnn.com/2025/06/07/politics/gop-senators-trump-agenda-bill-dg",
-      "source": "CNN",
-      "publishedAt": "2025-06-07T11:00:00Z",
-      "image": "https://media.cnn.com/api/v1/images/stellar/prod/202506-bbb-top-illustration.jpg?c=16x9&q=w_800,c_fill"
+      "title": "Eggs sold at Arizona Walmarts recalled for possible salmonella contamination",
+      "description": "A California company is recalling nearly 2 million dozens of eggs after possibly being contaminated with Salmonella.",
+      "url": "https://www.abc15.com/news/health/eggs-sold-at-arizona-walmart-stores-recalled-for-possible-salmonella-contamination",
+      "source": "ABC15 Arizona",
+      "publishedAt": "2025-06-07T15:24:49Z",
+      "image": "https://ewscripps.brightspotcdn.com/dims4/default/e0c9ecc/2147483647/strip/true/crop/1380x725+0+24/resize/1200x630!/quality/90/?url=https%3A%2F%2Fewscripps.brightspotcdn.com%2Fc3%2Ffb%2Fb9cf3eb04a52b290d53e3e04e093%2Feggs.jpg"
     },
     {
-      "title": "How the U.S. became highly reliant on Elon Musk for access to space",
-      "description": "Besides its flights to the International Space Station and Starship program, SpaceX is deeply embedded in the Department of Defense. The feud between Elon Musk and President Trump could end all that.",
-      "url": "https://www.npr.org/2025/06/07/nx-s1-5425266/spacex-musk-trump-starlink-starship",
+      "title": "Israel says it has retrieved the body of a Thai hostage in Gaza",
+      "description": "Israel said it had retrieved the body of Nattapong Pinta, who was abducted during the Oct. 7, 2023, attack that sparked the war. He had come to Israel to work in agriculture.",
+      "url": "https://www.npr.org/2025/06/07/nx-s1-5426563/gaza-thai-hostage-body-recovered",
       "source": "NPR",
-      "publishedAt": "2025-06-07T10:00:00Z",
-      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4000x2250+0+209/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa2%2Fb8%2Fec024fb6498ead9ae85138c11eb2%2Fgettyimages-2157647673.jpg"
+      "publishedAt": "2025-06-07T15:18:16Z",
+      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/799x449+0+0/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fcc%2F4f%2F8db0f22942bf8f9fd4e1a5a1e99d%2Fap25158333591141.jpg"
     },
     {
-      "title": "Judge approves landmark college sports settlement",
-      "description": "The corrupt system of denying payment to college athletes has officially ended.",
-      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/judge-approves-landmark-college-sports-settlement",
+      "title": "'Ballerina' Opening Day at $10.6 Million, 'Stitch' on Top",
+      "description": "'Ballerina,' the 'John Wick' spinoff with Ana de Armas, earned a $10.6 million opening day at the box office, with 'Lilo & Stitch' still topping charts.",
+      "url": "https://variety.com/2025/film/news/box-office-ballerina-opening-day-1236421852/",
+      "source": "Variety",
+      "publishedAt": "2025-06-07T15:04:00Z",
+      "image": "https://variety.com/wp-content/uploads/2025/06/ballerina-stitch-split.jpg?w=1000&h=563&crop=1"
+    },
+    {
+      "title": "Sam Nivola and Cooper Koch on Nepo Babies, Incest and The White Lotus",
+      "description": "Sam Nivola and Cooper Koch join Variety's 'Actors on Actors' to discuss their shows about complicated siblings.",
+      "url": "https://variety.com/2025/tv/news/sam-nivola-cooper-koch-nepo-babies-incest-white-lotus-1236414698/",
+      "source": "Variety",
+      "publishedAt": "2025-06-07T15:00:00Z",
+      "image": "https://variety.com/wp-content/uploads/2025/06/Cooper-Koch-and-Sam-Nivola-Variety-Actors-on-Actors.jpg?crop=0px%2C2px%2C1500px%2C842px&resize=1000%2C563"
+    },
+    {
+      "title": "Resident Evil Requiem Is Capcom's Next Horror Epic, Launches On Xbox In February 2026",
+      "description": "RE9 has been announced! - Summer Game Fest 2025 has just closed out with the announcement of Capcom's Resident Evil Requiem — the next mainline entry in it...",
+      "url": "https://www.purexbox.com/news/2025/06/resident-evil-requiem-is-capcoms-next-horror-epic-launches-on-xbox-in-february-2026",
+      "source": "Pure Xbox",
+      "publishedAt": "2025-06-07T14:46:47Z",
+      "image": "https://images.purexbox.com/7ee9cb6d7ccd4/large.jpg"
+    },
+    {
+      "title": "Kilmar Abrego Garcia Returned to U.S. From El Salvador to Face Criminal Charges",
+      "description": "Kilmar Armando Abrego Garcia, who had been living in Maryland and legally protected from deportation, had been held in a Salvadoran prison since March 15.",
+      "url": "https://www.nytimes.com/2025/06/06/us/politics/kilmar-abrego-garcia-us-criminal-charges.html",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-07T14:39:00Z",
+      "image": "https://static01.nyt.com/images/2025/05/17/multimedia/06trump-news-garcia/17trump-news-alert-mzlv-facebookJumbo.jpg"
+    },
+    {
+      "title": "Aaron Rodgers arrives in Pittsburgh to sign contract with Steelers",
+      "description": "Rodgers is officially signing his contract at the Steelers' facility today.",
+      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/aaron-rodgers-arrives-in-pittsburgh-to-sign-contract-with-steelers",
       "source": "NBC Sports",
-      "publishedAt": "2025-06-07T09:51:22Z",
-      "image": "https://nbcsports.brightspotcdn.com/dims4/default/980bf3c/2147483647/strip/true/crop/1920x1080+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fhdliveextra-a.akamaihd.net%2FHD%2Fimage_sports%2FNBCU_Sports_Group_-_nbcsports%2F534%2F863%2Fnbc_pft_collegesportscommission_250523.jpg"
-    },
-    {
-      "title": "A Russian attack on the Ukrainian city of Kharkiv kills 3 people",
-      "description": "Ukraine says that a large Russian drone-and-missile attack has targeted the eastern city of Kharkiv, killing at least three people and injuring 21.",
-      "url": "https://apnews.com/article/russia-ukraine-war-kharkiv-66093df9697bdb27794c8055d9beac10",
-      "source": "AP News",
-      "publishedAt": "2025-06-07T09:40:00Z",
-      "image": "https://dims.apnews.com/dims4/default/91b6f55/2147483647/strip/true/crop/6000x3375+0+312/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F59%2F1c%2Ff9180dedd0dbd7c07c8421c91e61%2Ff8b705eb716742ac966d32311f0ef7e3"
-    },
-    {
-      "title": "Kharkiv hit by ‘most powerful attack’ of entire war, mayor says, as Russia pounds Ukraine again",
-      "description": "Russia bombarded Ukraine’s second-largest city with massive strikes in the early hours of Saturday, its mayor said, one night after Moscow carried out one of the war’s largest aerial assaults on Ukraine.",
-      "url": "https://www.cnn.com/2025/06/07/europe/russia-strikes-kharkiv-ukraine-intl-hnk",
-      "source": "CNN",
-      "publishedAt": "2025-06-07T09:25:00Z",
-      "image": "https://media.cnn.com/api/v1/images/stellar/prod/2025-06-07t052941z-670247452-rc2gxeaopan2-rtrmadp-3-ukraine-crisis-attack-kharkiv.jpg?c=16x9&q=w_800,c_fill"
-    },
-    {
-      "title": "The Trump-Elon Musk Feud Creates More Problems for Tesla",
-      "description": "Already suffering from steep declines in sales and profit, the carmaker could now face the president’s wrath.",
-      "url": "https://www.nytimes.com/2025/06/07/business/trump-elon-musk-tesla.html",
-      "source": "The New York Times",
-      "publishedAt": "2025-06-07T09:01:48Z",
-      "image": "https://static01.nyt.com/images/2025/06/06/multimedia/06biz-tesla-musk-bfjp/06biz-tesla-musk-bfjp-facebookJumbo.jpg"
-    },
-    {
-      "title": "Trump’s International Student Ban Sparks Fear Among Harvard Attendees",
-      "description": "Alfred Williamson could not have imagined how much his freshman year would be shaped by the Trump administration, inside and outside the classroom.",
-      "url": "https://www.nytimes.com/2025/06/07/us/trump-harvard-international-student-ban.html",
-      "source": "The New York Times",
-      "publishedAt": "2025-06-07T09:01:40Z",
-      "image": "https://static01.nyt.com/images/2025/06/07/multimedia/07nat-harvard-student-02-qhkv/07nat-harvard-student-02-qhkv-facebookJumbo.jpg"
+      "publishedAt": "2025-06-07T14:25:13Z",
+      "image": "https://nbcsports.brightspotcdn.com/dims4/default/2178a17/2147483647/strip/true/crop/6456x3632+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F7f%2F49%2Fc327980a40299220808b87a586c0%2Fhttps-api-imagn.com%2Frest%2Fdownload%2FimageID%3D25344815"
     }
   ]
 }
