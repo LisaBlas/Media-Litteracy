@@ -1,85 +1,85 @@
 {
-  "lastUpdated": "2025-06-07T06:48:14.244Z",
+  "lastUpdated": "2025-06-07T13:16:08.788Z",
   "headlines": [
     {
-      "title": "Russia launches biggest drone attack on Ukraine's Kharkiv",
-      "description": "At least three people are killed and 17 injured in Kharkiv, near the Russian border.",
-      "url": "https://www.bbc.com/news/articles/cwyjd1z8yg5o",
+      "title": "Inside the stealth EV production facility backed by Bezos",
+      "description": "Slate Auto hopes its modular, stripped-down vehicle will be the future of affordable EVs, but it has a long road ahead.",
+      "url": "https://www.cnbc.com/2025/06/07/jeff-bezos-slate-auto-ev.html",
+      "source": "CNBC",
+      "publishedAt": "2025-06-07T12:00:01Z",
+      "image": "https://image.cnbcfm.com/api/v1/image/108156199-1749270719458-BETAS_AT_BETA--8.jpg?v=1749270974&w=1920&h=1080"
+    },
+    {
+      "title": "Body of Thai hostage recovered from Gaza, Israel says",
+      "description": "Nattapong Pinta was captured alive and was likely killed during the first months of captivity, the Israeli military says.",
+      "url": "https://www.bbc.com/news/articles/cev4l7kxdllo",
       "source": "BBC",
-      "publishedAt": "2025-06-07T04:23:52Z",
-      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/6d54/live/257fc940-4358-11f0-b905-41542a3e5b8b.png"
+      "publishedAt": "2025-06-07T11:54:05Z",
+      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/cd5c/live/cdfad530-4383-11f0-a417-bf17ecbe9808.png"
     },
     {
-      "title": "Federal agents conduct immigration raids across LA. Protesters and city officials respond",
-      "description": "Confrontations between what appeared to be personnel from U.S. Immigration and Customs Enforcement and people in the streets of downtown L.A. were carried live on TV.",
-      "url": "https://laist.com/news/federal-agents-immigration-raids-across-la",
-      "source": "LAist",
-      "publishedAt": "2025-06-07T02:59:00Z",
-      "image": "https://scpr.brightspotcdn.com/dims4/default/2ae2a4d/2147483647/strip/true/crop/5121x2689+0+363/resize/1200x630!/quality/90/?url=http%3A%2F%2Fscpr-brightspot.s3.us-west-2.amazonaws.com%2F80%2Fa4%2F1b66df5b468286a33deebb0175b4%2Fap25158002874127.jpg"
+      "title": "Russian Spies Are Suspicious of China, Even as Putin and Xi Grow Close",
+      "description": "Russia’s spy hunters are increasingly worried about China’s espionage, even as the two countries grow closer.",
+      "url": "https://www.nytimes.com/2025/06/07/world/europe/china-russia-spies-documents-putin-war.html",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-07T11:45:24Z",
+      "image": "https://static01.nyt.com/images/2025/06/05/multimedia/00int-russia-china-spies-01-hcfg/00int-russia-china-spies-01-hcfg-facebookJumbo.jpg"
     },
     {
-      "title": "WCWS Game 3: Texas wins national championship, defeating Texas Tech, 10-4, powered by Mia Scott's grand slam",
-      "description": "Mia Scott's fourth-inning grand slam was the decisive blow in leading the Longhorns to a women's softball national championship.",
-      "url": "https://sports.yahoo.com/live/wcws-game-3-texas-wins-national-championship-defeating-texas-tech-10-4-powered-by-mia-scotts-grand-slam-223024001.html",
-      "source": "Yahoo Sports",
-      "publishedAt": "2025-06-07T02:52:00Z",
-      "image": "https://s.yimg.com/ny/api/res/1.2/hg682JEvZlej8NkfRu6M8g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA7Y2Y9d2VicA--/https://s.yimg.com/os/creatr-uploaded-images/2025-06/dd8c3350-4346-11f0-bfef-0a0b61c20474"
-    },
-    {
-      "title": "Sean ‘Diddy’ ignored pleas for escorts to use condoms, ex-girlfriend tells court in sex trafficking trial",
-      "description": "The woman said that Combs would ‘guilt trip’ her when she asked that the entertainers wear condoms during their frequent and lengthy sexual encounters. The woman is testifying under the pseudonym Jane to protect her privacy.",
-      "url": "https://www.livemint.com/news/us-news/sean-diddy-ignored-pleas-for-escorts-to-use-condoms-ex-girlfriend-tells-court-in-sex-trafficking-trial-11749261137450.html",
-      "source": "Mint",
-      "publishedAt": "2025-06-07T02:29:31Z",
-      "image": "https://www.livemint.com/lm-img/img/2025/06/07/1600x900/FILES-US-CRIME-ENTERTAINMNET-MUSIC-DIDDY-0_1749261290325_1749261302437.jpg"
-    },
-    {
-      "title": "‘It could be months’: Experts evaluate Decker’s survival odds",
-      "description": "Authorities intensify the manhunt for Travis Decker amid rugged Washington terrain, employing the expertise of survivalists to navigate challenges.",
-      "url": "https://www.king5.com/article/news/local/experts-evaluate-decker-survival-odds/281-9137133a-6e59-47ff-812c-7d184c42c8e0",
-      "source": "KING5.com",
-      "publishedAt": "2025-06-07T01:57:00Z",
-      "image": "https://media.king5.com/assets/KING/images/926cfb2d-11c1-465d-b5a4-f757f5e3458a/20250607T014204/926cfb2d-11c1-465d-b5a4-f757f5e3458a_1140x641.jpg"
-    },
-    {
-      "title": "Dramatic L.A. ICE raids spark protests, questions, anger",
-      "description": "Surprise U.S. Immigration and Customs Enforcement sweeps in downtown Los Angeles prompted fierce pushback from elected officials and protesters, who decried the action as \"cruel and unnecessary.\"",
-      "url": "https://www.latimes.com/california/story/2025-06-06/la-me-ice-raids-protests-color-scene",
-      "source": "Los Angeles Times",
-      "publishedAt": "2025-06-07T01:48:00Z",
-      "image": "https://ca-times.brightspotcdn.com/dims4/default/2dbc403/2147483647/strip/true/crop/5088x2671+0+360/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F32%2F30%2F482fc5b34e5091b13edb467271ee%2F1509441-me-0606-ice-raid-protest-gem-009.jpg"
-    },
-    {
-      "title": "WCWS Game 3: Texas Tech vs. Texas softball live updates, highlights from the Women's College World Series",
-      "description": "The Texas Tech Red Raiders tied up the series with a 4-3 victory over the Texas Longhorns on Thursday night. Who will win it all?",
-      "url": "https://sports.yahoo.com/live/wcws-game-3-texas-tech-vs-texas-softball-live-updates-highlights-womens-college-world-series-223024460.html",
-      "source": "Yahoo Sports",
-      "publishedAt": "2025-06-07T01:41:00Z",
-      "image": "https://s.yimg.com/ny/api/res/1.2/dO4oVms1dD2OuQmXGw9pmA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA7Y2Y9d2VicA--/https://s.yimg.com/os/creatr-uploaded-images/2025-06/c4ca6050-428b-11f0-bfbe-2f5253c78351"
-    },
-    {
-      "title": "Supreme Court restores DOGE’s access to sensitive Social Security data and says it doesn’t have to turn over documents",
-      "description": "The Supreme Court handed the Department of Government Efficiency a pair of significant wins on Friday, allowing the entity to access sensitive Social Security data for millions of Americans while simultaneously pausing an effort to look into whether it is subject to a key transparency law.",
-      "url": "https://www.cnn.com/2025/06/06/politics/supreme-court-restores-doges-access-to-sensitive-social-security-data",
+      "title": "Trump’s agenda bill: GOP senators’ top concerns in their own words",
+      "description": "Republicans have set an ambitious deadline of trying to pass President Donald Trump’s sweeping agenda through Congress by the fourth of July. Hear senators describe in their own words their concerns and what they want to see changed in the weeks ahead.",
+      "url": "https://www.cnn.com/2025/06/07/politics/gop-senators-trump-agenda-bill-dg",
       "source": "CNN",
-      "publishedAt": "2025-06-07T01:24:00Z",
-      "image": "https://media.cnn.com/api/v1/images/stellar/prod/c-ap25143652385201.jpg?c=16x9&q=w_800,c_fill"
+      "publishedAt": "2025-06-07T11:00:00Z",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/202506-bbb-top-illustration.jpg?c=16x9&q=w_800,c_fill"
     },
     {
-      "title": "Aaron Rodgers signing is ‘worst-case scenario’ for Steelers: Ryan Clark",
-      "description": "Ryan Clark thinks that the Steelers are making a mistake in signing Rodgers, saying that fans should look it as a \"worst case scenario.\"",
-      "url": "https://nypost.com/2025/06/06/sports/aaron-rodgers-signing-is-worst-case-scenario-for-the-steelers-ryan-clark/",
-      "source": "New York Post",
-      "publishedAt": "2025-06-07T00:34:00Z",
-      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/newspress-collage-ch731regq-1749248759662.jpg?quality=75&strip=all&1749234375&w=1024"
+      "title": "How the U.S. became highly reliant on Elon Musk for access to space",
+      "description": "Besides its flights to the International Space Station and Starship program, SpaceX is deeply embedded in the Department of Defense. The feud between Elon Musk and President Trump could end all that.",
+      "url": "https://www.npr.org/2025/06/07/nx-s1-5425266/spacex-musk-trump-starlink-starship",
+      "source": "NPR",
+      "publishedAt": "2025-06-07T10:00:00Z",
+      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4000x2250+0+209/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa2%2Fb8%2Fec024fb6498ead9ae85138c11eb2%2Fgettyimages-2157647673.jpg"
     },
     {
-      "title": "Diddy's ex-girlfriend 'Jane' testifies about pressure to participate in 'hotel nights'",
-      "description": "\"Jane\" testified about her \"love contract\" with Sean \"Diddy\" Combs and feeling pressure to continue with the sexual encounters.",
-      "url": "https://www.bbc.com/news/articles/c79eye4n93no",
-      "source": "BBC",
-      "publishedAt": "2025-06-07T00:24:36Z",
-      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/b43b/live/7aabf9e0-4324-11f0-814a-1bff3e45ccdd.jpg"
+      "title": "Judge approves landmark college sports settlement",
+      "description": "The corrupt system of denying payment to college athletes has officially ended.",
+      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/judge-approves-landmark-college-sports-settlement",
+      "source": "NBC Sports",
+      "publishedAt": "2025-06-07T09:51:22Z",
+      "image": "https://nbcsports.brightspotcdn.com/dims4/default/980bf3c/2147483647/strip/true/crop/1920x1080+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fhdliveextra-a.akamaihd.net%2FHD%2Fimage_sports%2FNBCU_Sports_Group_-_nbcsports%2F534%2F863%2Fnbc_pft_collegesportscommission_250523.jpg"
+    },
+    {
+      "title": "A Russian attack on the Ukrainian city of Kharkiv kills 3 people",
+      "description": "Ukraine says that a large Russian drone-and-missile attack has targeted the eastern city of Kharkiv, killing at least three people and injuring 21.",
+      "url": "https://apnews.com/article/russia-ukraine-war-kharkiv-66093df9697bdb27794c8055d9beac10",
+      "source": "AP News",
+      "publishedAt": "2025-06-07T09:40:00Z",
+      "image": "https://dims.apnews.com/dims4/default/91b6f55/2147483647/strip/true/crop/6000x3375+0+312/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F59%2F1c%2Ff9180dedd0dbd7c07c8421c91e61%2Ff8b705eb716742ac966d32311f0ef7e3"
+    },
+    {
+      "title": "Kharkiv hit by ‘most powerful attack’ of entire war, mayor says, as Russia pounds Ukraine again",
+      "description": "Russia bombarded Ukraine’s second-largest city with massive strikes in the early hours of Saturday, its mayor said, one night after Moscow carried out one of the war’s largest aerial assaults on Ukraine.",
+      "url": "https://www.cnn.com/2025/06/07/europe/russia-strikes-kharkiv-ukraine-intl-hnk",
+      "source": "CNN",
+      "publishedAt": "2025-06-07T09:25:00Z",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/2025-06-07t052941z-670247452-rc2gxeaopan2-rtrmadp-3-ukraine-crisis-attack-kharkiv.jpg?c=16x9&q=w_800,c_fill"
+    },
+    {
+      "title": "The Trump-Elon Musk Feud Creates More Problems for Tesla",
+      "description": "Already suffering from steep declines in sales and profit, the carmaker could now face the president’s wrath.",
+      "url": "https://www.nytimes.com/2025/06/07/business/trump-elon-musk-tesla.html",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-07T09:01:48Z",
+      "image": "https://static01.nyt.com/images/2025/06/06/multimedia/06biz-tesla-musk-bfjp/06biz-tesla-musk-bfjp-facebookJumbo.jpg"
+    },
+    {
+      "title": "Trump’s International Student Ban Sparks Fear Among Harvard Attendees",
+      "description": "Alfred Williamson could not have imagined how much his freshman year would be shaped by the Trump administration, inside and outside the classroom.",
+      "url": "https://www.nytimes.com/2025/06/07/us/trump-harvard-international-student-ban.html",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-07T09:01:40Z",
+      "image": "https://static01.nyt.com/images/2025/06/07/multimedia/07nat-harvard-student-02-qhkv/07nat-harvard-student-02-qhkv-facebookJumbo.jpg"
     }
   ]
 }
