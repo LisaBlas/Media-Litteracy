@@ -1,6 +1,78 @@
 {
-  "lastUpdated": "2025-06-08T03:41:19.767Z",
+  "lastUpdated": "2025-06-08T06:49:51.204Z",
   "headlines": [
+    {
+      "title": "Japan Flexes Its Military Muscle at China, and Trump",
+      "description": "A highly visible missile base on Okinawa is part of a Japanese defense buildup made amid fears of Beijing’s growing power and questions about U.S. commitment.",
+      "url": "https://www.nytimes.com/2025/06/08/world/asia/japan-military-trump-china.html",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-08T04:01:09Z",
+      "image": "https://static01.nyt.com/images/2025/05/29/multimedia/00int-japan-military-01-fqwp/00int-japan-military-01-fqwp-facebookJumbo.jpg"
+    },
+    {
+      "title": "New questions emerge from the new charges in Kilmar Abrego Garcia case",
+      "description": "The sudden return of Kilmar Abrego Garcia to the United States on Friday to face federal charges of smuggling migrants across the country was a messaging triumph for the Trump administration.",
+      "url": "https://www.nbcnews.com/news/us-news/kilmar-abrego-garcia-questions-rcna211601",
+      "source": "NBC News",
+      "publishedAt": "2025-06-08T03:51:00Z",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-04/250409-Kilmar-Abrego-Garcia-mn-0755-d8ceeb.jpg"
+    },
+    {
+      "title": "Trump to Send National Guard to LA to Quell Immigration Protests: Live Updates",
+      "description": "Gov. Gavin Newsom called the decision to call in National Guard forces “purposefully inflammatory.” The president’s order came on the second day of protests and clashes over federal immigration raids in Los Angeles.",
+      "url": "https://www.nytimes.com/live/2025/06/07/us/la-immigration-raid-protests",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-08T03:03:00Z",
+      "image": "https://static01.nyt.com/images/2025/06/08/multimedia/08la-immigration-carousel-wcpj-promo/08la-immigration-carousel-wcpj-facebookJumbo.jpg"
+    },
+    {
+      "title": "Colombia presidential candidate shot in head",
+      "description": "The opposition senator was hit three times during rally in Bogota and is in a critical condition in hospital.",
+      "url": "https://www.bbc.com/news/articles/c9dq8yxxy8zo",
+      "source": "BBC",
+      "publishedAt": "2025-06-08T02:45:33Z",
+      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/4b9d/live/aa4305d0-4410-11f0-97fc-8175165e17d2.jpg"
+    },
+    {
+      "title": "NASA is launching a $488 million mission with its new telescope, which is expected to provide a lot of data.",
+      "description": "NASA's ambitious SPHEREx telescope project represents a significant leap forward in our understanding of the cosmos. With a price tag of $488 million, this revolutionary instrument is designed to create an unprecedented three-dimensional map of our universe. The Spectro-Photometer for the History of the Universe, Epoch of Reionization and Ices…",
+      "url": "https://farmingdale-observer.com/2025/06/07/nasa-is-launching-a-488-million-mission-with-its-new-telescope-which-is-expected-to-provide-a-lot-of-data/",
+      "source": "Farmingdale Observer",
+      "publishedAt": "2025-06-08T02:36:00Z",
+      "image": "https://farmingdale-observer.com/wp-content/uploads/2024/06/cropped-cropped-design-sans-titre-29-32x32.png"
+    },
+    {
+      "title": "San Antonio’s next mayor is Air Force veteran Gina Ortiz Jones",
+      "description": "The progressive West Side native fended off roughly $1 million in attacks from Texas Republicans trying to elect Abbott ally Rolando Pablos.",
+      "url": "https://sanantonioreport.org/san-antonio-mayor-result-who-won-gina-ortiz-jones-rolando-pablos/",
+      "source": "San Antonio Report",
+      "publishedAt": "2025-06-08T02:30:00Z",
+      "image": "https://sanantonioreport.org/wp-content/uploads/2025/06/OrtizJones_05_06.07.25_AmberEsparza-scaled.jpg"
+    },
+    {
+      "title": "Decker manhunt: Officials reopen Icicle River area",
+      "description": "Decker, who is believed to be armed and highly skilled in survival, has been the subject of an intensive multi-agency manhunt across Washington state.",
+      "url": "https://www.king5.com/article/news/local/decker-manhunt-officials-reopen-icicle-river-area/281-a5bef6a2-086a-4532-8072-e4cc47d0a2f6",
+      "source": "KING5.com",
+      "publishedAt": "2025-06-08T02:26:00Z",
+      "image": "https://media.king5.com/assets/KING/images/b4b93b2b-61ae-4c49-a931-163f291e3c0f/20250608T022235/b4b93b2b-61ae-4c49-a931-163f291e3c0f_1140x641.jpg"
+    },
+    {
+      "title": "Sovereignty Wins 2025 Belmont Stakes, Beats Journalism in Final Triple Crown Leg",
+      "description": "Sovereignty won the 157th Belmont Stakes on Saturday, finishing just ahead of the favorite Journalism to win another jewel of the Triple Crown.",
+      "url": "https://bleacherreport.com/articles/25203242-sovereignty-wins-2025-belmont-stakes-beats-journalism-final-triple-crown-leg",
+      "source": "Bleacher Report",
+      "publishedAt": "2025-06-08T02:15:00Z",
+      "image": "https://gsp-image-cdn.wmsports.io/cms/prod/bleacher-report/2025-06/br_horse-racing-top3_3x2.png?w=3800&h=2000"
+    },
+    {
+      "title": "Trump deploys 2,000 National Guard members after Los Angeles immigration protests",
+      "description": "President Donald Trump has deployed 2,000 National Guard members in California after the Los Angeles immigration protests, the White House said.",
+      "url": "https://abc7.com/post/protests-erupt-immigration-customs-enforcement-raids-los-angeles-california/16690197/",
+      "source": "ABC7 Los Angeles",
+      "publishedAt": "2025-06-08T01:39:29Z",
+      "image": "https://cdn.abcotvs.com/dip/images/16690264_060725-wls-la-ice-protests-clean-img.jpg?w=1600"
+    },
     {
       "title": "Ukraine war briefing: Putin yet to retaliate in full force over Operation Spiderweb, officials say",
       "description": "Diplomat predicts ‘huge, vicious and unrelenting’ assault, though a Russia expert thinks Moscow is unable to escalate much beyond current level of attacks. What we know on day 1,201",
@@ -8,78 +80,6 @@
       "source": "The Guardian",
       "publishedAt": "2025-06-08T01:34:00Z",
       "image": "https://i.guim.co.uk/img/media/aabfe9ca2cbe836659ed054cb36d5be67a3b42c8/637_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=93340953d099c3fc56eba0cb180c7136"
-    },
-    {
-      "title": "WorldPride Parade Attendees Celebrate in D.C. With Both Joy and Resolve",
-      "description": "The president’s moves affecting L.G.B.T.Q. people were on the minds of attendees, but there was no stopping the party.",
-      "url": "https://www.nytimes.com/2025/06/07/us/worldpride-parade-washington-dc.html",
-      "source": "The New York Times",
-      "publishedAt": "2025-06-08T01:21:25Z",
-      "image": "https://static01.nyt.com/images/2025/06/07/multimedia/07nat-pride-parade-2-hvwt/07nat-pride-parade-2-hvwt-facebookJumbo.jpg"
-    },
-    {
-      "title": "UFC 316: Dvalishvili vs O'Malley 2 Prelim Results",
-      "description": "See The Fight Results, Watch Post-Fight Interviews With The Prelim Winners And More From UFC 316: Dvalishvili vs O'Malley 2, Live From Prudential Center In Newark On June 7",
-      "url": "https://www.ufc.com/news/prelim-results-highlights-winner-interviews-ufc-316-dvalishvili-vs-omalley-2-newark",
-      "source": "UFC.com",
-      "publishedAt": "2025-06-08T00:52:10Z",
-      "image": "https://ufc.com/images/styles/card/s3/2025-06/060725-ufc-316-octagon-hero.jpg?itok=TL9PbkvS"
-    },
-    {
-      "title": "Colombian Senator Miguel Uribe Is Shot at Campaign Event",
-      "description": "The condition of Miguel Uribe, who belongs to a conservative party and was seeking to be its presidential nominee, was not immediately clear.",
-      "url": "https://www.nytimes.com/2025/06/07/world/americas/colombia-senator-shot.html",
-      "source": "The New York Times",
-      "publishedAt": "2025-06-08T00:39:44Z",
-      "image": "https://static01.nyt.com/images/2025/06/08/multimedia/08int-colombia-plceholder/08int-colombia-plceholder-facebookJumbo.jpg"
-    },
-    {
-      "title": "Belmont Stakes 2025 recap, winnings: Sovereignty beats out Journalism in rematch of Kentucky Derby, Preakness winners",
-      "description": "Sovereignty is the first Kentucky Derby and Belmont Stakes winner to skip the Preakness.",
-      "url": "https://sports.yahoo.com/horse-racing/breaking-news/live/belmont-stakes-2025-recap-winnings-sovereignty-beats-out-journalism-in-rematch-of-kentucky-derby-preakness-winners-200048971.html",
-      "source": "Yahoo Sports",
-      "publishedAt": "2025-06-08T00:34:00Z",
-      "image": "https://s.yimg.com/ny/api/res/1.2/Ko7X3gBBMjqOHAypZd4ypw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA7Y2Y9d2VicA--/https://s.yimg.com/os/creatr-uploaded-images/2025-06/a5e14640-43f8-11f0-a9ba-aa69c4bddc18"
-    },
-    {
-      "title": "Sean \"Diddy\" Combs Want A Mistrial Based On Prosecutorial Misconduct",
-      "description": "For the second time in just over a week, Diddy wants the judge in his sex-trafficking case to declare a mistrial",
-      "url": "https://deadline.com/2025/06/sean-diddy-combs-trial-dismissal-attempt-1236420584/",
-      "source": "Deadline",
-      "publishedAt": "2025-06-08T00:29:00Z",
-      "image": "https://deadline.com/wp-content/uploads/2025/04/diddy.jpg?w=1024"
-    },
-    {
-      "title": "Leavenworth mountain community faces manhunt for Travis Decker",
-      "description": "Authorities search for Travis Decker in rugged Leavenworth mountains. Residents urged to stay vigilant and secure homes as hunt intensifies.",
-      "url": "https://www.king5.com/article/news/local/life-inside-search-zone-travis-decker/281-d11e310d-1444-43d2-8da6-69ce6dbac793",
-      "source": "KING5.com",
-      "publishedAt": "2025-06-08T00:25:00Z",
-      "image": "https://media.king5.com/assets/KING/images/88c61d8d-9081-49d9-8628-e5934b78e5d8/20250608T002218/88c61d8d-9081-49d9-8628-e5934b78e5d8_1140x641.jpg"
-    },
-    {
-      "title": "Colombian senator and presidential hopeful shot in assassination attempt",
-      "description": "Miguel Uribe Turbay was attending a campaign event in Bogota when he was shot, his party said.",
-      "url": "https://www.cbsnews.com/news/miguel-uribe-turbay-colombian-presidential-hopeful-shot-assassination-attempt/",
-      "source": "CBS News",
-      "publishedAt": "2025-06-08T00:06:00Z",
-      "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2025/06/07/e9e31d7a-035d-4c16-b3b5-0071230406af/thumbnail/1200x630/586d6230d3146ab70acd60e5fbfb42b4/gettyimages-1149090815.jpg?v=8e774d26301ae5e7a27489083c0cf8b6"
-    },
-    {
-      "title": "UFC 316 live updates: Merab Dvalishvili vs. Sean O'Malley 2 results, round-by-round analysis, highlights",
-      "description": "Follow UFC 316 live results and round-by-round updates for the Merab Dvalishvili vs. Sean O'Malley 2 and Julianna Peña vs. Kayla Harrison fight card on Saturday night in Newark.",
-      "url": "https://sports.yahoo.com/mma/live/ufc-316-live-updates-merab-dvalishvili-vs-sean-omalley-2-results-round-by-round-analysis-highlights-050007018.html",
-      "source": "Yahoo Sports",
-      "publishedAt": "2025-06-07T23:55:35Z",
-      "image": "https://s.yimg.com/ny/api/res/1.2/2ceRMpeFJu.k3UzMNUnbQw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU7Y2Y9d2VicA--/https://s.yimg.com/os/creatr-uploaded-images/2025-06/d0510a90-431d-11f0-9ecb-0ce545068f68"
-    },
-    {
-      "title": "Man shot in Dupont Circle, 2 others stabbed near WorldPride celebrations, police say",
-      "description": "A man was shot in Dupont Circle Park and two others were stabbed Saturday evening, officials said. D.C. police asked everyone to clear the park.",
-      "url": "https://wjla.com/news/local/2-wounded-in-dupont-circle-park-stabbing-police-say-world-pride-washington-dc-police-department-safety-festival-parade-march-lgbtq",
-      "source": "WJLA",
-      "publishedAt": "2025-06-07T23:52:01Z",
-      "image": "https://wjla.com/resources/media2/16x9/1280/986/center/90/d41e8e4a-df4b-4be8-92c5-3524f84a4cf4-SASTABBING_frame_4258.jpeg"
     }
   ]
 }
