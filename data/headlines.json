@@ -1,85 +1,85 @@
 {
-  "lastUpdated": "2025-06-08T06:49:51.204Z",
+  "lastUpdated": "2025-06-08T13:15:50.815Z",
   "headlines": [
     {
-      "title": "Japan Flexes Its Military Muscle at China, and Trump",
-      "description": "A highly visible missile base on Okinawa is part of a Japanese defense buildup made amid fears of Beijing’s growing power and questions about U.S. commitment.",
-      "url": "https://www.nytimes.com/2025/06/08/world/asia/japan-military-trump-china.html",
+      "title": "Russia claims to have pushed into central Ukrainian region for first time",
+      "description": "Russia claimed Sunday that its forces are for the first time pushing into the central Ukrainian region of Dnipropetrovsk, an area it has been trying to reach for months, in a move that could create new problems for Kyiv’s much-stretched forces.",
+      "url": "https://www.cnn.com/2025/06/08/europe/russia-claims-offensive-dnipropetrovsk-intl",
+      "source": "CNN",
+      "publishedAt": "2025-06-08T11:41:00Z",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2204910436.jpg?c=16x9&q=w_800,c_fill"
+    },
+    {
+      "title": "Athletes express concern over NCAA settlement's impact on non-revenue sports",
+      "description": "The $2.8 billion NCAA settlement is being touted as a path to stability for college sports, clearing the way for schools to pay their athletes within certain parameters.",
+      "url": "https://apnews.com/article/ncaa-settlement-7aab7a3f3ee0a045b1cf1ce69e029b45",
+      "source": "AP News",
+      "publishedAt": "2025-06-08T11:10:00Z",
+      "image": "https://dims.apnews.com/dims4/default/c63eabc/2147483647/strip/true/crop/4959x2789+0+256/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F58%2F0b%2F373f17c1b11d9a90f2bc447542fb%2F24fbb8ffb45c4f3bbf154b56e08ae9ee"
+    },
+    {
+      "title": "Xbox console games are suddenly showing up inside the Xbox PC app",
+      "description": "Microsoft has started showing Xbox console games inside the Xbox PC app. It’s part of Microsoft’s ongoing work to bring Xbox and Windows closer together.",
+      "url": "https://www.theverge.com/news/682235/xbox-pc-games-console-library-xbox-360",
+      "source": "The Verge",
+      "publishedAt": "2025-06-08T09:08:58Z",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/xboxpcapp.jpg?quality=90&strip=all&crop=0%2C8.1151832460733%2C100%2C83.769633507853&w=1200"
+    },
+    {
+      "title": "Trump sending National Guard troops to LA-area protests against ICE",
+      "description": "The president is deploying 2,000 troops to Los Angeles, where protests Saturday led to clashes between immigration authorities and demonstrators, despite Gov. Gavin Newsom's objections.",
+      "url": "https://apnews.com/article/immigration-raids-los-angeles-2d1d5e2f638da600c4b34fe8bf8cf3aa",
+      "source": "AP News",
+      "publishedAt": "2025-06-08T09:02:00Z",
+      "image": "https://dims.apnews.com/dims4/default/639357b/2147483647/strip/true/crop/5808x3267+0+303/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fec%2F93%2F4009e4b77d23c28abef990656bf9%2Fd1d94af6ef8c4b409716996b54ca1769"
+    },
+    {
+      "title": "French Open final: Coco Gauff beats Aryna Sabalenka to win second Grand Slam title",
+      "description": "Gauff won her first Roland Garros title by playing the conditions and the occasion with more evenness than Sabalenka.",
+      "url": "https://www.nytimes.com/athletic/6410162/2025/06/07/sabalenka-gauff-french-open-final-tennis-result-analysis/",
       "source": "The New York Times",
-      "publishedAt": "2025-06-08T04:01:09Z",
-      "image": "https://static01.nyt.com/images/2025/05/29/multimedia/00int-japan-military-01-fqwp/00int-japan-military-01-fqwp-facebookJumbo.jpg"
+      "publishedAt": "2025-06-08T09:02:00Z",
+      "image": "https://static01.nyt.com/athletic/uploads/wp/2025/06/07123215/GettyImages-2218426503-scaled.jpg?width=1200&height=630&fit=cover"
     },
     {
-      "title": "New questions emerge from the new charges in Kilmar Abrego Garcia case",
-      "description": "The sudden return of Kilmar Abrego Garcia to the United States on Friday to face federal charges of smuggling migrants across the country was a messaging triumph for the Trump administration.",
-      "url": "https://www.nbcnews.com/news/us-news/kilmar-abrego-garcia-questions-rcna211601",
-      "source": "NBC News",
-      "publishedAt": "2025-06-08T03:51:00Z",
-      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-04/250409-Kilmar-Abrego-Garcia-mn-0755-d8ceeb.jpg"
+      "title": "Ukraine drone barrage targets Moscow as Zelenskyy demands accountability for Putin",
+      "description": "At least 10 Ukrainian drones were shot down on their approach to Moscow overnight into Sunday morning, according to the city's mayor.",
+      "url": "https://abcnews.go.com/International/ukraine-drone-barrage-targets-moscow-zelenskyy-demands-accountability/story?id=122623892",
+      "source": "ABC News",
+      "publishedAt": "2025-06-08T08:50:39Z",
+      "image": "https://i.abcnewsfe.com/a/51da4e9b-6f1d-4fe2-be28-974f15a0795a/Moscow-view-DB-250806_1749370758658_hpMain_16x9.jpg?w=1600"
     },
     {
-      "title": "Trump to Send National Guard to LA to Quell Immigration Protests: Live Updates",
-      "description": "Gov. Gavin Newsom called the decision to call in National Guard forces “purposefully inflammatory.” The president’s order came on the second day of protests and clashes over federal immigration raids in Los Angeles.",
-      "url": "https://www.nytimes.com/live/2025/06/07/us/la-immigration-raid-protests",
-      "source": "The New York Times",
-      "publishedAt": "2025-06-08T03:03:00Z",
-      "image": "https://static01.nyt.com/images/2025/06/08/multimedia/08la-immigration-carousel-wcpj-promo/08la-immigration-carousel-wcpj-facebookJumbo.jpg"
+      "title": "UFC 316: Merab Dvalishvili stops Sean O’Malley to retain title",
+      "description": "With US President Donald Trump in attendance, Dvalishvili dominates challenger O’Malley in a third-round victory.",
+      "url": "https://www.aljazeera.com/sports/2025/6/8/ufc-316-merab-dvalishvili-stops-sean-omalley-to-retain-title",
+      "source": "Al Jazeera",
+      "publishedAt": "2025-06-08T07:56:09Z",
+      "image": "https://www.aljazeera.com/wp-content/uploads/2025/06/AFP__20250608__2219120818__v2__HighRes__Ufc316DvalishviliVsOMalley2-1749366950.jpg?resize=1920%2C1440"
     },
     {
-      "title": "Colombia presidential candidate shot in head",
-      "description": "The opposition senator was hit three times during rally in Bogota and is in a critical condition in hospital.",
-      "url": "https://www.bbc.com/news/articles/c9dq8yxxy8zo",
+      "title": "Coco Gauff responds to Aryna Sabalenka over ‘not fair’ French Open final claim",
+      "description": "In an extraordinary press conference, Sabalenka claimed Gauff would have lost to Iga Swiatek and said the French Open winner had been ‘framing’ balls during the final",
+      "url": "https://sports.yahoo.com/article/coco-gauff-responds-aryna-sabalenka-200934155.html",
+      "source": "Yahoo Sports",
+      "publishedAt": "2025-06-08T07:38:39Z",
+      "image": "https://media.zenfs.com/en/the_independent_us_sports_articles_270/80af4b6b9b84846e461ce1e5101556ec"
+    },
+    {
+      "title": "What's at stake in US-China trade talks in London",
+      "description": "U.S.-China trade talks in London this week are expected to take up a series of disputes that have buffeted relations.",
+      "url": "https://apnews.com/article/us-china-tariff-trump-xi-trade-london-talks-7db44c1697a7c4cf781e0e1796470625",
+      "source": "AP News",
+      "publishedAt": "2025-06-08T07:36:00Z",
+      "image": "https://dims.apnews.com/dims4/default/f0c4813/2147483647/strip/true/crop/3775x2123+0+197/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F75%2Fe5%2F278a1c94f1d2c83094bbe54211bc%2F7af34119a3a64029b839891e5bea5a08"
+    },
+    {
+      "title": "Los Angeles protests live: Donald Trump deploys California National Guard to city after clashes over immigration raids",
+      "description": "The US president says he's sending in 2,000 troops to deal with unrest over raids on undocumented migrants.",
+      "url": "https://www.bbc.com/news/live/cvg7vxx888kt",
       "source": "BBC",
-      "publishedAt": "2025-06-08T02:45:33Z",
-      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/4b9d/live/aa4305d0-4410-11f0-97fc-8175165e17d2.jpg"
-    },
-    {
-      "title": "NASA is launching a $488 million mission with its new telescope, which is expected to provide a lot of data.",
-      "description": "NASA's ambitious SPHEREx telescope project represents a significant leap forward in our understanding of the cosmos. With a price tag of $488 million, this revolutionary instrument is designed to create an unprecedented three-dimensional map of our universe. The Spectro-Photometer for the History of the Universe, Epoch of Reionization and Ices…",
-      "url": "https://farmingdale-observer.com/2025/06/07/nasa-is-launching-a-488-million-mission-with-its-new-telescope-which-is-expected-to-provide-a-lot-of-data/",
-      "source": "Farmingdale Observer",
-      "publishedAt": "2025-06-08T02:36:00Z",
-      "image": "https://farmingdale-observer.com/wp-content/uploads/2024/06/cropped-cropped-design-sans-titre-29-32x32.png"
-    },
-    {
-      "title": "San Antonio’s next mayor is Air Force veteran Gina Ortiz Jones",
-      "description": "The progressive West Side native fended off roughly $1 million in attacks from Texas Republicans trying to elect Abbott ally Rolando Pablos.",
-      "url": "https://sanantonioreport.org/san-antonio-mayor-result-who-won-gina-ortiz-jones-rolando-pablos/",
-      "source": "San Antonio Report",
-      "publishedAt": "2025-06-08T02:30:00Z",
-      "image": "https://sanantonioreport.org/wp-content/uploads/2025/06/OrtizJones_05_06.07.25_AmberEsparza-scaled.jpg"
-    },
-    {
-      "title": "Decker manhunt: Officials reopen Icicle River area",
-      "description": "Decker, who is believed to be armed and highly skilled in survival, has been the subject of an intensive multi-agency manhunt across Washington state.",
-      "url": "https://www.king5.com/article/news/local/decker-manhunt-officials-reopen-icicle-river-area/281-a5bef6a2-086a-4532-8072-e4cc47d0a2f6",
-      "source": "KING5.com",
-      "publishedAt": "2025-06-08T02:26:00Z",
-      "image": "https://media.king5.com/assets/KING/images/b4b93b2b-61ae-4c49-a931-163f291e3c0f/20250608T022235/b4b93b2b-61ae-4c49-a931-163f291e3c0f_1140x641.jpg"
-    },
-    {
-      "title": "Sovereignty Wins 2025 Belmont Stakes, Beats Journalism in Final Triple Crown Leg",
-      "description": "Sovereignty won the 157th Belmont Stakes on Saturday, finishing just ahead of the favorite Journalism to win another jewel of the Triple Crown.",
-      "url": "https://bleacherreport.com/articles/25203242-sovereignty-wins-2025-belmont-stakes-beats-journalism-final-triple-crown-leg",
-      "source": "Bleacher Report",
-      "publishedAt": "2025-06-08T02:15:00Z",
-      "image": "https://gsp-image-cdn.wmsports.io/cms/prod/bleacher-report/2025-06/br_horse-racing-top3_3x2.png?w=3800&h=2000"
-    },
-    {
-      "title": "Trump deploys 2,000 National Guard members after Los Angeles immigration protests",
-      "description": "President Donald Trump has deployed 2,000 National Guard members in California after the Los Angeles immigration protests, the White House said.",
-      "url": "https://abc7.com/post/protests-erupt-immigration-customs-enforcement-raids-los-angeles-california/16690197/",
-      "source": "ABC7 Los Angeles",
-      "publishedAt": "2025-06-08T01:39:29Z",
-      "image": "https://cdn.abcotvs.com/dip/images/16690264_060725-wls-la-ice-protests-clean-img.jpg?w=1600"
-    },
-    {
-      "title": "Ukraine war briefing: Putin yet to retaliate in full force over Operation Spiderweb, officials say",
-      "description": "Diplomat predicts ‘huge, vicious and unrelenting’ assault, though a Russia expert thinks Moscow is unable to escalate much beyond current level of attacks. What we know on day 1,201",
-      "url": "https://www.theguardian.com/world/2025/jun/08/ukraine-war-briefing-putin-yet-to-retaliate-in-full-force-over-operation-spiderweb-officials-say",
-      "source": "The Guardian",
-      "publishedAt": "2025-06-08T01:34:00Z",
-      "image": "https://i.guim.co.uk/img/media/aabfe9ca2cbe836659ed054cb36d5be67a3b42c8/637_0_5000_4000/master/5000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=93340953d099c3fc56eba0cb180c7136"
+      "publishedAt": "2025-06-08T07:12:47Z",
+      "image": "https://static.files.bbci.co.uk/ws/simorgh-assets/public/news/images/metadata/poster-1024x576.png"
     }
   ]
 }
