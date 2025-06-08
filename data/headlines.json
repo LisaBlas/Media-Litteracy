@@ -1,6 +1,70 @@
 {
-  "lastUpdated": "2025-06-08T13:15:50.815Z",
+  "lastUpdated": "2025-06-08T18:12:14.318Z",
   "headlines": [
+    {
+      "title": "Sleep paralysis: Science, causes and treatments",
+      "description": "Around 30% of people will experience sleep paralysis at least once. Here’s why and what you can do about it.",
+      "url": "https://www.cnn.com/2025/06/08/health/sleep-paralysis-causes-treatments-wellness",
+      "source": "CNN",
+      "publishedAt": "2025-06-08T16:00:00Z",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/sleepparalysisdemon.jpg?c=16x9&q=w_800,c_fill"
+    },
+    {
+      "title": "10 Times AI And Robotics Have Done Horrible Things",
+      "description": "\"Your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.\"",
+      "url": "https://www.buzzfeed.com/mikespohr/10-times-ai-and-robotics-have-done-horrible-things",
+      "source": "BuzzFeed",
+      "publishedAt": "2025-06-08T13:31:02Z",
+      "image": "https://img.buzzfeed.com/buzzfeed-static/static/2025-06/03/18/thumb/94cHZ2ZYe.jpg?crop=3000:1568;0,0%26downsize=1250:*"
+    },
+    {
+      "title": "Experts are certain, the next major volcanic eruption will cause climate chaos.",
+      "description": "The scientific community has raised an urgent alarm regarding our global unpreparedness for the next major volcanic eruption. In a compelling study published in Nature, climatologists and geographers warn that such an event could trigger unprecedented climate chaos in our warming world. This warning demands immediate attention from governments worldwide.…",
+      "url": "https://farmingdale-observer.com/2025/06/08/experts-are-certain-the-next-major-volcanic-eruption-will-cause-climate-chaos/",
+      "source": "Farmingdale Observer",
+      "publishedAt": "2025-06-08T13:03:00Z",
+      "image": "https://farmingdale-observer.com/wp-content/uploads/2024/06/cropped-cropped-design-sans-titre-29-32x32.png"
+    },
+    {
+      "title": "Afghans who helped US war effort feel betrayed by Trump’s travel ban",
+      "description": "When President Donald Trump’s issued a proclamation on Wednesday evening that citizens from Afghanistan, along with 11 other nations, would be blocked from coming to the United States, it added even more fear, uncertainty and for some, a sense of betrayal, for vulnerable Afghans.",
+      "url": "https://www.cnn.com/2025/06/08/politics/afghans-who-helped-us-war-effort-feel-betrayed-by-trumps-travel-ban",
+      "source": "CNN",
+      "publishedAt": "2025-06-08T13:00:00Z",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/c-ap25156397276394.jpg?c=16x9&q=w_800,c_fill"
+    },
+    {
+      "title": "OnePlus Pad 3 review: perfect for play, not for work",
+      "description": "The OnePlus Pad 3 adds modest hardware and meaningful software upgrades at a higher price. It’s better than ever for entertainment, but still not ideal for work.",
+      "url": "https://www.theverge.com/tech/681301/oneplus-pad-3-review",
+      "source": "The Verge",
+      "publishedAt": "2025-06-08T12:00:00Z",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/257791_OnePlus_Pad_3_SVasani_0005.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+    },
+    {
+      "title": "Travis Decker: How a manhunt for a father accused of killing his 3 daughters is unfolding",
+      "description": "Olivia, Evelyn and Paityn Decker were found suffocated to death at an abandoned campsite in Washington state. A massive search is now underway for their father, an Army veteran and National Guardsman.",
+      "url": "https://edition.cnn.com/2025/06/08/us/travis-decker-daughters-washington-manhunt",
+      "source": "CNN",
+      "publishedAt": "2025-06-08T12:00:00Z",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/504256257-1007841391501030-4899887439149253646-n.jpg?c=16x9&q=w_800,c_fill"
+    },
+    {
+      "title": "The most fun camera app I’ve used in forever",
+      "description": "Not Boring Camera for iOS, the Nintendo Switch 2, Mario Kart World, Good Night and Good Luck, and more in this week’s Installer newsletter.",
+      "url": "https://www.theverge.com/installer-newsletter/681745/camera-app-iphone-mario-kart-switch-2-installer",
+      "source": "The Verge",
+      "publishedAt": "2025-06-08T12:00:00Z",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/Installer-86.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200"
+    },
+    {
+      "title": "Italians vote on citizenship rules, labor laws",
+      "description": "Italians are voting on referendums that would make it easier for children born to foreigners to gain citizenship. Prime Minister Giorgia Meloni has urged supporters to skip the vote.",
+      "url": "https://www.dw.com/en/italians-vote-on-citizenship-rules-labor-laws/a-72835388",
+      "source": "dw.com",
+      "publishedAt": "2025-06-08T11:45:41Z",
+      "image": "https://static.dw.com/image/72835617_6.jpg"
+    },
     {
       "title": "Russia claims to have pushed into central Ukrainian region for first time",
       "description": "Russia claimed Sunday that its forces are for the first time pushing into the central Ukrainian region of Dnipropetrovsk, an area it has been trying to reach for months, in a move that could create new problems for Kyiv’s much-stretched forces.",
@@ -10,76 +74,12 @@
       "image": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2204910436.jpg?c=16x9&q=w_800,c_fill"
     },
     {
-      "title": "Athletes express concern over NCAA settlement's impact on non-revenue sports",
-      "description": "The $2.8 billion NCAA settlement is being touted as a path to stability for college sports, clearing the way for schools to pay their athletes within certain parameters.",
-      "url": "https://apnews.com/article/ncaa-settlement-7aab7a3f3ee0a045b1cf1ce69e029b45",
+      "title": "Gauff persuaded herself she could win French Open and did",
+      "description": "A little bit of self-persuasion went a very long way for Coco Gauff, whose victory at the French Open gave the 21-year-old American a trophy she has long coveted, and a second major title.",
+      "url": "https://apnews.com/article/french-open-women-gauff-sabalenka-1c3171407a915f51948f276c7cf14014",
       "source": "AP News",
-      "publishedAt": "2025-06-08T11:10:00Z",
-      "image": "https://dims.apnews.com/dims4/default/c63eabc/2147483647/strip/true/crop/4959x2789+0+256/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F58%2F0b%2F373f17c1b11d9a90f2bc447542fb%2F24fbb8ffb45c4f3bbf154b56e08ae9ee"
-    },
-    {
-      "title": "Xbox console games are suddenly showing up inside the Xbox PC app",
-      "description": "Microsoft has started showing Xbox console games inside the Xbox PC app. It’s part of Microsoft’s ongoing work to bring Xbox and Windows closer together.",
-      "url": "https://www.theverge.com/news/682235/xbox-pc-games-console-library-xbox-360",
-      "source": "The Verge",
-      "publishedAt": "2025-06-08T09:08:58Z",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/xboxpcapp.jpg?quality=90&strip=all&crop=0%2C8.1151832460733%2C100%2C83.769633507853&w=1200"
-    },
-    {
-      "title": "Trump sending National Guard troops to LA-area protests against ICE",
-      "description": "The president is deploying 2,000 troops to Los Angeles, where protests Saturday led to clashes between immigration authorities and demonstrators, despite Gov. Gavin Newsom's objections.",
-      "url": "https://apnews.com/article/immigration-raids-los-angeles-2d1d5e2f638da600c4b34fe8bf8cf3aa",
-      "source": "AP News",
-      "publishedAt": "2025-06-08T09:02:00Z",
-      "image": "https://dims.apnews.com/dims4/default/639357b/2147483647/strip/true/crop/5808x3267+0+303/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fec%2F93%2F4009e4b77d23c28abef990656bf9%2Fd1d94af6ef8c4b409716996b54ca1769"
-    },
-    {
-      "title": "French Open final: Coco Gauff beats Aryna Sabalenka to win second Grand Slam title",
-      "description": "Gauff won her first Roland Garros title by playing the conditions and the occasion with more evenness than Sabalenka.",
-      "url": "https://www.nytimes.com/athletic/6410162/2025/06/07/sabalenka-gauff-french-open-final-tennis-result-analysis/",
-      "source": "The New York Times",
-      "publishedAt": "2025-06-08T09:02:00Z",
-      "image": "https://static01.nyt.com/athletic/uploads/wp/2025/06/07123215/GettyImages-2218426503-scaled.jpg?width=1200&height=630&fit=cover"
-    },
-    {
-      "title": "Ukraine drone barrage targets Moscow as Zelenskyy demands accountability for Putin",
-      "description": "At least 10 Ukrainian drones were shot down on their approach to Moscow overnight into Sunday morning, according to the city's mayor.",
-      "url": "https://abcnews.go.com/International/ukraine-drone-barrage-targets-moscow-zelenskyy-demands-accountability/story?id=122623892",
-      "source": "ABC News",
-      "publishedAt": "2025-06-08T08:50:39Z",
-      "image": "https://i.abcnewsfe.com/a/51da4e9b-6f1d-4fe2-be28-974f15a0795a/Moscow-view-DB-250806_1749370758658_hpMain_16x9.jpg?w=1600"
-    },
-    {
-      "title": "UFC 316: Merab Dvalishvili stops Sean O’Malley to retain title",
-      "description": "With US President Donald Trump in attendance, Dvalishvili dominates challenger O’Malley in a third-round victory.",
-      "url": "https://www.aljazeera.com/sports/2025/6/8/ufc-316-merab-dvalishvili-stops-sean-omalley-to-retain-title",
-      "source": "Al Jazeera",
-      "publishedAt": "2025-06-08T07:56:09Z",
-      "image": "https://www.aljazeera.com/wp-content/uploads/2025/06/AFP__20250608__2219120818__v2__HighRes__Ufc316DvalishviliVsOMalley2-1749366950.jpg?resize=1920%2C1440"
-    },
-    {
-      "title": "Coco Gauff responds to Aryna Sabalenka over ‘not fair’ French Open final claim",
-      "description": "In an extraordinary press conference, Sabalenka claimed Gauff would have lost to Iga Swiatek and said the French Open winner had been ‘framing’ balls during the final",
-      "url": "https://sports.yahoo.com/article/coco-gauff-responds-aryna-sabalenka-200934155.html",
-      "source": "Yahoo Sports",
-      "publishedAt": "2025-06-08T07:38:39Z",
-      "image": "https://media.zenfs.com/en/the_independent_us_sports_articles_270/80af4b6b9b84846e461ce1e5101556ec"
-    },
-    {
-      "title": "What's at stake in US-China trade talks in London",
-      "description": "U.S.-China trade talks in London this week are expected to take up a series of disputes that have buffeted relations.",
-      "url": "https://apnews.com/article/us-china-tariff-trump-xi-trade-london-talks-7db44c1697a7c4cf781e0e1796470625",
-      "source": "AP News",
-      "publishedAt": "2025-06-08T07:36:00Z",
-      "image": "https://dims.apnews.com/dims4/default/f0c4813/2147483647/strip/true/crop/3775x2123+0+197/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F75%2Fe5%2F278a1c94f1d2c83094bbe54211bc%2F7af34119a3a64029b839891e5bea5a08"
-    },
-    {
-      "title": "Los Angeles protests live: Donald Trump deploys California National Guard to city after clashes over immigration raids",
-      "description": "The US president says he's sending in 2,000 troops to deal with unrest over raids on undocumented migrants.",
-      "url": "https://www.bbc.com/news/live/cvg7vxx888kt",
-      "source": "BBC",
-      "publishedAt": "2025-06-08T07:12:47Z",
-      "image": "https://static.files.bbci.co.uk/ws/simorgh-assets/public/news/images/metadata/poster-1024x576.png"
+      "publishedAt": "2025-06-08T11:34:00Z",
+      "image": "https://dims.apnews.com/dims4/default/1c613fc/2147483647/strip/true/crop/5192x2921+0+270/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F77%2F0e%2Fd4d05d526c2c397ebfb3ae941226%2F3cf86e7331194bebb3879c3f11213510"
     }
   ]
 }
