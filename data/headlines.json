@@ -1,85 +1,85 @@
 {
-  "lastUpdated": "2025-06-09T12:19:38.185Z",
+  "lastUpdated": "2025-06-09T18:14:35.607Z",
   "headlines": [
     {
-      "title": "Warner Bros. Discovery To Split Into Two Companies",
-      "description": "Warner Bros. Discovery will split into two companies - Streaming & Studios will separate from Global Networks",
-      "url": "https://deadline.com/2025/06/warner-bros-discovery-to-split-into-two-companies-1236427927/",
-      "source": "Deadline",
-      "publishedAt": "2025-06-09T11:15:00Z",
-      "image": "https://deadline.com/wp-content/uploads/2023/11/Gunnar-Wiedenfels-and-david-zaslav.jpg?w=1024"
-    },
-    {
-      "title": "Xbox finally reveals handheld console after decade of speculation",
-      "description": "The ROG Xbox Ally will use Game Pass on-the-go - meaning subscribers start off with hundreds of games.",
-      "url": "https://www.bbc.com/news/articles/c1de113lkdpo",
-      "source": "BBC",
-      "publishedAt": "2025-06-09T10:01:14Z",
-      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/617c/live/d9381980-4509-11f0-955c-8b8f53c11caf.png"
-    },
-    {
       "title": "Stock market today: Live updates",
-      "description": "The S&P 500 closed above 6,000 last week for the first time since February.",
+      "description": "Stocks were little changed Monday as traders looked for details on the latest U.S.-China trade talks.",
       "url": "https://www.cnbc.com/2025/06/08/stock-market-today-live-updates.html",
       "source": "CNBC",
-      "publishedAt": "2025-06-09T09:46:00Z",
-      "image": "https://image.cnbcfm.com/api/v1/image/108133398-1744901282932-gettyimages-2210727739-anotherday18620636_mw2vfms2.jpeg?v=1749418062&w=1920&h=1080"
+      "publishedAt": "2025-06-09T16:57:00Z",
+      "image": "https://image.cnbcfm.com/api/v1/image/108155372-17491406572025-06-05t155502z_786883746_rc2eweat38pf_rtrmadp_0_usa-stocks.jpeg?v=1749140760&w=1920&h=1080"
     },
     {
-      "title": "2 dead in Las Vegas Strip shooting, with suspect known but not yet arrested, police say",
-      "description": "\"The shooting did not occur inside a casino,\" the Las Vegas Metro Police Department said",
-      "url": "https://abcnews.go.com/US/las-vegas-police-respond-shooting-strip/story?id=122644094",
-      "source": "ABC News",
-      "publishedAt": "2025-06-09T09:39:49Z",
-      "image": "https://i.abcnewsfe.com/a/e8ef0956-c59f-4dfc-b6dd-96050ecbf51a/ktnv-vegas-6-9_1749451977877_hpMain_16x9.jpg?w=1600"
+      "title": "Here's Galaxy Watch 8 Classic in hands-on photos with new design",
+      "description": "A Galaxy Watch 8 Classic unit has shown up on eBay with its new design, twice as much storage, and other changes in a new leak.",
+      "url": "https://9to5google.com/2025/06/09/samsung-galaxy-watch-8-classic-ebay-leak/",
+      "source": "9to5Google",
+      "publishedAt": "2025-06-09T15:00:00Z",
+      "image": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2025/06/galaxy-watch-8-classic-ebay-1_a53c3c.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1"
     },
     {
-      "title": "How Healthy Is Chicken Breast?",
-      "description": "It’s a protein powerhouse. But it has other strengths, too.",
-      "url": "https://www.nytimes.com/2025/06/09/well/eat/chicken-breast-health-benefits-recipes.html",
-      "source": "The New York Times",
-      "publishedAt": "2025-06-09T09:00:08Z",
-      "image": "https://static01.nyt.com/images/2025/04/10/well/WELL-HEALTHY-CHICKEN-BREAST1/WELL-HEALTHY-CHICKEN-BREAST1-facebookJumbo.jpg"
+      "title": "US plane crash: Small aircraft carrying 6 passengers crashes in San Diego; search on for survivors",
+      "description": "US News: A Cessna 414 carrying six individuals crashed into the Pacific Ocean near San Diego shortly after takeoff on Sunday. The US Coast Guard and San Diego",
+      "url": "https://timesofindia.indiatimes.com/world/us/us-plane-crash-small-aircraft-carrying-6-passengers-crashes-in-san-diego-search-on-for-survivors/articleshow/121732003.cms",
+      "source": "Times of India",
+      "publishedAt": "2025-06-09T14:55:00Z",
+      "image": "https://static.toiimg.com/thumb/msid-121732258,width-1070,height-580,imgsize-1002150,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
     },
     {
-      "title": "Russia bombards Ukraine with 479 drones overnight, Ukrainian air force says",
-      "description": "Russia launched a massive aerial attack, sending hundreds of drones to Ukraine.",
-      "url": "https://abcnews.go.com/International/polish-allied-planes-briefly-scramble-amid-russian-targeting/story?id=122644087",
-      "source": "ABC News",
-      "publishedAt": "2025-06-09T08:48:45Z",
-      "image": "https://i.abcnewsfe.com/a/e8058dea-b68b-453a-a30c-501a640e2cbc/putin-main_1749459063330_hpMain_16x9.jpg?w=1600"
-    },
-    {
-      "title": "Israel Intercepts Gaza-Bound Aid Ship With Greta Thunberg Aboard",
-      "description": "Israel had vowed to prevent the vessel from reaching Gaza, saying its military would use “any means necessary” to stop it from breaching a naval blockade.",
-      "url": "https://www.nytimes.com/2025/06/08/world/middleeast/gaza-flotilla-greta-thunberg-israel.html",
-      "source": "The New York Times",
-      "publishedAt": "2025-06-09T08:43:00Z",
-      "image": "https://static01.nyt.com/images/2025/07/08/multimedia/08int-israel-flotilla-gqbj-promo/08int-israel-flotilla-gqbj-promo-facebookJumbo.jpg"
-    },
-    {
-      "title": "China says its exports to the US fell 35% in May, as trade talks are due to start in London",
-      "description": "China has reported its exports to the United States fell 35% in May from a year earlier, straining the economy, as trade talks with Washington were due to start in London.",
-      "url": "https://apnews.com/article/china-trade-exports-trump-tariffs-a6f55570462e4ffce106698ef23ac7be",
-      "source": "AP News",
-      "publishedAt": "2025-06-09T08:20:00Z",
-      "image": "https://dims.apnews.com/dims4/default/3343bf3/2147483647/strip/true/crop/3943x2218+0+207/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Ffb%2F6f%2Fb6f769108f2aab05f77edb1e49cb%2Fecf14e435f3d4343b20a557e7e101371"
-    },
-    {
-      "title": "‘I’m sorry’…. Julianna Pena issues statement following submission loss to Kayla Harrison at UFC 316",
-      "description": "Julianna Pena has broke her silence in an apologetic yet defiant social media statement after losing to Kayla Harrison at UFC 316.",
-      "url": "https://bloodyelbow.com/2025/06/09/im-sorry-julianna-pena-issues-statement-following-submission-loss-to-kayla-harrison-at-ufc-316/",
-      "source": "Bloody Elbow",
-      "publishedAt": "2025-06-09T07:51:46Z",
-      "image": "https://bloodyelbow.com/wp-content/uploads/1/2025/06/GettyImages-2219117393-scaled.jpg"
-    },
-    {
-      "title": "Why the U.S. tax bill's Section 899 could push European firms to list in the U.S.",
-      "description": "Goldman Sachs identified a U.S. re-listing as one measure European companies could take to avoid the impact of Section 899 taxes.",
-      "url": "https://www.cnbc.com/2025/06/09/why-the-us-tax-bills-section-899-could-push-european-firms-to-list-in-the-us.html",
+      "title": "Walmart taps own fintech firm for credit cards after Capital One exit",
+      "description": "Walmart had leaned on Capital One as exclusive provider of its credit card since 2018, but sued the bank in 2023 so that it could exit the relationship.",
+      "url": "https://www.cnbc.com/2025/06/09/walmart-onepay-synchrony-credit-cards-capital-one.html",
       "source": "CNBC",
-      "publishedAt": "2025-06-09T06:54:12Z",
-      "image": "https://image.cnbcfm.com/api/v1/image/108150090-1748020397265-gettyimages-2216485105-wm107202_eadmblbk.jpeg?v=1749296427&w=1920&h=1080"
+      "publishedAt": "2025-06-09T14:50:54Z",
+      "image": "https://image.cnbcfm.com/api/v1/image/107393269-1711488865494-gettyimages-1183648626-cao-holidays191119_nppmm.jpeg?v=1716564810&w=1920&h=1080"
+    },
+    {
+      "title": "The Xbox Handheld Is Launching at the Worst Possible Moment",
+      "description": "The ROG Xbox Ally is stuck between a rock and a hard place: the Switch 2 and Steam Deck.",
+      "url": "https://gizmodo.com/the-xbox-handheld-is-launching-at-the-worst-possible-moment-2000613111",
+      "source": "Gizmodo",
+      "publishedAt": "2025-06-09T14:48:57Z",
+      "image": "https://gizmodo.com/app/uploads/2025/06/Xbox-Ally-ROG-Handheld-HEro-1200x675.jpg"
+    },
+    {
+      "title": "What Happens to Movie, TV, Studios?",
+      "description": "Here's a breakdown of what Warner Bros. Discovery's two entities would look like following the split, expected to be completed by mid-2026.",
+      "url": "https://variety.com/2025/tv/news/warner-bros-discovery-split-what-happens-hbo-max-movie-studios-tv-networks-1236423363/",
+      "source": "Variety",
+      "publishedAt": "2025-06-09T14:40:00Z",
+      "image": "https://variety.com/wp-content/uploads/2025/05/superman.jpg?w=1000&h=563&crop=1"
+    },
+    {
+      "title": "'Harry Potter' Series Casts Bel Powley, Daniel Rigby as The Dursleys",
+      "description": "The \"Harry Potter\" TV series at HBO has found its Petunia and Vernon Dursley.",
+      "url": "https://variety.com/2025/tv/news/harry-potter-hbo-bel-powley-daniel-rigby-petunia-vernon-dursley-1236423368/",
+      "source": "Variety",
+      "publishedAt": "2025-06-09T14:30:00Z",
+      "image": "https://variety.com/wp-content/uploads/2025/06/Harry-Potter-max-Bel-Powley-Daniel-Rigby.jpg?w=1000&h=563&crop=1"
+    },
+    {
+      "title": "Los Angeles gears up for fourth day of protests against immigration raids",
+      "description": "Rally will demand release of arrested union leader David Huerta as ACLU says ‘we will not be silenced’",
+      "url": "https://www.theguardian.com/us-news/2025/jun/09/los-angeles-protests",
+      "source": "The Guardian",
+      "publishedAt": "2025-06-09T14:27:00Z",
+      "image": "https://i.guim.co.uk/img/media/7484e3a366c911a2afc19a199ceaa72ba310c541/338_0_3375_2700/master/3375.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=82bddf1515278de69772a6684030be5a"
+    },
+    {
+      "title": "LA protests live updates: California to sue Trump over National Guard deployment",
+      "description": "California Governor Gavin Newsom, a Democrat, told MSNBC that he plans to file suit Monday against the Trump administration to roll back the National Guard deployment.",
+      "url": "https://apnews.com/live/immigration-protests-los-angeles",
+      "source": "AP News",
+      "publishedAt": "2025-06-09T14:26:03Z",
+      "image": "https://dims.apnews.com/dims4/default/3c454db/2147483647/strip/true/crop/8053x4530+0+421/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F9c%2Fd6%2Fef718149ff86f5806bdde95ddbab%2F77fdec99bbed4cc3a4ff9cdfb66c7c26"
+    },
+    {
+      "title": "Full List Of Tonys Results, Updating Live",
+      "description": "The curtain is officially up on the 2025 Tony Awards. See the full list of winners here, which we'll update as Sunday's ceremony continues.",
+      "url": "https://tvline.com/lists/tony-awards-2025-winners-full-list/",
+      "source": "TVLine",
+      "publishedAt": "2025-06-09T14:24:52Z",
+      "image": "https://tvline.com/wp-content/uploads/2025/06/tony-awards-2025-winners-list-full.jpg?w=650"
     }
   ]
 }
