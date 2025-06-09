@@ -1,85 +1,156 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { XMarkIcon, LightBulbIcon } from '@heroicons/react/24/solid'; // Example icon for bias
+import AccordionItem from './AccordionItem';
 
-const ArticleCard = ({ article }) => {
+const ArticleCard = ({ article, index }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+  const cardRef = useRef(null);
+
+  const handleFlip = (e) => {
+    // Prevent event bubbling if the click is on an interactive element inside the card back
+    if (e && e.target.closest('a, button:not(.card-face)')) {
+        if(isFlipped && !e.target.closest('.close-button-back')) return;
+    }
+    setIsFlipped(!isFlipped);
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      handleFlip();
+    }
+  };
+
+ useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (cardRef.current && !cardRef.current.contains(event.target) && isFlipped) {
+        setIsFlipped(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isFlipped]);
+
   const formatDate = (dateString) => {
+    if (!dateString) return 'Date N/A';
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'short',
-      day: 'numeric'
+      day: 'numeric',
     });
   };
 
-  const truncateContent = (content, maxLength = 150) => {
-    if (content.length <= maxLength) return content;
+  const truncateContent = (content, maxLength = 100) => {
+    if (!content || typeof content !== 'string' || content.length <= maxLength) return content || '';
     return content.substring(0, maxLength).trim() + '...';
   };
 
+  // Fallback for missing article data
+  const currentArticle = article || {
+    title: 'Article Not Available',
+    source: 'Unknown Source',
+    image: '', // Provide a path to a default placeholder image if desired
+    content: 'No content to display.',
+    url: '#',
+    publishedAt: null,
+    biasType: 'N/A', // Placeholder for bias/fallacy data
+  };
+
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-      {article.image && (
-        <div className="relative h-48 overflow-hidden">
-          <img
-            src={article.image}
-            alt={article.title}
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-            onError={(e) => {
-              e.target.style.display = 'none';
-            }}
-          />
-        </div>
-      )}
-      
-      <div className="p-6">
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-sm text-blue-600 font-medium">
-            {article.source?.name || 'Unknown Source'}
-          </span>
-          <span className="text-sm text-gray-500">
-            {formatDate(article.publishedAt)}
-          </span>
-        </div>
-        
-        <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
-          {article.title}
-        </h3>
-        
-        <p className="text-gray-600 mb-4 leading-relaxed">
-          {article.description}
-        </p>
-        
-        {article.content && (
-          <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-            {truncateContent(article.content)}
-          </p>
-        )}
-        
-        <div className="flex items-center justify-between">
-          <a
-            href={article.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 transition-colors duration-200"
-          >
-            Read More
-            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
-          
-          <button
-            onClick={() => navigator.share && navigator.share({
-              title: article.title,
-              text: article.description,
-              url: article.url
-            })}
-            className="p-2 text-gray-400 hover:text-gray-600 transition-colors duration-200"
-            title="Share article"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
-            </svg>
-          </button>
+    <div className="card-container-perspective w-full h-full"> {/* Ensure h-full if cards have varying heights set by grid row */} 
+      <div
+        ref={cardRef}
+        className="article-card-wrapper w-full h-full min-h-[480px]"
+        onClick={!isFlipped ? handleFlip : undefined} 
+        onKeyDown={!isFlipped ? handleKeyDown : undefined}
+        tabIndex={0}
+        role="button"
+        aria-pressed={isFlipped}
+        aria-label={`Read more about ${currentArticle.title}`}
+      >
+        <div className={`card-inner ${isFlipped ? 'is-flipped' : ''} w-full h-full`}>
+          {/* Front Face */}
+          <div className="card-face card-front textured-dark-gradient p-5 sm:p-6 flex flex-col justify-between text-brutalist-text">
+            <div className="flex-grow">
+              {currentArticle.image && (
+                <div className={`relative h-40 sm:h-48 mb-4 overflow-hidden image-vignette image-diagonal-overlay border-2 border-brutalist-block-dark ${index % 2 !== 0 ? 'alt-overlay-direction' : ''}`}>
+                  <img
+                    src={currentArticle.image}
+                    alt={currentArticle.title}
+                    className="w-full h-full object-cover brutalist-image-filter opacity-80"
+                    onError={(e) => { e.target.src = 'https://via.placeholder.com/400x200?text=Image+Not+Found'; }} // Fallback image
+                  />
+                </div>
+              )}
+              <span className="text-xs text-brutalist-text opacity-80 italic">
+                {currentArticle.source} - {formatDate(currentArticle.publishedAt)}
+              </span>
+              <h3 className="font-bebas text-brutalist-text font-black uppercase tracking-wider text-2xl sm:text-3xl mb-2 leading-tight border-b-2 border-brutalist-accent-red pb-1">
+                {currentArticle.title}
+              </h3>
+            </div>
+          </div>
+
+          {/* Back Face */}
+          <div className="card-face card-back p-5 sm:p-6 flex flex-col text-brutalist-text overflow-y-auto brutalist-scrollbar">
+            <button
+              onClick={handleFlip} 
+              className="close-button-back absolute top-3 right-3 text-brutalist-text opacity-70 hover:text-brutalist-accent-red focus-visible:ring-2 focus-visible:ring-brutalist-accent-red focus-visible:ring-offset-2 focus-visible:ring-offset-brutalist-block-dark z-20 p-1"
+              aria-label="Close details and flip back"
+            >
+              <XMarkIcon className="h-5 w-5 sm:h-6 sm:w-6" />
+            </button>
+            <div className="flex-grow">
+              <div className="mb-4">
+                {/* Placeholder for a potential back-face main title - styled for Brutalism */}
+                {/* <h4 className="font-bebas text-slate-50 font-black uppercase tracking-tight text-xl sm:text-2xl mb-3">Back Face Title</h4> */}
+                <img src="Images/animated.gif" alt="Brain" className="w-40 h-40 mb-3" />
+                <h3 className="font-bebas text-brutalist-text font-black uppercase tracking-wider text-2xl sm:text-3xl mb-2 leading-tight border-b-2 border-brutalist-accent-red pb-1">
+                Strawman Fallacy
+              </h3>
+                {currentArticle.biasType && currentArticle.biasType !== 'N/A' && (
+                  <div className="mb-3">
+                    <LightBulbIcon className="w-6 h-6 text-brutalist-accent-red animate-pulse" aria-label={`Bias detected: ${currentArticle.biasType}`} />
+                  </div>
+                )}
+                <div>
+                  <p>The article suggests the ban is "fundamentally racist" without fully exploring the administration's stated reasons, such as national security, which may misrepresent the policy's intent.</p>
+                </div>
+              </div>
+              <p className="text-sm text-brutalist-text opacity-90 mb-4 leading-relaxed">
+                {truncateContent(currentArticle.content, 120)}
+              </p>
+              <div className="space-y-1 mb-3">
+                <AccordionItem title="More flaws">
+                  <p>• Appeal to Emotion: The use of terms like "demonized" and "vilifying" appeals to readers' emotions rather than presenting a balanced analysis of the policy's implications.</p>
+                  <p className="mt-2">• Hasty Generalization: The article implies that the ban is racist based on the inclusion of non-white countries, without considering the specific criteria used for the ban.</p>
+                  <p className="mt-2">Further points could be listed here.</p>
+                </AccordionItem>
+                <AccordionItem title="More context">
+                  <p>1. The travel ban could be seen as a legitimate national security measure, focusing on countries with inadequate vetting processes, which is a common practice in international relations.</p>
+                  <p className="mt-2">2. The inclusion of non-Muslim-majority countries suggests the ban is not solely based on religion, challenging the narrative of it being a "Muslim ban."</p>
+                  <p className="mt-2">3. The policy might be viewed as a temporary measure to address specific security concerns, rather than a permanent exclusion, which could mitigate claims of racism.</p>
+                  <p className="mt-2">4. The ban's impact on African countries could be interpreted as a reflection of broader geopolitical dynamics rather than an intentional act of exclusion.</p>
+                </AccordionItem>
+                <AccordionItem title="More on the source">
+                  <p>Source: <a href={currentArticle.url} target="_blank" rel="noopener noreferrer" className="text-brutalist-accent-red hover:text-brutalist-text focus-visible:text-brutalist-text underline">{currentArticle.source}</a>. Reliability score: N/A. Publication date: {formatDate(currentArticle.publishedAt)}. The Guardian is a reputable, progressive-leaning news outlet with nonprofit ownership aiming for editorial independence, praised for investigative work but viewed as politically left-leaning with occasional critique over bias framing.</p>
+                </AccordionItem>
+              </div>
+            </div>
+            <div className="mt-auto pt-2">
+              <a
+                href={currentArticle.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center px-4 py-2.5 bg-brutalist-accent-red text-brutalist-text text-sm font-bold border-2 border-brutalist-accent-red cta-glow-button hover:bg-brutalist-text hover:text-brutalist-accent-red hover:shadow-hard-sm focus-visible:bg-brutalist-text focus-visible:text-brutalist-accent-red focus-visible:shadow-hard-sm"
+              >
+                Learn more in our course
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

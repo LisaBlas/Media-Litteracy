@@ -1,3 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brutalist-background text-brutalist-text;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  *:focus {
+    outline: none; 
+  }
+  *:focus-visible { /* Brutalist focus indicator */
+    outline: 2px solid theme('colors.brutalist.accent-red');
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* --- Brutalist Transformation of Existing Components --- */
+
+  .card-container-perspective {
+    perspective: 1000px; 
+  }
+
+  .article-card-wrapper {
+    transition: none; 
+    box-shadow: none; 
+    @apply border-2 border-brutalist-block-dark;
+  }
+  .article-card-wrapper:hover,
+  .article-card-wrapper:focus-within {
+    transform: translate(2px, 2px);
+    @apply shadow-hard-md; 
+  }
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); 
+    transform-style: preserve-3d;
+    border-radius: 0 !important; 
+  }
+
+  .card-inner.is-flipped {
+    transform: rotateY(180deg); 
+  }
+
+  .card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 0 !important; 
+    overflow: hidden; 
+  }
+
+  .card-back {
+    transform: rotateY(180deg);
+    @apply bg-brutalist-block-dark; 
+  }
+
+  .textured-dark-gradient {
+    @apply bg-brutalist-block-dark;
+  }
+
+  .image-vignette::after {
+    display: none; 
+  }
+
+  .cta-glow-button { 
+    @apply shadow-none transition-none rounded-none; 
+  }
+
+  @keyframes accordion-down {
+    from {
+      opacity: 0;
+      transform: translateY(-5px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-accordion-down {
+    animation: accordion-down 0.2s ease-out both; 
+  }
+
+  .image-diagonal-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, oklch(51.4% 0.222 16.935) 10%, transparent 40%);
+    pointer-events: none; /* Don't interfere with mouse events */
+    z-index: 1; /* Sit above the image, potentially under other pseudo-elements like vignette */
+  }
+
+  /* Alternative overlay direction */
+  .image-diagonal-overlay.alt-overlay-direction::before {
+    background-image: linear-gradient(to bottom left, oklch(51.4% 0.222 16.935) 10%, transparent 40%);
+  }
+
+  .brutalist-image-filter {
+    @apply filter grayscale contrast-[1.6] brightness-[1.05]; /* Increased brightness for starker whites */ /* Extreme contrast and reduced brightness to crush midtones */
+    /* Enhances perceived sharpness through high contrast */
+  }
+
+  /* Brutalist Scrollbar Styles */
+  /* For WebKit browsers (Chrome, Safari, Edge, etc.) */
+  .brutalist-scrollbar::-webkit-scrollbar {
+    width: 6px; /* Even narrower for a 'line' feel */
+  }
+
+  .brutalist-scrollbar::-webkit-scrollbar-track {
+    @apply bg-brutalist-block-dark rounded-none;
+  }
+
+  .brutalist-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-brutalist-accent-red rounded-none;
+    border: 1px solid theme('colors.brutalist.block-dark'); /* Adjusted for narrower thumb */
+  }
+
+  .brutalist-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #CC0000; /* Darker red on hover */
+  }
+
+  .brutalist-scrollbar::-webkit-scrollbar-button {
+    display: none; /* Remove buttons for a cleaner line look */
+  }
+
+  /* For Firefox */
+  .brutalist-scrollbar {
+    scrollbar-width: thin; /* Narrower for Firefox */
+    scrollbar-color: theme('colors.brutalist.accent-red') theme('colors.brutalist.block-dark'); /* thumb track */
+  }
+}
