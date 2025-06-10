@@ -1,85 +1,85 @@
 {
-  "lastUpdated": "2025-06-09T18:14:35.607Z",
+  "lastUpdated": "2025-06-10T00:51:38.212Z",
   "headlines": [
     {
       "title": "Stock market today: Live updates",
-      "description": "Stocks were little changed Monday as traders looked for details on the latest U.S.-China trade talks.",
-      "url": "https://www.cnbc.com/2025/06/08/stock-market-today-live-updates.html",
+      "description": "The S&P 500 inched higher to post its second straight positive session on Monday.",
+      "url": "https://www.cnbc.com/2025/06/09/stock-market-today-live-updates.html",
       "source": "CNBC",
-      "publishedAt": "2025-06-09T16:57:00Z",
-      "image": "https://image.cnbcfm.com/api/v1/image/108155372-17491406572025-06-05t155502z_786883746_rc2eweat38pf_rtrmadp_0_usa-stocks.jpeg?v=1749140760&w=1920&h=1080"
+      "publishedAt": "2025-06-09T22:44:00Z",
+      "image": "https://image.cnbcfm.com/api/v1/image/108154804-1749068892465-NYSE_Traders-OB-20250604-CC-PRESS-8.jpg?v=1749069908&w=1920&h=1080"
     },
     {
-      "title": "Here's Galaxy Watch 8 Classic in hands-on photos with new design",
-      "description": "A Galaxy Watch 8 Classic unit has shown up on eBay with its new design, twice as much storage, and other changes in a new leak.",
-      "url": "https://9to5google.com/2025/06/09/samsung-galaxy-watch-8-classic-ebay-leak/",
-      "source": "9to5Google",
-      "publishedAt": "2025-06-09T15:00:00Z",
-      "image": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2025/06/galaxy-watch-8-classic-ebay-1_a53c3c.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1"
+      "title": "Trump mobilizes Marines for duty in Los Angeles",
+      "description": "U.S. Northern Command says the infantry battalion would be supporting the National Guard troops \"who are protecting federal personnel and federal property in the greater Los Angeles area.\"",
+      "url": "https://www.npr.org/2025/06/09/g-s1-71640/trump-mobilizes-marines-for-duty-in-los-angeles",
+      "source": "NPR",
+      "publishedAt": "2025-06-09T22:32:58Z",
+      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4928x2772+0+258/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe3%2Ffc%2Fdd2914314e3f879375ece1c3e303%2Fgettyimages-2219185144.jpg"
     },
     {
-      "title": "US plane crash: Small aircraft carrying 6 passengers crashes in San Diego; search on for survivors",
-      "description": "US News: A Cessna 414 carrying six individuals crashed into the Pacific Ocean near San Diego shortly after takeoff on Sunday. The US Coast Guard and San Diego",
-      "url": "https://timesofindia.indiatimes.com/world/us/us-plane-crash-small-aircraft-carrying-6-passengers-crashes-in-san-diego-search-on-for-survivors/articleshow/121732003.cms",
-      "source": "Times of India",
-      "publishedAt": "2025-06-09T14:55:00Z",
-      "image": "https://static.toiimg.com/thumb/msid-121732258,width-1070,height-580,imgsize-1002150,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+      "title": "Apple’s big updates for Intel-based Macs will end with Tahoe",
+      "description": "Apple announced at WWDC that macOS Tahoe will be the last full update available for Intel-based Macs",
+      "url": "https://www.theverge.com/news/683846/macos-tahoe-intel-x86-arm-m-cpu",
+      "source": "The Verge",
+      "publishedAt": "2025-06-09T22:13:18Z",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/intel-final.png?quality=90&strip=all&crop=0,24.134915252756,100,67.315961390434"
     },
     {
-      "title": "Walmart taps own fintech firm for credit cards after Capital One exit",
-      "description": "Walmart had leaned on Capital One as exclusive provider of its credit card since 2018, but sued the bank in 2023 so that it could exit the relationship.",
-      "url": "https://www.cnbc.com/2025/06/09/walmart-onepay-synchrony-credit-cards-capital-one.html",
-      "source": "CNBC",
-      "publishedAt": "2025-06-09T14:50:54Z",
-      "image": "https://image.cnbcfm.com/api/v1/image/107393269-1711488865494-gettyimages-1183648626-cao-holidays191119_nppmm.jpeg?v=1716564810&w=1920&h=1080"
+      "title": "Shots - Health News",
+      "description": "Health Secretary RFK Jr. has removed all 17 members of the CDC's Advisory Committee on Immunization Practices. He says replacing them with new members will help restore 'public trust' in vaccines.",
+      "url": "https://www.npr.org/sections/shots-health-news/2025/06/09/nx-s1-5428533/rfk-jr-vaccine-advisory-committee-acip",
+      "source": "NPR",
+      "publishedAt": "2025-06-09T21:53:43Z",
+      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1024x576+0+100/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fdf%2Fea%2F26b5f1b5481c84bd38c09579efee%2Fgettyimages-2216099156.jpg"
     },
     {
-      "title": "The Xbox Handheld Is Launching at the Worst Possible Moment",
-      "description": "The ROG Xbox Ally is stuck between a rock and a hard place: the Switch 2 and Steam Deck.",
-      "url": "https://gizmodo.com/the-xbox-handheld-is-launching-at-the-worst-possible-moment-2000613111",
-      "source": "Gizmodo",
-      "publishedAt": "2025-06-09T14:48:57Z",
-      "image": "https://gizmodo.com/app/uploads/2025/06/Xbox-Ally-ROG-Handheld-HEro-1200x675.jpg"
+      "title": "Leaders of ‘Orgasmic Meditation’ Group Are Convicted of Coercion Charges",
+      "description": "Nicole Daedone and Rachel Cherwitz were charged with engaging in a forced labor conspiracy related to the sexual wellness company OneTaste.",
+      "url": "https://www.nytimes.com/2025/06/09/nyregion/onetaste-orgasmic-meditation-verdict.html",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-09T21:42:55Z",
+      "image": "https://static01.nyt.com/images/2025/06/06/multimedia/00met-onetaste-verdict-HFO-qmhl/00met-onetaste-verdict-HFO-qmhl-facebookJumbo.jpg"
     },
     {
-      "title": "What Happens to Movie, TV, Studios?",
-      "description": "Here's a breakdown of what Warner Bros. Discovery's two entities would look like following the split, expected to be completed by mid-2026.",
-      "url": "https://variety.com/2025/tv/news/warner-bros-discovery-split-what-happens-hbo-max-movie-studios-tv-networks-1236423363/",
-      "source": "Variety",
-      "publishedAt": "2025-06-09T14:40:00Z",
-      "image": "https://variety.com/wp-content/uploads/2025/05/superman.jpg?w=1000&h=563&crop=1"
+      "title": "Union leader faces federal charge of conspiracy to impede an officer",
+      "description": "SEIU California President David Huerta was released on a $50,000 bond. He can’t knowingly be within 100 yards of federal agents or operations.",
+      "url": "https://www.latimes.com/california/story/2025-06-09/union-leader-federal-charge",
+      "source": "Los Angeles Times",
+      "publishedAt": "2025-06-09T21:38:54Z",
+      "image": "https://ca-times.brightspotcdn.com/dims4/default/d9f6d7b/2147483647/strip/true/crop/6000x3150+0+425/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F60%2F48%2F4ed5b4a9407d870f4450f22c4c7e%2F1471988-la-pol-dnc-cal-delegate-breakfast-0027-mjc.jpg"
     },
     {
-      "title": "'Harry Potter' Series Casts Bel Powley, Daniel Rigby as The Dursleys",
-      "description": "The \"Harry Potter\" TV series at HBO has found its Petunia and Vernon Dursley.",
-      "url": "https://variety.com/2025/tv/news/harry-potter-hbo-bel-powley-daniel-rigby-petunia-vernon-dursley-1236423368/",
-      "source": "Variety",
-      "publishedAt": "2025-06-09T14:30:00Z",
-      "image": "https://variety.com/wp-content/uploads/2025/06/Harry-Potter-max-Bel-Powley-Daniel-Rigby.jpg?w=1000&h=563&crop=1"
+      "title": "Italian Referendum to Loosen Citizenship Rules Fails",
+      "description": "Less than a third of eligible voters turned out for a poll that would have made it easier for foreigners to become citizens, and strengthened labor rights.",
+      "url": "https://www.nytimes.com/2025/06/09/world/europe/italian-referendum-to-loosen-citizenship-rules-fails.html",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-09T21:24:59Z",
+      "image": "https://static01.nyt.com/images/2025/06/09/multimedia/09int-italy-referendum-bzcj/09int-italy-referendum-bzcj-facebookJumbo.jpg"
     },
     {
-      "title": "Los Angeles gears up for fourth day of protests against immigration raids",
-      "description": "Rally will demand release of arrested union leader David Huerta as ACLU says ‘we will not be silenced’",
-      "url": "https://www.theguardian.com/us-news/2025/jun/09/los-angeles-protests",
-      "source": "The Guardian",
-      "publishedAt": "2025-06-09T14:27:00Z",
-      "image": "https://i.guim.co.uk/img/media/7484e3a366c911a2afc19a199ceaa72ba310c541/338_0_3375_2700/master/3375.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=82bddf1515278de69772a6684030be5a"
+      "title": "Trump to promote $1,000 ‘Trump Accounts’ for newborns at White House event",
+      "description": "President Donald Trump is set to host a roundtable at the White House on Monday to promote a key feature of the sweeping Republican domestic policy bill – a provision that would provide every American newborn with a $1,000 investment account, a White House official told CNN.",
+      "url": "https://www.cnn.com/2025/06/09/politics/trump-accounts-newborn-1000",
+      "source": "CNN",
+      "publishedAt": "2025-06-09T21:22:00Z",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-2218958793.jpg?c=16x9&q=w_800,c_fill"
     },
     {
-      "title": "LA protests live updates: California to sue Trump over National Guard deployment",
-      "description": "California Governor Gavin Newsom, a Democrat, told MSNBC that he plans to file suit Monday against the Trump administration to roll back the National Guard deployment.",
-      "url": "https://apnews.com/live/immigration-protests-los-angeles",
-      "source": "AP News",
-      "publishedAt": "2025-06-09T14:26:03Z",
-      "image": "https://dims.apnews.com/dims4/default/3c454db/2147483647/strip/true/crop/8053x4530+0+421/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F9c%2Fd6%2Fef718149ff86f5806bdde95ddbab%2F77fdec99bbed4cc3a4ff9cdfb66c7c26"
+      "title": "Red Sox call up top prospect Roman Anthony",
+      "description": "The Red Sox hope to spark their offense with a player who hit a 497-foot home run on Saturday for Triple-A Worcester.",
+      "url": "https://www.nytimes.com/athletic/6412677/2025/06/09/red-sox-roman-anthony-call-up/",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-09T21:11:42Z",
+      "image": "https://static01.nyt.com/athletic/uploads/wp/2025/06/08212945/USATSI_26049913-scaled.jpg?width=1200&height=630&fit=cover"
     },
     {
-      "title": "Full List Of Tonys Results, Updating Live",
-      "description": "The curtain is officially up on the 2025 Tony Awards. See the full list of winners here, which we'll update as Sunday's ceremony continues.",
-      "url": "https://tvline.com/lists/tony-awards-2025-winners-full-list/",
-      "source": "TVLine",
-      "publishedAt": "2025-06-09T14:24:52Z",
-      "image": "https://tvline.com/wp-content/uploads/2025/06/tony-awards-2025-winners-list-full.jpg?w=650"
+      "title": "Deterrence and intimidation drive Trump threats to arrest Newsom in L.A. standoff",
+      "description": "White House press secretary Karoline Leavitt said President Trump called in the National Guard with the expectation that it would 'hopefully prevent and deter some of this violence.'",
+      "url": "https://www.latimes.com/politics/story/2025-06-09/trump-newsom-arrest-national-guard-los-angeles-unrest-ice-raids",
+      "source": "Los Angeles Times",
+      "publishedAt": "2025-06-09T21:04:43Z",
+      "image": "https://ca-times.brightspotcdn.com/dims4/default/0c702ea/2147483647/strip/true/crop/4000x2100+0+283/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F3a%2F06%2F550d930c4bc98f1356633d6dc12e%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2218814991"
     }
   ]
 }
