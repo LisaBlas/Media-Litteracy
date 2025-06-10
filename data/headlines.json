@@ -1,85 +1,85 @@
 {
-  "lastUpdated": "2025-06-10T06:15:10.824Z",
+  "lastUpdated": "2025-06-10T12:20:20.038Z",
   "headlines": [
     {
-      "title": "Doechii blasts Trump administration’s ‘ruthless attacks’ in LA amid Ice raids",
-      "description": "Rapper turns BET awards speech into call for justice after White House deployed military forces on demonstrators",
-      "url": "https://www.theguardian.com/us-news/2025/jun/09/doechii-bet-awards-speech-trump-ice-raids-protests",
-      "source": "The Guardian",
-      "publishedAt": "2025-06-10T04:03:00Z",
-      "image": "https://i.guim.co.uk/img/media/a23c4877a9eacf5e5d5e345c909aaa50662bb9ff/622_0_3919_3137/master/3919.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2db04ee231e4d4a20771b55a4438a86f"
+      "title": "Paramount to cut 3% of U.S. workforce as it deepens cost-cutting",
+      "description": "It's the latest round of layoffs at Paramount as it contends with cord-cutting and prepares to merge with Skydance Media.",
+      "url": "https://www.cnbc.com/2025/06/10/paramount-to-cut-3percent-of-us-workforce-as-it-deepens-cost-cutting.html",
+      "source": "CNBC",
+      "publishedAt": "2025-06-10T11:10:18Z",
+      "image": "https://image.cnbcfm.com/api/v1/image/108002566-1720443190426-gettyimages-2150317927-PARAMOUNT_STUDIOS_LA.jpeg?v=1749552321&w=1920&h=1080"
     },
     {
-      "title": "Marchand, Bennett stay hot for Panthers in Game 3 of Stanley Cup Final",
-      "description": "Honor roll, stock watch from Florida’s big win to take 2-1 series lead against Edmonton",
-      "url": "https://www.nhl.com/news/honor-roll-stock-watch-game-3-stanley-cup-final-2025",
-      "source": "NHL.com",
-      "publishedAt": "2025-06-10T03:49:31Z",
-      "image": "https://media.d3.nhle.com/image/private/t_ratio16_9-size50/v1749526971/prd/pusxwsy7mmd7vbr2yuvh.jpg"
+      "title": "Conservative Sen. Josh Hawley wants to raise federal minimum wage",
+      "description": "GOP Sen. Josh Hawley's position on the minimum wage aligns him with some of the Senate's most liberal members.",
+      "url": "https://www.cbsnews.com/news/josh-hawley-raise-federal-minimum-wage/",
+      "source": "CBS News",
+      "publishedAt": "2025-06-10T10:03:25Z",
+      "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2025/06/09/bedd0fe6-4cf2-4ad3-9b60-8d4a960fde63/thumbnail/1200x630g2/eae88ccdf11773afcf519d71636ec930/gettyimages-2218332756.jpg?v=47da7f60d670305b40b7371b438c2af0"
     },
     {
-      "title": "Panthers dominate Oilers, chase Skinner in 6-1 Game 3 rout",
-      "description": "The Panthers seized control of what had been a tight Stanley Cup Finals after two games, dominating the discombobulated Oilers 6-1 in Game 3.",
-      "url": "https://www.espn.com/nhl/story/_/id/45483101/panthers-dominate-oilers-chase-skinner-6-1-game-3-rout",
-      "source": "ESPN",
-      "publishedAt": "2025-06-10T03:34:00Z",
-      "image": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F0610%2Fr1504679_1024x576_16%2D9.jpg"
+      "title": "Despite three-owner structure, NFL rules require Carlie Irsay-Gordon to have unilateral control",
+      "description": "On Monday, the Colts announced an \"ownership transition\" that has the three daughters of the late Jim Irsay serving as owners of the franchise.",
+      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/despite-three-owner-structure-nfl-rules-require-carlie-irsay-gordon-to-have-unilateral-control",
+      "source": "NBC Sports",
+      "publishedAt": "2025-06-10T09:38:22Z",
+      "image": "https://nbcsports.brightspotcdn.com/dims4/default/711d0e7/2147483647/strip/true/crop/4539x2553+0+236/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fc5%2F4c%2Fc386f63b4c07860ad75011d963c9%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F1876936736"
     },
     {
-      "title": "Sly Stone, Maestro of a Multifaceted, Hitmaking Band, Dies at 82",
-      "description": "Leading Sly and the Family Stone, he helped redefine the landscape of pop, funk and rock in the late 1960s and early ’70s.",
-      "url": "https://www.nytimes.com/2025/06/09/arts/music/sly-stone-dead.html",
+      "title": "Several people killed in school shooting in Austria's second biggest city, police say",
+      "description": "At least eight people were killed and several others injured in a school shooting Tuesday in the southern Austrian city of Graz, local media reported",
+      "url": "https://www.nbcnews.com/world/europe/school-shooting-austrias-graz-second-biggest-city-graz-rcna211983",
+      "source": "NBC News",
+      "publishedAt": "2025-06-10T09:36:00Z",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-06/250610-Austria-shooting-5-RS-1a1aaf.jpg"
+    },
+    {
+      "title": "Stock market today: Live updates",
+      "description": "The S&P 500 inched higher to post its second straight positive session on Monday.",
+      "url": "https://www.cnbc.com/2025/06/09/stock-market-today-live-updates.html",
+      "source": "CNBC",
+      "publishedAt": "2025-06-10T09:06:00Z",
+      "image": "https://image.cnbcfm.com/api/v1/image/108154804-1749068892465-NYSE_Traders-OB-20250604-CC-PRESS-8.jpg?v=1749069908&w=1920&h=1080"
+    },
+    {
+      "title": "US and China Talk Trade as Fight Over Rare Earths Escalates",
+      "description": "Officials from the world’s largest economies will try to strike a deal Tuesday to relax painful export restrictions that they have imposed on each other.",
+      "url": "https://www.nytimes.com/2025/06/10/business/economy/china-us-trade-talks.html",
       "source": "The New York Times",
-      "publishedAt": "2025-06-10T03:18:52Z",
-      "image": "https://static01.nyt.com/images/2025/06/11/multimedia/00Stone-Adv-zmjf/00Stone-Adv-zmjf-facebookJumbo-v2.jpg"
+      "publishedAt": "2025-06-10T09:03:29Z",
+      "image": "https://static01.nyt.com/images/2025/06/10/multimedia/10dc-uschina-talks-cqbz/10dc-uschina-talks-cqbz-facebookJumbo.jpg"
     },
     {
-      "title": "Stock Market Today: Dow, S&P Live Updates for June 10",
-      "description": "Asian shares edged higher on Tuesday, buoyed by expectations about the US-China trade talks as officials struck a positive tone after the first day of negotiations.",
-      "url": "https://www.bloomberg.com/news/articles/2025-06-09/stock-market-today-dow-s-p-live-updates",
-      "source": "Bloomberg.com",
-      "publishedAt": "2025-06-10T02:59:00Z",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iFbDOitmGV1o/v0/1200x675.png"
+      "title": "Wall Street CEOs go through the five stages of tariff grief : NPR",
+      "description": "As they process President Trump's chaotic tariffs and other economic policies, some of the country's most powerful CEOs are moving from denial and bargaining to public anger and depression.",
+      "url": "https://www.npr.org/2025/06/10/nx-s1-5428560/wall-street-ceos-five-stages-of-tariff-grief",
+      "source": "NPR",
+      "publishedAt": "2025-06-10T09:00:00Z",
+      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2881x1621+0+209/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F12%2Fc2%2F606ecd3e4ba09262e7773c67f6eb%2Fgettyimages-2208185163-2.jpg"
     },
     {
-      "title": "Sean Diddy Combs' ex-girlfriend testifies about sexual violence",
-      "description": "Sean “Diddy” Combs' ex-girlfriend says he forced her to have a “freak-off”-style sexual encounter with a male sex worker last year after chasing her around her California home, putting her in a chokehold, punching her in the face and kicking down doors.",
-      "url": "https://apnews.com/article/sean-combs-diddy-trial-cassie-jane-9b2d2c73d83c4936bb18264bf9764374",
-      "source": "AP News",
-      "publishedAt": "2025-06-10T02:43:00Z",
-      "image": "https://dims.apnews.com/dims4/default/de232e2/2147483647/strip/true/crop/4612x2594+0+277/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F26%2Feb%2Ffdf4b66e88b5b8a22e1b3145dcba%2F963ea17f57a64890bf8a7c7f2b5d716f"
+      "title": "Meta Is Creating a New A.I. Lab to Pursue ‘Superintelligence’",
+      "description": "The new lab, set to include Scale AI founder Alexandr Wang, is part of a reorganization of Meta’s artificial intelligence efforts under Mark Zuckerberg.",
+      "url": "https://www.nytimes.com/2025/06/10/technology/meta-new-ai-lab-superintelligence.html",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-10T08:57:27Z",
+      "image": "https://static01.nyt.com/images/2025/06/10/multimedia/10meta-ai-jgql/10meta-ai-jgql-facebookJumbo.jpg"
     },
     {
-      "title": "BET Awards 2025: Live Coverage Of Culture's Biggest Night",
-      "description": "The ceremony, hosted by comedian Kevin Hart, promises to be a star-studded affair.",
-      "url": "https://www.huffingtonpost.co.uk/entry/bet-awards-2025-recap_n_6841f2eee4b0b39135918054",
-      "source": "HuffPost",
-      "publishedAt": "2025-06-10T02:30:00Z",
-      "image": "https://img.huffingtonpost.com/asset/68472a8d1900003e14270520.jpeg?cache=9hFoXH4QyV&ops=1200_630"
+      "title": "Uber taps AI firm Wayve to pilot fully driverless rides in the UK",
+      "description": "The ride-hailing app said the pilot would be the first of its kind for the company, as it allow users to take Uber rides without a safety driver present.",
+      "url": "https://www.cnbc.com/2025/06/10/uber-taps-ai-firm-wayve-to-pilot-fully-driverless-rides-in-the-uk.html",
+      "source": "CNBC",
+      "publishedAt": "2025-06-10T08:38:19Z",
+      "image": "https://image.cnbcfm.com/api/v1/image/107288133-1692282302786-07_Wayve_Autonomous_Van.jpg?v=1692365317&w=1920&h=1080"
     },
     {
-      "title": "Israel preparing to deport Gaza aid boat activists, including Greta Thunberg",
-      "description": "The passengers from the Madleen were intercepted by Israeli forces on Monday and towed to the port of Ashdod",
-      "url": "https://www.theguardian.com/world/2025/jun/10/gaza-aid-boat-activists-greta-thunberg-israel-deportation",
-      "source": "The Guardian",
-      "publishedAt": "2025-06-10T02:26:00Z",
-      "image": "https://i.guim.co.uk/img/media/2a284beb43087b36aa1922ecde4271aa36cb31fe/683_384_4520_3616/master/4520.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4bcdd765c50a70a5ea64194dd01e54ea"
-    },
-    {
-      "title": "One dead in strike on Odesa maternity ward, officials say",
-      "description": "Four were injured in the attack that hit medical and residential buildings, the Odesa Governor said.",
-      "url": "https://www.bbc.com/news/articles/cx2jzp0ewe0o",
-      "source": "BBC",
-      "publishedAt": "2025-06-10T02:19:35Z",
-      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/c792/live/41b9c100-459d-11f0-95ec-55893cd5f892.jpg"
-    },
-    {
-      "title": "HBO and CNN owner Warner Bros Discovery to split in two",
-      "description": "The media giant will separate its studio and streaming business away from its cable TV networks.",
-      "url": "https://www.bbc.com/news/articles/c80k45vm35go",
-      "source": "BBC",
-      "publishedAt": "2025-06-10T02:14:23Z",
-      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/10b2/live/f4052f30-45ab-11f0-8e0f-85b634392c89.jpg"
+      "title": "Android 16 will officially launch later today",
+      "description": "In wake of Apple's unveiling of iOS 26, Google has officially confirmed that we'll see the \"final\" Android 16 launch later today.",
+      "url": "https://9to5google.com/2025/06/10/android-16-will-officially-launch-later-today/",
+      "source": "9to5Google",
+      "publishedAt": "2025-06-10T08:15:00Z",
+      "image": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/11/Android-16-Logo-Top-Down-2.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1"
     }
   ]
 }
