@@ -1,85 +1,85 @@
 {
-  "lastUpdated": "2025-06-10T12:20:20.038Z",
+  "lastUpdated": "2025-06-10T18:14:13.434Z",
   "headlines": [
     {
-      "title": "Paramount to cut 3% of U.S. workforce as it deepens cost-cutting",
-      "description": "It's the latest round of layoffs at Paramount as it contends with cord-cutting and prepares to merge with Skydance Media.",
-      "url": "https://www.cnbc.com/2025/06/10/paramount-to-cut-3percent-of-us-workforce-as-it-deepens-cost-cutting.html",
-      "source": "CNBC",
-      "publishedAt": "2025-06-10T11:10:18Z",
-      "image": "https://image.cnbcfm.com/api/v1/image/108002566-1720443190426-gettyimages-2150317927-PARAMOUNT_STUDIOS_LA.jpeg?v=1749552321&w=1920&h=1080"
+      "title": "Astronomers left puzzled by high-altitude clouds forming on young planet",
+      "description": "Experts say thick slabs of cloud in YSES-1 system could consist of mineral dust and iron, which would rain down",
+      "url": "https://www.theguardian.com/science/2025/jun/10/astronomers-space-telescope-clouds-planet",
+      "source": "The Guardian",
+      "publishedAt": "2025-06-10T15:02:00Z",
+      "image": "https://i.guim.co.uk/img/media/dcbced00390b69417ffc8d155f538651979ef55d/204_0_3100_2480/master/3100.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2d198b6c45f706861c08aa9d438f3bc5"
     },
     {
-      "title": "Conservative Sen. Josh Hawley wants to raise federal minimum wage",
-      "description": "GOP Sen. Josh Hawley's position on the minimum wage aligns him with some of the Senate's most liberal members.",
-      "url": "https://www.cbsnews.com/news/josh-hawley-raise-federal-minimum-wage/",
-      "source": "CBS News",
-      "publishedAt": "2025-06-10T10:03:25Z",
-      "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2025/06/09/bedd0fe6-4cf2-4ad3-9b60-8d4a960fde63/thumbnail/1200x630g2/eae88ccdf11773afcf519d71636ec930/gettyimages-2218332756.jpg?v=47da7f60d670305b40b7371b438c2af0"
+      "title": "Doechii criticizes Trump’s use of ‘military force’ against protesters",
+      "description": "The BET Awards were heavy on nostalgia, but rapper and singer Doechii brought a very current event to the stage on Monday.",
+      "url": "https://www.cnn.com/2025/06/10/entertainment/doechii-bet-awards-speech",
+      "source": "CNN",
+      "publishedAt": "2025-06-10T14:53:00Z",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-2219398693.jpg?c=16x9&q=w_800,c_fill"
     },
     {
-      "title": "Despite three-owner structure, NFL rules require Carlie Irsay-Gordon to have unilateral control",
-      "description": "On Monday, the Colts announced an \"ownership transition\" that has the three daughters of the late Jim Irsay serving as owners of the franchise.",
-      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/despite-three-owner-structure-nfl-rules-require-carlie-irsay-gordon-to-have-unilateral-control",
+      "title": "European Union Unveils Fresh Sanctions on Russia, Including a Nord Stream Ban",
+      "description": "Ursula von der Leyen, president of the European Commission, announced a proposal meant to ramp up pressure on Moscow.",
+      "url": "https://www.nytimes.com/2025/06/10/world/europe/european-union-sanctions-russia.html",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-10T14:48:31Z",
+      "image": "https://static01.nyt.com/images/2025/06/10/multimedia/10ukraine-sanctions-cvbm/10ukraine-sanctions-cvbm-facebookJumbo.jpg"
+    },
+    {
+      "title": "At a troubled fashion company, workers found community. Then ICE came",
+      "description": "Workers at Ambiance Apparel in Los Angeles often worked for the fast-fashion company for years, despite its run-ins with federal authorities.",
+      "url": "https://www.latimes.com/california/story/2025-06-10/los-angeles-ambiance-apparel-workers-ice-raid",
+      "source": "Los Angeles Times",
+      "publishedAt": "2025-06-10T14:19:12Z",
+      "image": "https://ca-times.brightspotcdn.com/dims4/default/aceec51/2147483647/strip/true/crop/4957x2602+0+328/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd0%2F71%2F5925f79d48c1849ce776f6cd1190%2F1509616-me-immigration-ambiance-lrj-007.jpg"
+    },
+    {
+      "title": "Justin Baldoni Reacts After Blake Lively Defamation Lawsuit Thrown Out",
+      "description": "Justin Baldoni plans to keep at his legal battle with \"It Ends With Us\" co-star Blake Lively after a judge dismissed his $400 million defamation lawsuit.",
+      "url": "https://variety.com/2025/film/news/justin-baldoni-reacts-blake-lively-defamation-lawsuit-thrown-out-1236424645/",
+      "source": "Variety",
+      "publishedAt": "2025-06-10T13:49:00Z",
+      "image": "https://variety.com/wp-content/uploads/2024/08/Screen-Shot-2024-08-09-at-2.57.00-PM.png?w=1000&h=563&crop=1"
+    },
+    {
+      "title": "For Connor McDavid and the Oilers, a new ‘dig in’ moment arrives",
+      "description": "Following a big loss in Game 3, Connor McDavid intends to let his play do the talking in pivotal Game 4.",
+      "url": "https://www.nytimes.com/athletic/6415335/2025/06/10/connor-mcdavid-oilers-panthers-nhl-playoffs/",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-10T13:47:33Z",
+      "image": "https://static01.nyt.com/athletic/uploads/wp/2025/06/10075821/GettyImages-2219397049-scaled.jpg?width=1200&height=630&fit=cover"
+    },
+    {
+      "title": "World Bank Forecast Underscores Cost of U.S. Trade War",
+      "description": "Along with a sharply downgraded projection for global output this year, it urged a “course correction” on trade to help preserve living standards.",
+      "url": "https://www.nytimes.com/2025/06/10/business/trump-trade-war-global-economy.html",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-10T13:30:05Z",
+      "image": "https://static01.nyt.com/images/2025/06/10/multimedia/10dc-globalecon-kqht/10dc-globaecon-kqht-facebookJumbo.jpg"
+    },
+    {
+      "title": "U.S. Open 2025: First-round tee times, groupings and featured groups Thursday at Oakmont",
+      "description": "Here's a look at the first-round tee times, groupings and featured groups at the U.S. Open.",
+      "url": "https://www.nbcsports.com/golf/news/u-s-open-2025-first-round-tee-times-groupings-and-featured-groups-thursday-at-oakmont",
       "source": "NBC Sports",
-      "publishedAt": "2025-06-10T09:38:22Z",
-      "image": "https://nbcsports.brightspotcdn.com/dims4/default/711d0e7/2147483647/strip/true/crop/4539x2553+0+236/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fc5%2F4c%2Fc386f63b4c07860ad75011d963c9%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F1876936736"
+      "publishedAt": "2025-06-10T13:25:44Z",
+      "image": "https://nbcsports.brightspotcdn.com/dims4/default/9885c14/2147483647/strip/true/crop/2811x1581+0+146/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fa1%2F8d%2F597273244d4e8fa03613dda13b2b%2Fhttps-api-imagn.com%2Frest%2Fdownload%2FimageID%3D26414312"
     },
     {
-      "title": "Several people killed in school shooting in Austria's second biggest city, police say",
-      "description": "At least eight people were killed and several others injured in a school shooting Tuesday in the southern Austrian city of Graz, local media reported",
-      "url": "https://www.nbcnews.com/world/europe/school-shooting-austrias-graz-second-biggest-city-graz-rcna211983",
-      "source": "NBC News",
-      "publishedAt": "2025-06-10T09:36:00Z",
-      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-06/250610-Austria-shooting-5-RS-1a1aaf.jpg"
+      "title": "U.S. Open 2025: First-round tee times, groupings and featured groups Thursday at Oakmont",
+      "description": "Here's a look at the first-round tee times, groupings and featured groups at the U.S. Open.",
+      "url": "https://sports.yahoo.com/article/u-open-2025-first-round-132453427.html",
+      "source": "Yahoo Sports",
+      "publishedAt": "2025-06-10T13:24:53Z",
+      "image": "https://s.yimg.com/ny/api/res/1.2/4aRPViiOYc88DofbZh7E7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU7Y2Y9d2VicA--/https://media.zenfs.com/en/the_golf_channel_404/0a30cc2ed42c1f8c72615b7502fd1262"
     },
     {
-      "title": "Stock market today: Live updates",
-      "description": "The S&P 500 inched higher to post its second straight positive session on Monday.",
-      "url": "https://www.cnbc.com/2025/06/09/stock-market-today-live-updates.html",
-      "source": "CNBC",
-      "publishedAt": "2025-06-10T09:06:00Z",
-      "image": "https://image.cnbcfm.com/api/v1/image/108154804-1749068892465-NYSE_Traders-OB-20250604-CC-PRESS-8.jpg?v=1749069908&w=1920&h=1080"
-    },
-    {
-      "title": "US and China Talk Trade as Fight Over Rare Earths Escalates",
-      "description": "Officials from the world’s largest economies will try to strike a deal Tuesday to relax painful export restrictions that they have imposed on each other.",
-      "url": "https://www.nytimes.com/2025/06/10/business/economy/china-us-trade-talks.html",
-      "source": "The New York Times",
-      "publishedAt": "2025-06-10T09:03:29Z",
-      "image": "https://static01.nyt.com/images/2025/06/10/multimedia/10dc-uschina-talks-cqbz/10dc-uschina-talks-cqbz-facebookJumbo.jpg"
-    },
-    {
-      "title": "Wall Street CEOs go through the five stages of tariff grief : NPR",
-      "description": "As they process President Trump's chaotic tariffs and other economic policies, some of the country's most powerful CEOs are moving from denial and bargaining to public anger and depression.",
-      "url": "https://www.npr.org/2025/06/10/nx-s1-5428560/wall-street-ceos-five-stages-of-tariff-grief",
-      "source": "NPR",
-      "publishedAt": "2025-06-10T09:00:00Z",
-      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2881x1621+0+209/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F12%2Fc2%2F606ecd3e4ba09262e7773c67f6eb%2Fgettyimages-2208185163-2.jpg"
-    },
-    {
-      "title": "Meta Is Creating a New A.I. Lab to Pursue ‘Superintelligence’",
-      "description": "The new lab, set to include Scale AI founder Alexandr Wang, is part of a reorganization of Meta’s artificial intelligence efforts under Mark Zuckerberg.",
-      "url": "https://www.nytimes.com/2025/06/10/technology/meta-new-ai-lab-superintelligence.html",
-      "source": "The New York Times",
-      "publishedAt": "2025-06-10T08:57:27Z",
-      "image": "https://static01.nyt.com/images/2025/06/10/multimedia/10meta-ai-jgql/10meta-ai-jgql-facebookJumbo.jpg"
-    },
-    {
-      "title": "Uber taps AI firm Wayve to pilot fully driverless rides in the UK",
-      "description": "The ride-hailing app said the pilot would be the first of its kind for the company, as it allow users to take Uber rides without a safety driver present.",
-      "url": "https://www.cnbc.com/2025/06/10/uber-taps-ai-firm-wayve-to-pilot-fully-driverless-rides-in-the-uk.html",
-      "source": "CNBC",
-      "publishedAt": "2025-06-10T08:38:19Z",
-      "image": "https://image.cnbcfm.com/api/v1/image/107288133-1692282302786-07_Wayve_Autonomous_Van.jpg?v=1692365317&w=1920&h=1080"
-    },
-    {
-      "title": "Android 16 will officially launch later today",
-      "description": "In wake of Apple's unveiling of iOS 26, Google has officially confirmed that we'll see the \"final\" Android 16 launch later today.",
-      "url": "https://9to5google.com/2025/06/10/android-16-will-officially-launch-later-today/",
-      "source": "9to5Google",
-      "publishedAt": "2025-06-10T08:15:00Z",
-      "image": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/11/Android-16-Logo-Top-Down-2.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1"
+      "title": "Diddy Judge Shoots Down Music Mogul's Motion for Mistrial",
+      "description": "The judge has finally weighed in on whether to grant Diddy a mistrial ... and he's giving the disgraced music mogul a big thumbs down.",
+      "url": "https://www.tmz.com/2025/06/10/diddy-mistrial-arun-subramanian-cassie-bryana-bongolan-kristina-khorram/",
+      "source": "TMZ",
+      "publishedAt": "2025-06-10T13:24:52Z",
+      "image": "https://imagez.tmz.com/image/b4/16by9/2025/06/09/b43e6a9b0475412198707a6a94b51258_xl.jpg"
     }
   ]
 }
