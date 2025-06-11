@@ -1,155 +1,85 @@
 {
-  "lastUpdated": "2025-06-11T12:20:08.015Z",
+  "lastUpdated": "2025-06-11T18:14:29.813Z",
   "headlines": [
     {
-      "title": "Mexican Flags Have Become Republican Fodder, but Protesters Keep Waving Them",
-      "description": "Images of Los Angeles protesters waving Mexican flags have gone viral in conservative circles this week. Many protesters say they are aware of the political reaction but won’t put their flags away.",
-      "url": "https://www.nytimes.com/2025/06/11/us/mexican-flags-have-become-republican-fodder-but-protesters-keep-waving-them.html",
+      "title": "The Beach Boys’ Brian Wilson Dies at 82",
+      "description": "The beloved musician had been living with a neurocognitive disorder akin to dementia",
+      "url": "https://pitchfork.com/news/the-beach-boys-brian-wilson-dies-at-82/",
+      "source": "Pitchfork",
+      "publishedAt": "2025-06-11T16:42:21Z",
+      "image": "https://media.pitchfork.com/photos/65cfa9ea385f726c388b86d3/16:9/w_1280,c_limit/Brian-Wilson-Beach-Boys.jpg"
+    },
+    {
+      "title": "Pragmata, delayed for years, is now the year’s biggest surprise",
+      "description": "Capcom’s sci-fi action game was announced in 2020 and set for 2022. Thought canceled, it turned up at Summer Game Fest 2025 and shocked everyone.",
+      "url": "https://www.polygon.com/preview/606231/pragmata-gameplay-sgf-summer-game-fest-2025",
+      "source": "Polygon",
+      "publishedAt": "2025-06-11T15:03:34Z",
+      "image": "https://platform.polygon.com/wp-content/uploads/sites/2/2025/06/PRAGMATA_SS_13-3.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200"
+    },
+    {
+      "title": "Fossils found in 1970s are most recent ancestor of tyrannosaurs, scientists say",
+      "description": "Researchers identify new species named Khankhuuluu mongoliensis from skeletons unearthed in Mongolia",
+      "url": "https://www.theguardian.com/science/2025/jun/11/tyrannosaurs-new-species-fossils-mongolia",
+      "source": "The Guardian",
+      "publishedAt": "2025-06-11T15:00:00Z",
+      "image": "https://i.guim.co.uk/img/media/ad55bb191c3bd4e1610163a5679a5a9b937cc117/250_0_7500_6000/master/7500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e2e55bd9b7fd3c41f68e7aea88e8a00e"
+    },
+    {
+      "title": "Deion Sanders says everything is OK as he deals with health issue",
+      "description": "Colorado coach Deion Sanders is currently away from his team and recuperating in Texas from an unspecified medical issue, but he put out a statement today saying he is OK.",
+      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/deion-sanders-says-everything-is-ok-as-he-deals-with-health-issue",
+      "source": "NBC Sports",
+      "publishedAt": "2025-06-11T14:56:57Z",
+      "image": "https://nbcsports.brightspotcdn.com/dims4/default/bf69920/2147483647/strip/true/crop/8256x4644+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fcb%2F3d%2F1a89a044439099bad3a1e893546c%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2211428784"
+    },
+    {
+      "title": "CPI Shows U.S. Inflation Remains Muted as Tariff Impact Is Limited",
+      "description": "The Consumer Price Index rose 2.4 percent in May, from a year ago, a reading that reflects only the initial impact of President Trump’s tariffs.",
+      "url": "https://www.nytimes.com/2025/06/11/business/cpi-may-inflation-tariffs.html",
       "source": "The New York Times",
-      "publishedAt": "2025-06-11T09:03:28Z",
-      "image": "https://static01.nyt.com/images/2025/06/10/multimedia/10immigration-protests-flag-ctzm/10immigration-protests-flag-ctzm-facebookJumbo.jpg",
-      "biasType": "False Dichotomy",
-      "biasDescription": "This is a placeholder analysis. The text here explains the nature of the logical fallacy or bias identified in the headline, offering a brief, insightful overview.",
-      "additionalBiases": [
-        "This is the first quick insight.",
-        "This is a second, equally sharp insight.",
-        "And here is a final, concise point."
-      ]
+      "publishedAt": "2025-06-11T14:31:11Z",
+      "image": "https://static01.nyt.com/images/2025/06/10/multimedia/2025-06-11-inflation-may-index/2025-06-11-inflation-may-index-facebookJumbo-v3.png"
     },
     {
-      "title": "CFPB enforcement lead resigns, slams ‘attack’ on core mission in departure email",
-      "description": "Cara Petersen, the Consumer Financial Protection Bureau’s acting enforcement director, resigned from the agency on Tuesday. In an email to colleagues announcing her decision, Petersen slammed the Trump administration’s efforts to dismantle the agency, which was established as a banking watchdog following the 2008 global financial crisis.",
-      "url": "https://www.cnn.com/2025/06/11/business/cfpb-enforcement-official-resignation",
-      "source": "CNN",
-      "publishedAt": "2025-06-11T09:00:00Z",
-      "image": "https://media.cnn.com/api/v1/images/stellar/prod/ap25041856853761.jpg?c=16x9&q=w_800,c_fill",
-      "biasType": "False Dichotomy",
-      "biasDescription": "This is a placeholder analysis. The text here explains the nature of the logical fallacy or bias identified in the headline, offering a brief, insightful overview.",
-      "additionalBiases": [
-        "This is the first quick insight.",
-        "This is a second, equally sharp insight.",
-        "And here is a final, concise point."
-      ]
+      "title": "Pop Culture Takes Up Smoking Again",
+      "description": "From movies and TV shows to music, the habit is no longer taboo. It’s even being celebrated for the way it makes characters look cool or powerful.",
+      "url": "https://www.nytimes.com/2025/06/11/movies/smoking-materialists-the-bear-lorde-charli-xcx.html",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-11T14:24:11Z",
+      "image": "https://static01.nyt.com/images/2025/06/15/multimedia/15cul-cigarette-cinema-01-kbvj/15cul-cigarette-cinema-01-kbvj-facebookJumbo.jpg"
     },
     {
-      "title": "A year later, Trump continues to appeal his historic criminal case. Here's what we know",
-      "description": "Wednesday's hearing is another attempt by the president's legal team to have a hush money case moved from New York state court to federal court, in an effort to get the criminal charges dismissed. Trump was found guilty of all 34 charges last year, and sentenced in January.",
-      "url": "https://www.npr.org/2025/06/11/nx-s1-5428246/trump-continues-to-appeal-historic-criminal-case-hush-money-stormy-daniels",
+      "title": "DHS spokesperson defends Trump's use of the military in LA : NPR",
+      "description": "Tricia McLaughlin, assistant secretary for public affairs at the Department of Homeland Security, explains why the Trump administration has deployed National Guard and Marine troops to Los Angeles amid protests against immigration raids.",
+      "url": "https://www.npr.org/2025/06/11/nx-s1-5429040/trump-military-los-angeles-immigration-protests",
       "source": "NPR",
-      "publishedAt": "2025-06-11T09:00:00Z",
-      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3883x2184+0+202/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbb%2F11%2F985a30c24503adf3d2206c15c149%2Fap24151627590447.jpg",
-      "biasType": "",
-      "biasDescription": "This is a placeholder analysis. The text here explains the nature of the logical fallacy or bias identified in the headline, offering a brief, insightful overview.",
-      "additionalBiases": [
-        "This is the first quick insight.",
-        "This is a second, equally sharp insight.",
-        "And here is a final, concise point."
-      ]
+      "publishedAt": "2025-06-11T14:23:35Z",
+      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5302x2982+0+276/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F98%2F59%2F461dfe39488f958677f7cfd9b3b1%2Fgettyimages-2219574709.jpg"
     },
     {
-      "title": "Trump administration slams UK over sanctions on Israeli ministers",
-      "description": "“We remind our partners not to forget who the real enemy is,” U.S. Secretary of State Marco Rubio says.",
-      "url": "https://www.politico.eu/article/u-s-marco-rubio-condemns-u-k-government-over-sanctions-on-israeli-ministers/",
-      "source": "politico.eu",
-      "publishedAt": "2025-06-11T08:24:00Z",
-      "image": "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2025/06/11/13064728-scaled.jpg",
-      "biasType": "False Dichotomy",
-      "biasDescription": "This is a placeholder analysis. The text here explains the nature of the logical fallacy or bias identified in the headline, offering a brief, insightful overview.",
-      "additionalBiases": [
-        "This is the first quick insight.",
-        "This is a second, equally sharp insight.",
-        "And here is a final, concise point."
-      ]
+      "title": "Apple 'Sherlocked' These Apps at WWDC 2025",
+      "description": "Apple at WWDC previewed a bunch of new features coming in its updated operating systems, but certain changes will have been met with dismay by...",
+      "url": "https://www.macrumors.com/2025/06/11/apple-sherlocked-these-apps-at-wwdc-2025/",
+      "source": "MacRumors",
+      "publishedAt": "2025-06-11T14:14:45Z",
+      "image": "https://images.macrumors.com/t/UrX3EJ-eB5hMT9fNxaS9N4ln1Gg=/2000x/article-new/2025/06/apple-beta-26-lineup.jpg"
     },
     {
-      "title": "Logitech’s new iPad case has a compact removable wireless keyboard",
-      "description": "The Flip Folio is Logitech’s first iPad Pro and Air keyboard case that lets you remove and position the keyboard where you need it.",
-      "url": "https://www.theverge.com/news/684344/logitech-flip-folio-keyboard-case-bluetooth-apple-ipad-pro-air",
-      "source": "The Verge",
-      "publishedAt": "2025-06-11T07:01:00Z",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/logitech1.jpg?quality=90&strip=all&crop=0%2C14.021425960412%2C100%2C71.957148079176&w=1200",
-      "biasType": "False Dichotomy",
-      "biasDescription": "This is a placeholder analysis. The text here explains the nature of the logical fallacy or bias identified in the headline, offering a brief, insightful overview.",
-      "additionalBiases": [
-        "This is the first quick insight.",
-        "This is a second, equally sharp insight.",
-        "And here is a final, concise point."
-      ]
-    },
-    {
-      "title": "Mayor Bass announces curfew for DTLA amid ongoing anti-ICE protests",
-      "description": "A curfew has been enacted for downtown Los Angeles from 8 p.m. to 6 a.m. amid the ongoing anti-ICE protests, Los Angeles Mayor Karen Bass announced.",
-      "url": "https://abc7.com/live-updates/tensions-flare-downtown-la-anti-ice-protesters-clash-agents-live-updates/16692645/entry/16718238/",
-      "source": "ABC7 Los Angeles",
-      "publishedAt": "2025-06-11T06:59:00Z",
-      "image": "https://cdn.abcotvs.com/dip/images/16718229_TN-bass-presser.jpg?w=1600",
-      "biasType": "False Dichotomy",
-      "biasDescription": "This is a placeholder analysis. The text here explains the nature of the logical fallacy or bias identified in the headline, offering a brief, insightful overview.",
-      "additionalBiases": [
-        "This is the first quick insight.",
-        "This is a second, equally sharp insight.",
-        "And here is a final, concise point."
-      ]
-    },
-    {
-      "title": "Newsom Says Trump Is Destroying U.S. Democracy in Speech on L.A. Protests",
-      "description": "Gov. Gavin Newsom of California called on Americans to stand up to President Trump in a nationally televised address.",
-      "url": "https://www.nytimes.com/2025/06/10/us/newsom-speech-trump-la-protests.html",
+      "title": "First Ever Images of Sun’s South Pole Released by ESA Solar Orbiter",
+      "description": "Visuals from the European Space Agency’s Solar Orbiter reveal chaotic solar magnetism in the solar polar region. Even better images are expected in the years ahead.",
+      "url": "https://www.nytimes.com/2025/06/11/science/sun-south-pole-solar-orbiter-esa.html",
       "source": "The New York Times",
-      "publishedAt": "2025-06-11T06:36:00Z",
-      "image": "https://static01.nyt.com/images/2025/06/10/multimedia/10immigration-protests-newsom-speech1-wgvz/10immigration-protests-newsom-speech1-wgvz-facebookJumbo-v2.jpg",
-      "biasType": "False Dichotomy",
-      "biasDescription": "This is a placeholder analysis. The text here explains the nature of the logical fallacy or bias identified in the headline, offering a brief, insightful overview.",
-      "additionalBiases": [
-        "This is the first quick insight.",
-        "This is a second, equally sharp insight.",
-        "And here is a final, concise point."
-      ]
+      "publishedAt": "2025-06-11T14:00:09Z",
+      "image": "https://static01.nyt.com/images/2025/06/11/11HS-solar-pole-57334-cover/11HS-solar-pole-57334-cover-facebookJumbo-v3.jpg"
     },
     {
-      "title": "Rachel Reeves' spending review in focus",
-      "description": "The U.K. chancellor is set to raise spending on defense and healthcare but faces pressure to save money elsewhere due to her fiscal rules.",
-      "url": "https://www.cnbc.com/2025/06/11/cnbc-uk-exchange-newsletter-rachel-reeves-spending-review-in-focus-.html",
-      "source": "CNBC",
-      "publishedAt": "2025-06-11T05:30:01Z",
-      "image": "https://image.cnbcfm.com/api/v1/image/108085248-1736591982709-gettyimages-2192687294-China_UK_Reeves.jpeg?v=1749573631&w=1920&h=1080",
-      "biasType": "False Dichotomy",
-      "biasDescription": "This is a placeholder analysis. The text here explains the nature of the logical fallacy or bias identified in the headline, offering a brief, insightful overview.",
-      "additionalBiases": [
-        "This is the first quick insight.",
-        "This is a second, equally sharp insight.",
-        "And here is a final, concise point."
-      ]
-    },
-    {
-      "title": "Hong Kong bans 'seditious' mobile game",
-      "description": "Police say those who download the game may be seen as having material with seditious intent.",
-      "url": "https://www.bbc.com/news/articles/cjdzvvgev8eo",
-      "source": "BBC",
-      "publishedAt": "2025-06-11T05:22:07Z",
-      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/0aae/live/9d278520-467b-11f0-bbaa-4bc03e0665b7.jpg",
-      "biasType": "False Dichotomy",
-      "biasDescription": "This is a placeholder analysis. The text here explains the nature of the logical fallacy or bias identified in the headline, offering a brief, insightful overview.",
-      "additionalBiases": [
-        "This is the first quick insight.",
-        "This is a second, equally sharp insight.",
-        "And here is a final, concise point."
-      ]
-    },
-    {
-      "title": "Downtown LA Under Curfew, Newsom Blasts Trump (Live Updates)",
-      "description": "Hundreds of Marines joined National Guard troops in Los Angeles on Tuesday.",
-      "url": "https://www.forbes.com/sites/conormurray/2025/06/11/los-angeles-protests-live-updates-downtown-la-under-curfew-as-newsom-blasts-trump-again/",
-      "source": "Forbes",
-      "publishedAt": "2025-06-11T04:30:00Z",
-      "image": "https://imageio.forbes.com/specials-images/imageserve/6849064966c73f179d0596aa/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-      "biasType": "False Dichotomy",
-      "biasDescription": "This is a placeholder analysis. The text here explains the nature of the logical fallacy or bias identified in the headline, offering a brief, insightful overview.",
-      "additionalBiases": [
-        "This is the first quick insight.",
-        "This is a second, equally sharp insight.",
-        "And here is a final, concise point."
-      ]
+      "title": "MLB players make it clear they don’t want to play for the A’s, but which managers, teams do they like?",
+      "description": "We asked more than 100 players which opposing managers they would and wouldn’t want to play for and got their take on rival organizations.",
+      "url": "https://www.nytimes.com/athletic/6406636/2025/06/11/best-worst-mlb-manager-2025-player-poll/",
+      "source": "The New York Times",
+      "publishedAt": "2025-06-11T13:56:48Z",
+      "image": "https://static01.nyt.com/athletic/uploads/wp/2025/06/10160655/0611_MLB_Management.png?width=1200&height=630&fit=cover"
     }
   ]
 }
