@@ -1,37 +1,31 @@
+// Editorial Style ArticleCard Component
 import React, { useState, useRef, useEffect } from 'react';
-import { XMarkIcon, LightBulbIcon } from '@heroicons/react/24/solid'; // Example icon for bias
-import AccordionItem from './AccordionItem';
+import { XMarkIcon, MagnifyingGlassIcon, ExclamationTriangleIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
 
-const ArticleCard = ({ article, index }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+const ArticleCard = ({ article, index, darkMode = false }) => {
+  const [isRotated, setIsRotated] = useState(false);
   const cardRef = useRef(null);
 
-  const handleFlip = (e) => {
-    // Prevent event bubbling if the click is on an interactive element inside the card back
-    if (e && e.target.closest('a, button:not(.card-face)')) {
-        if(isFlipped && !e.target.closest('.close-button-back')) return;
-    }
-    setIsFlipped(!isFlipped);
-  };
+  const handleRotate = () => setIsRotated(!isRotated);
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
-      handleFlip();
+      handleRotate();
     }
   };
 
- useEffect(() => {
+  useEffect(() => {
     const handleClickOutside = (event) => {
-      if (cardRef.current && !cardRef.current.contains(event.target) && isFlipped) {
-        setIsFlipped(false);
+      if (cardRef.current && !cardRef.current.contains(event.target) && isRotated) {
+        setIsRotated(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [isFlipped]);
+  }, [isRotated]);
 
   const formatDate = (dateString) => {
     if (!dateString) return 'Date N/A';
@@ -40,116 +34,108 @@ const ArticleCard = ({ article, index }) => {
       year: 'numeric',
       month: 'short',
       day: 'numeric',
-    });
+    }).toUpperCase();
   };
 
-  const truncateContent = (content, maxLength = 100) => {
-    if (!content || typeof content !== 'string' || content.length <= maxLength) return content || '';
-    return content.substring(0, maxLength).trim() + '...';
-  };
-
-  // Fallback for missing article data
   const currentArticle = article || {
     title: 'Article Not Available',
     source: 'Unknown Source',
-    image: '', // Provide a path to a default placeholder image if desired
+    image: '',
     content: 'No content to display.',
     url: '#',
     publishedAt: null,
-    biasType: 'N/A', // Placeholder for bias/fallacy data
+    biasType: 'N/A',
+    biasDescription: 'No bias analysis available.',
+    additionalBiases: []
   };
 
   return (
-    <div className="card-container-perspective w-full h-full"> {/* Ensure h-full if cards have varying heights set by grid row */} 
-      <div
-        ref={cardRef}
-        className="article-card-wrapper w-full h-full min-h-[480px]"
-        onClick={!isFlipped ? handleFlip : undefined} 
-        onKeyDown={!isFlipped ? handleKeyDown : undefined}
+    <div 
+      className="relative w-full h-96 card-enter-animation article-card-wrapper"
+      style={{ animationDelay: `${index * 100}ms`, opacity: 0 }}
+      ref={cardRef}
+    >
+      <div 
+        className={`rotate-card w-full h-full cursor-pointer ${isRotated ? 'rotated' : ''}`} 
+        onClick={!isRotated ? handleRotate : undefined}
+        onKeyDown={!isRotated ? handleKeyDown : undefined}
         tabIndex={0}
         role="button"
-        aria-pressed={isFlipped}
+        aria-pressed={isRotated}
         aria-label={`Read more about ${currentArticle.title}`}
       >
-        <div className={`card-inner ${isFlipped ? 'is-flipped' : ''} w-full h-full`}>
-          {/* Front Face */}
-          <div className="card-face card-front textured-dark-gradient p-5 sm:p-6 flex flex-col justify-between text-brutalist-text">
-            <div className="flex-grow">
-              {currentArticle.image && (
-                <div className={`relative h-40 sm:h-48 mb-4 overflow-hidden image-vignette image-diagonal-overlay border-2 border-brutalist-block-dark ${index % 2 !== 0 ? 'alt-overlay-direction' : ''}`}>
-                  <img
-                    src={currentArticle.image}
-                    alt={currentArticle.title}
-                    className="w-full h-full object-cover brutalist-image-filter opacity-80"
-                    onError={(e) => { e.target.src = 'https://via.placeholder.com/400x200?text=Image+Not+Found'; }} // Fallback image
-                  />
-                </div>
-              )}
-              <span className="text-xs text-brutalist-text opacity-80 italic">
-                {currentArticle.source} - {formatDate(currentArticle.publishedAt)}
-              </span>
-              <h3 className="font-bebas text-brutalist-text font-black uppercase tracking-wider text-2xl sm:text-3xl mb-2 leading-tight border-b-2 border-brutalist-accent-red pb-1">
-                {currentArticle.title}
+        {/* Editorial Front Face */}
+        <div className={`w-full h-full ${darkMode ? 'bg-slate-800 border-slate-600 text-slate-100' : 'bg-editorial-cream border-editorial-charcoal text-editorial-charcoal'} border-2 p-4 absolute editorial-front flex flex-col justify-between`}>
+          <div>
+            <div className={`absolute top-4 right-4 w-8 h-8 border-2 ${darkMode ? 'border-orange-400' : 'border-editorial-orange'} flex items-center justify-center`}>
+              <MagnifyingGlassIcon className={`${darkMode ? 'text-orange-400' : 'text-editorial-orange'} w-4 h-4`} />
+            </div>
+
+            <div className={`border-b-2 ${darkMode ? 'border-orange-400' : 'border-editorial-orange'} pb-2 mb-3`}>
+              <h2 className={`font-playfair font-bold text-lg ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal'}`}>{currentArticle.biasType || 'FALLACY'}</h2>
+              <p className={`text-xs ${darkMode ? 'text-slate-400' : 'text-editorial-charcoal'} opacity-60 font-mono`}>SOURCE: {currentArticle.source}</p>
+            </div>
+            
+            <div className="space-y-2">
+              <div className={`text-xs ${darkMode ? 'text-slate-400' : 'text-editorial-charcoal'} opacity-60 font-mono`}>
+                {formatDate(currentArticle.publishedAt)}
+              </div>
+              
+              <h3 className={`font-playfair font-bold text-lg leading-tight ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal'}`}>
+                "{currentArticle.title}"
               </h3>
             </div>
           </div>
+          <p className="text-xs font-mono self-end">FLIP TO READ ANALYSIS →</p>
+        </div>
+        
+        {/* Editorial Back Face */}
+        <div className={`w-full h-full ${darkMode ? 'bg-slate-700 text-slate-100' : 'bg-editorial-cream text-editorial-charcoal'} p-4 absolute overflow-y-auto custom-scrollbar editorial-back flex flex-col`}>
+          <button 
+            onClick={(e) => { e.stopPropagation(); handleRotate(); }}
+            className={`absolute top-3 right-3 ${darkMode ? 'text-slate-300 hover:text-orange-400' : 'text-editorial-cream hover:text-editorial-orange'}`}
+            aria-label="Close details and flip back"
+          >
+            <XMarkIcon className="w-5 h-5" />
+          </button>
+          
+          {/* Top Section: Icon + Fallacy Name */}
+          <div className="text-center pt-4 pb-2">
+            <ExclamationTriangleIcon className={`w-10 h-10 ${darkMode ? 'text-orange-400' : 'text-editorial-orange'} mx-auto mb-2`} />
+            <h5 className="font-playfair font-bold text-xl">{currentArticle.biasType}</h5>
+          </div>
 
-          {/* Back Face */}
-          <div className="card-face card-back p-5 sm:p-6 flex flex-col text-brutalist-text overflow-y-auto brutalist-scrollbar">
-            <button
-              onClick={handleFlip} 
-              className="close-button-back absolute top-3 right-3 text-brutalist-text opacity-70 hover:text-brutalist-accent-red focus-visible:ring-2 focus-visible:ring-brutalist-accent-red focus-visible:ring-offset-2 focus-visible:ring-offset-brutalist-block-dark z-20 p-1"
-              aria-label="Close details and flip back"
-            >
-              <XMarkIcon className="h-5 w-5 sm:h-6 sm:w-6" />
-            </button>
-            <div className="flex-grow">
-              <div className="mb-4">
-                {/* Placeholder for a potential back-face main title - styled for Brutalism */}
-                {/* <h4 className="font-bebas text-slate-50 font-black uppercase tracking-tight text-xl sm:text-2xl mb-3">Back Face Title</h4> */}
-                <img src="Images/animated.gif" alt="Brain" className="w-40 h-40 mb-3" />
-                <h3 className="font-bebas text-brutalist-text font-black uppercase tracking-wider text-2xl sm:text-3xl mb-2 leading-tight border-b-2 border-brutalist-accent-red pb-1">
-                Strawman Fallacy
-              </h3>
-                {currentArticle.biasType && currentArticle.biasType !== 'N/A' && (
-                  <div className="mb-3">
-                    <LightBulbIcon className="w-6 h-6 text-brutalist-accent-red animate-pulse" aria-label={`Bias detected: ${currentArticle.biasType}`} />
-                  </div>
-                )}
-                <div>
-                  <p>The article suggests the ban is "fundamentally racist" without fully exploring the administration's stated reasons, such as national security, which may misrepresent the policy's intent.</p>
-                </div>
-              </div>
-              <p className="text-sm text-brutalist-text opacity-90 mb-4 leading-relaxed">
-                {truncateContent(currentArticle.content, 120)}
-              </p>
-              <div className="space-y-1 mb-3">
-                <AccordionItem title="More flaws">
-                  <p>• Appeal to Emotion: The use of terms like "demonized" and "vilifying" appeals to readers' emotions rather than presenting a balanced analysis of the policy's implications.</p>
-                  <p className="mt-2">• Hasty Generalization: The article implies that the ban is racist based on the inclusion of non-white countries, without considering the specific criteria used for the ban.</p>
-                  <p className="mt-2">Further points could be listed here.</p>
-                </AccordionItem>
-                <AccordionItem title="More context">
-                  <p>1. The travel ban could be seen as a legitimate national security measure, focusing on countries with inadequate vetting processes, which is a common practice in international relations.</p>
-                  <p className="mt-2">2. The inclusion of non-Muslim-majority countries suggests the ban is not solely based on religion, challenging the narrative of it being a "Muslim ban."</p>
-                  <p className="mt-2">3. The policy might be viewed as a temporary measure to address specific security concerns, rather than a permanent exclusion, which could mitigate claims of racism.</p>
-                  <p className="mt-2">4. The ban's impact on African countries could be interpreted as a reflection of broader geopolitical dynamics rather than an intentional act of exclusion.</p>
-                </AccordionItem>
-                <AccordionItem title="More on the source">
-                  <p>Source: <a href={currentArticle.url} target="_blank" rel="noopener noreferrer" className="text-brutalist-accent-red hover:text-brutalist-text focus-visible:text-brutalist-text underline">{currentArticle.source}</a>. Reliability score: N/A. Publication date: {formatDate(currentArticle.publishedAt)}. The Guardian is a reputable, progressive-leaning news outlet with nonprofit ownership aiming for editorial independence, praised for investigative work but viewed as politically left-leaning with occasional critique over bias framing.</p>
-                </AccordionItem>
-              </div>
+          <hr className={`my-4 ${darkMode ? 'border-slate-600' : 'border-editorial-charcoal border-opacity-20'}`} />
+
+          {/* Content Wrapper */}
+          <div className="flex-grow space-y-4 text-sm">
+            {/* Analysis Section */}
+            <div>
+              <h6 className={`font-mono text-xs uppercase tracking-wider ${darkMode ? 'text-slate-400' : 'text-editorial-charcoal opacity-70'} mb-2`}>Analysis</h6>
+              <p className="leading-relaxed opacity-90">{currentArticle.biasDescription}</p>
             </div>
-            <div className="mt-auto pt-2">
-              <a
-                href={currentArticle.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center px-4 py-2.5 bg-brutalist-accent-red text-brutalist-text text-sm font-bold border-2 border-brutalist-accent-red cta-glow-button hover:bg-brutalist-text hover:text-brutalist-accent-red hover:shadow-hard-sm focus-visible:bg-brutalist-text focus-visible:text-brutalist-accent-red focus-visible:shadow-hard-sm"
-              >
-                Learn more in our course
-              </a>
-            </div>
+
+            {/* Quick Insights Section */}
+            {currentArticle.additionalBiases && currentArticle.additionalBiases.length > 0 && (
+              <div>
+                <h6 className={`font-mono text-xs uppercase tracking-wider ${darkMode ? 'text-slate-400' : 'text-editorial-charcoal opacity-70'} mb-2`}>Quick Insights</h6>
+                <ul className="space-y-2">
+                  {currentArticle.additionalBiases.slice(0, 3).map((bias, index) => (
+                    <li key={index} className="flex items-start">
+                      <CheckCircleIcon className={`w-4 h-4 ${darkMode ? 'text-orange-400' : 'text-editorial-orange'} mr-2 mt-1 flex-shrink-0`} />
+                      <span>{bias}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+          
+          {/* Footer Link */}
+          <div className="mt-auto pt-4">
+            <a href={currentArticle.url} target="_blank" rel="noopener noreferrer" className={`block w-full text-center ${darkMode ? 'bg-orange-500 text-slate-900 hover:bg-orange-400' : 'bg-editorial-orange text-editorial-charcoal hover:bg-opacity-90'} py-2 font-playfair font-bold transition-opacity`}>
+              Read Original Article
+            </a>
           </div>
         </div>
       </div>
