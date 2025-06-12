@@ -1,6 +1,28 @@
 {
-  "lastUpdated": "2025-06-12T10:48:24.635Z",
+  "lastUpdated": "2025-06-12T10:59:57.096Z",
   "headlines": [
+    {
+      "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
+      "description": "The U.K. economy shrank sharply in April as global trade tariffs and domestic tax rises kicked in, data showed Thursday.",
+      "url": "https://www.cnbc.com/2025/06/12/uk-economy-shrank-sharply-in-april-as-trump-tariffs-kicked-in.html",
+      "source": "CNBC",
+      "publishedAt": "2025-06-12T10:03:22Z",
+      "image": "https://image.cnbcfm.com/api/v1/image/108108612-17406808382025-02-27t182635z_956173787_rc243dape335_rtrmadp_0_usa-britain.jpeg?v=1749720305&w=1920&h=1080",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null
+    },
+    {
+      "title": "London-bound Air India flight with more than 240 aboard crashes in Ahmedabad, India",
+      "description": "A Boeing 787 crashed into a residential area in Ahmedabad city five minutes after taking off. The flight was bound for London's Gatwick Airport. There were more than 240 people onboard.",
+      "url": "https://www.npr.org/2025/06/12/nx-s1-5431407/air-india-crash-ahmedabad-boeing",
+      "source": "NPR",
+      "publishedAt": "2025-06-12T09:37:37Z",
+      "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4160x2340+0+390/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F58%2F7a%2F0744d895407786fa572e12d08d8f%2Fap25163341095177.jpg",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null
+    },
     {
       "title": "Plane carrying 242 people crashes outside airport in western Indian city of Ahmedabad",
       "description": "An Air India passenger plane with 242 people on board has crashed shortly after taking off from an airport in India’s western city of Ahmedabad.",
@@ -30,6 +52,17 @@
       "source": "CNBC",
       "publishedAt": "2025-06-12T07:21:00Z",
       "image": "https://image.cnbcfm.com/api/v1/image/108158246-1749701990126-gettyimages-1347416870-1032_14_30102282.jpeg?v=1749708550&w=1920&h=1080",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null
+    },
+    {
+      "title": "Why 2 Chinese aircraft carriers are operating in the Pacific together for the first time",
+      "description": "Japan this week confirmed that two Chinese aircraft carriers have operated together for the first time in the Pacific.",
+      "url": "https://apnews.com/article/japan-china-aircraft-carriers-pacific-military-explainer-9ff9ec57e0721dbcf11f88939a1f3fa8",
+      "source": "AP News",
+      "publishedAt": "2025-06-12T07:01:00Z",
+      "image": "https://dims.apnews.com/dims4/default/8938668/2147483647/strip/true/crop/724x407+381+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F4f%2F2d%2F055af90f1f185c525c1e7bc5c11e%2F10901c6fc0c04f7b91c24fb047797352",
       "containsFallacy": false,
       "fallacy": null,
       "explanation": null
@@ -68,45 +101,12 @@
       "explanation": null
     },
     {
-      "title": "Sly Stone and Brian Wilson both revolutionized music",
-      "description": "Sometimes death, as life, brings strange symmetries. Two music revolutionaries, Sly Stone and Brian Wilson, both died within two days of each other. Each was 82.",
-      "url": "https://apnews.com/article/brian-wilson-sly-stone-deaths-impact-496efc054cf0973bd385ede87bd9437f",
+      "title": "What to know about 'No Kings' protests against Trump's policies on Saturday",
+      "description": "Opponents of President Donald Trump’s administration are set to rally in nearly 2,000 cities and towns this weekend.",
+      "url": "https://apnews.com/article/no-kings-protest-things-to-know-trump-8d37f2bb2bf20ab503205b277e92b885",
       "source": "AP News",
-      "publishedAt": "2025-06-12T04:02:00Z",
-      "image": "https://dims.apnews.com/dims4/default/2585db0/2147483647/strip/true/crop/2769x1558+0+190/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F19%2Ff8%2Fb350fc99840d7715c04459f2aac3%2F04959e1019ba463d86408486ac37a514",
-      "containsFallacy": false,
-      "fallacy": null,
-      "explanation": null
-    },
-    {
-      "title": "Trump-China deal, Thailand CPI",
-      "description": "Asia-Pacific markets traded mixed as traders assessed U.S. President Donald Trump's declaration that a trade deal with China was \"done.\"",
-      "url": "https://www.cnbc.com/2025/06/12/asia-pacific-markets-today-live-trump-china-deal-thailand-cpi.html",
-      "source": "CNBC",
-      "publishedAt": "2025-06-12T03:53:00Z",
-      "image": "https://image.cnbcfm.com/api/v1/image/108127280-1743996513501-gettyimages-1086840996-hok0739.jpeg?v=1743996523&w=1920&h=1080",
-      "containsFallacy": false,
-      "fallacy": null,
-      "explanation": null
-    },
-    {
-      "title": "Trump Given Bad Weather News About His Birthday Tank Parade",
-      "description": "The president’s $45 million parade might not go as planned due to potential rain and thunderstorms.",
-      "url": "https://www.thedailybeast.com/weather-forecasts-say-its-going-to-rain-on-trumps-parade/",
-      "source": "The Daily Beast",
-      "publishedAt": "2025-06-12T03:32:00Z",
-      "image": "https://www.thedailybeast.com/resizer/v2/Y7CZVVQZ7BCVPKLSVJ7TYCXYOE.gif?smart=true&auth=fceb0f803ce5d12a9f248e5b22ecedc3c997ddf9289ffbdfa177724028f07a94&width=1200&height=630",
-      "containsFallacy": false,
-      "fallacy": null,
-      "explanation": null
-    },
-    {
-      "title": "Walmart says this is its highest paying job, not including managers",
-      "description": "Walmart decorates over 150,000 cakes a week. The company says they employ 6,000 cake decorators across the nation.",
-      "url": "https://www.usatoday.com/story/money/retail/2025/06/11/walmart-highest-paying-job/84159234007/",
-      "source": "USA Today",
-      "publishedAt": "2025-06-12T03:20:54Z",
-      "image": "https://www.usatoday.com/gcdn/authoring/authoring-images/2025/06/12/USAT/84160008007-usatsi-26329326-168401916-lowres.jpg?crop=1871,1052,x64,y0&width=1871&height=1052&format=pjpg&auto=webp",
+      "publishedAt": "2025-06-12T04:08:00Z",
+      "image": "https://dims.apnews.com/dims4/default/7ec91f9/2147483647/strip/true/crop/6000x3375+0+312/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F32%2F46%2Fd68255b0ef442e8fb2339d764d65%2F05efdb8a99cf43429713f12e0523ce4b",
       "containsFallacy": false,
       "fallacy": null,
       "explanation": null
