@@ -104,6 +104,8 @@ jobs:
           try {
             const response = await makeRequest('https://openrouter.ai/api/v1/chat/completions', options);
             
+            console.log('Raw response:', response);
+
             if (response.choices && response.choices[0] && response.choices[0].message) {
               const content = response.choices[0].message.content.trim();
               
