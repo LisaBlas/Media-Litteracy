@@ -1,4 +1,4 @@
-name: Update News Headlines
+name: Update News Headlines with Fallacy Analysis
 
 on:
   schedule:
@@ -22,81 +22,204 @@ jobs:
       with:
         node-version: '18'
         
-    - name: Fetch news headlines
+    - name: Fetch and analyze news headlines
       env:
         GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
+        OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       run: |
-        # Create a Node.js script to fetch headlines
-        cat << 'EOF' > fetch-headlines.js
+        # Create the enhanced Node.js script
+        cat << 'EOF' > fetch-analyze.js
         const https = require('https');
         const fs = require('fs');
         
-        const API_KEY = process.env.GNEWS_API_KEY;
-        const API_URL = `https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=10&apikey=${API_KEY}`;
+        const GNEWS_API_KEY = process.env.GNEWS_API_KEY;
+        const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+        const GNEWS_API_URL = `https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=10&apikey=${GNEWS_API_KEY}`;
         
-        https.get(API_URL, (res) => {
-          let data = '';
-          
-          res.on('data', (chunk) => {
-            data += chunk;
-          });
-          
-          res.on('end', () => {
-            try {
-              const newsData = JSON.parse(data);
-              
-              if (newsData.articles) {
-                // Transform the data to match your needs
-                const headlines = newsData.articles.map(article => ({
-                  title: article.title,
-                  description: article.description,
-                  url: article.url,
-                  source: article.source.name,
-                  publishedAt: article.publishedAt,
-                  image: article.image
-                }));
-                
-                // Write to headlines.json
-                const outputData = {
-                  lastUpdated: new Date().toISOString(),
-                  headlines: headlines
-                };
-                
-                // Create data directory if it doesn't exist
-                if (!fs.existsSync('data')) {
-                  fs.mkdirSync('data', { recursive: true });
+        // Function to make HTTP requests
+        function makeRequest(url, options = {}) {
+          return new Promise((resolve, reject) => {
+            const req = https.request(url, options, (res) => {
+              let data = '';
+              res.on('data', (chunk) => data += chunk);
+              res.on('end', () => {
+                try {
+                  resolve(JSON.parse(data));
+                } catch (error) {
+                  resolve(data);
                 }
-                
-                fs.writeFileSync('data/headlines.json', JSON.stringify(outputData, null, 2));
-                console.log('Headlines updated successfully!');
-              } else {
-                console.error('No articles found in API response');
-                process.exit(1);
+              });
+            });
+            req.on('error', reject);
+            if (options.body) {
+              req.write(options.body);
+            }
+            req.end();
+          });
+        }
+        
+        // Function to analyze headline for logical fallacies
+        async function analyzeHeadline(headline) {
+          const prompt = `Analyze this news headline for logical fallacies: "${headline}"
+        
+        Please respond with a JSON object in this exact format:
+        {
+          "containsFallacy": true/false,
+          "fallacy": "type of fallacy if found, or null",
+          "explanation": "brief explanation of why it's a fallacy, or null"
+        }
+        
+        Common fallacies to look for:
+        - Ad hominem (attacking person instead of argument)
+        - Straw man (misrepresenting opponent's position)
+        - False dichotomy (presenting only two options when more exist)
+        - Appeal to emotion (manipulating emotions instead of logic)
+        - Hasty generalization (broad conclusion from limited evidence)
+        - Slippery slope (assuming one event leads to extreme consequences)
+        - Appeal to authority (citing irrelevant authority)
+        - Bandwagon (appeal to popularity)
+        
+        Only return the JSON object, nothing else.`;
+        
+          const requestBody = JSON.stringify({
+            model: "openai/gpt-3.5-turbo",
+            messages: [
+              {
+                role: "user",
+                content: prompt
               }
-            } catch (error) {
-              console.error('Error parsing API response:', error);
+            ],
+            temperature: 0.3,
+            max_tokens: 200
+          });
+        
+          const options = {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
+              'Content-Type': 'application/json',
+              'HTTP-Referer': 'https://github.com',
+              'X-Title': 'News Fallacy Analyzer'
+            },
+            body: requestBody
+          };
+        
+          try {
+            const response = await makeRequest('https://openrouter.ai/api/v1/chat/completions', options);
+            
+            if (response.choices && response.choices[0] && response.choices[0].message) {
+              const content = response.choices[0].message.content.trim();
+              
+              // Try to parse the JSON response
+              try {
+                const analysis = JSON.parse(content);
+                return analysis;
+              } catch (parseError) {
+                console.log(`Failed to parse analysis for "${headline}":`, content);
+                return { containsFallacy: false, fallacy: null, explanation: null };
+              }
+            } else {
+              console.log(`No valid response for "${headline}"`);
+              return { containsFallacy: false, fallacy: null, explanation: null };
+            }
+          } catch (error) {
+            console.error(`Error analyzing "${headline}":`, error.message);
+            return { containsFallacy: false, fallacy: null, explanation: null };
+          }
+        }
+        
+        // Main function
+        async function main() {
+          try {
+            console.log('Fetching headlines...');
+            const newsData = await makeRequest(GNEWS_API_URL);
+            
+            if (!newsData.articles || newsData.articles.length === 0) {
+              console.error('No articles found in API response');
               process.exit(1);
             }
-          });
-        }).on('error', (error) => {
-          console.error('Error fetching headlines:', error);
-          process.exit(1);
-        });
+            
+            console.log(`Found ${newsData.articles.length} headlines. Analyzing...`);
+            
+            const analyzedHeadlines = [];
+            
+            // Analyze each headline (with delay to avoid rate limits)
+            for (let i = 0; i < newsData.articles.length; i++) {
+              const article = newsData.articles[i];
+              console.log(`Analyzing headline ${i + 1}/${newsData.articles.length}: ${article.title}`);
+              
+              const analysis = await analyzeHeadline(article.title);
+              
+              const processedArticle = {
+                title: article.title,
+                description: article.description,
+                url: article.url,
+                source: article.source.name,
+                publishedAt: article.publishedAt,
+                image: article.image,
+                containsFallacy: analysis.containsFallacy,
+                fallacy: analysis.fallacy,
+                explanation: analysis.explanation
+              };
+              
+              analyzedHeadlines.push(processedArticle);
+              
+              // Add delay between requests to avoid rate limiting
+              if (i < newsData.articles.length - 1) {
+                await new Promise(resolve => setTimeout(resolve, 1000));
+              }
+            }
+            
+            // Filter headlines that contain fallacies
+            const fallacyHeadlines = analyzedHeadlines.filter(article => article.containsFallacy);
+            
+            console.log(`Found ${fallacyHeadlines.length} headlines with logical fallacies out of ${analyzedHeadlines.length} total`);
+            
+            // Prepare output data
+            const outputData = {
+              lastUpdated: new Date().toISOString(),
+              totalAnalyzed: analyzedHeadlines.length,
+              fallaciesFound: fallacyHeadlines.length,
+              headlines: fallacyHeadlines // Only include headlines with fallacies
+            };
+            
+            // Create data directory if it doesn't exist
+            if (!fs.existsSync('data')) {
+              fs.mkdirSync('data', { recursive: true });
+            }
+            
+            // Write to headlines.json
+            fs.writeFileSync('data/headlines.json', JSON.stringify(outputData, null, 2));
+            console.log('Headlines analysis completed and saved!');
+            
+            // Also save all analyzed headlines for debugging (optional)
+            fs.writeFileSync('data/all-headlines.json', JSON.stringify({
+              lastUpdated: new Date().toISOString(),
+              headlines: analyzedHeadlines
+            }, null, 2));
+            
+          } catch (error) {
+            console.error('Error in main function:', error);
+            process.exit(1);
+          }
+        }
+        
+        main();
         EOF
         
         # Run the script
-        node fetch-headlines.js
+        node fetch-analyze.js
         
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add data/headlines.json
+        git add data/headlines.json data/all-headlines.json
         
         # Check if there are changes to commit
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
-          git commit -m "Update news headlines - $(date)"
+          git commit -m "Update news headlines with fallacy analysis - $(date)"
           git push
         fi

@@ -1,10 +1,24 @@
 // Editorial Style ArticleCard Component
 import React, { useState, useRef, useEffect } from 'react';
 import { XMarkIcon, MagnifyingGlassIcon, ExclamationTriangleIcon, CheckCircleIcon } from '@heroicons/react/24/solid';
+import fallacyDefinitions from '../../data/fallacy-definitions.json';
 
 const ArticleCard = ({ article, index, darkMode = false }) => {
   const [isRotated, setIsRotated] = useState(false);
+  const [fallacyDefinition, setFallacyDefinition] = useState('');
   const cardRef = useRef(null);
+
+  const currentArticle = article || {
+    title: 'Article Not Available',
+    source: 'Unknown Source',
+    image: '',
+    content: 'No content to display.',
+    url: '#',
+    publishedAt: null,
+    fallacy: 'N/A',
+    explanation: 'No analysis available.',
+    additionalBiases: []
+  };
 
   const handleRotate = () => setIsRotated(!isRotated);
 
@@ -22,10 +36,24 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
+
+    if (currentArticle.fallacy) {
+      const definitionKey = Object.keys(fallacyDefinitions).find(
+        key => key.toLowerCase() === currentArticle.fallacy.toLowerCase()
+      );
+      if (definitionKey) {
+        setFallacyDefinition(fallacyDefinitions[definitionKey].definition);
+      } else {
+        setFallacyDefinition('');
+      }
+    } else {
+      setFallacyDefinition('');
+    }
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [isRotated]);
+  }, [isRotated, currentArticle.fallacy]);
 
   const formatDate = (dateString) => {
     if (!dateString) return 'Date N/A';
@@ -35,18 +63,6 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
       month: 'short',
       day: 'numeric',
     }).toUpperCase();
-  };
-
-  const currentArticle = article || {
-    title: 'Article Not Available',
-    source: 'Unknown Source',
-    image: '',
-    content: 'No content to display.',
-    url: '#',
-    publishedAt: null,
-    biasType: 'N/A',
-    biasDescription: 'No bias analysis available.',
-    additionalBiases: []
   };
 
   return (
@@ -72,7 +88,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
             </div>
 
             <div className={`border-b-2 ${darkMode ? 'border-orange-400' : 'border-editorial-orange'} pb-2 mb-3`}>
-              <h2 className={`font-playfair font-bold text-lg ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal'}`}>{currentArticle.biasType || 'FALLACY'}</h2>
+              <h2 className={`font-playfair font-bold text-lg ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal'}`}>{currentArticle.fallacy || 'FALLACY'}</h2>
               <p className={`text-xs ${darkMode ? 'text-slate-400' : 'text-editorial-charcoal'} opacity-60 font-mono`}>SOURCE: {currentArticle.source}</p>
             </div>
             
@@ -102,17 +118,25 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
           {/* Top Section: Icon + Fallacy Name */}
           <div className="text-center pt-4 pb-2">
             <ExclamationTriangleIcon className={`w-10 h-10 ${darkMode ? 'text-orange-400' : 'text-editorial-orange'} mx-auto mb-2`} />
-            <h5 className="font-playfair font-bold text-xl">{currentArticle.biasType}</h5>
+            <h5 className="font-playfair font-bold text-xl">{currentArticle.fallacy}</h5>
           </div>
 
           <hr className={`my-4 ${darkMode ? 'border-slate-600' : 'border-editorial-charcoal border-opacity-20'}`} />
 
           {/* Content Wrapper */}
           <div className="flex-grow space-y-4 text-sm">
+            {/* Definition Section */}
+            {fallacyDefinition && (
+              <div>
+                <h6 className={`font-mono text-xs uppercase tracking-wider ${darkMode ? 'text-slate-400' : 'text-editorial-charcoal opacity-70'} mb-2`}>Definition</h6>
+                <p className="leading-relaxed opacity-90 italic">"{fallacyDefinition}"</p>
+              </div>
+            )}
+
             {/* Analysis Section */}
             <div>
-              <h6 className={`font-mono text-xs uppercase tracking-wider ${darkMode ? 'text-slate-400' : 'text-editorial-charcoal opacity-70'} mb-2`}>Analysis</h6>
-              <p className="leading-relaxed opacity-90">{currentArticle.biasDescription}</p>
+              <h6 className={`font-mono text-xs uppercase tracking-wider ${darkMode ? 'text-slate-400' : 'text-editorial-charcoal opacity-70'} mb-2`}>Analysis of Headline</h6>
+              <p className="leading-relaxed opacity-90">{currentArticle.explanation}</p>
             </div>
 
             {/* Quick Insights Section */}
