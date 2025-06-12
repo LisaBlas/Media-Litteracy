@@ -34,23 +34,20 @@
     animation: card-enter 0.5s ease-out forwards;
   }
 
-  .article-card-wrapper {
-    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-  }
-
-  .article-card-wrapper:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(44, 44, 44, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-  }
-  /* --- Editorial Style Components --- */
   .rotate-card {
     transition: transform 0.8s ease-in-out;
     transform-style: preserve-3d;
     position: relative;
+    transform: rotateY(0deg);
+  }
+
+  .rotate-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 10px 20px rgba(44, 44, 44, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   }
 
   .rotate-card.rotated {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) !important;
   }
 
   .editorial-front {
@@ -99,7 +96,7 @@
   }
 
   .bg-editorial-orange {
-    background-color: #ff6b35;
+    background-color: #dd6e45;
   }
 
   .text-editorial-cream {
@@ -111,7 +108,7 @@
   }
 
   .text-editorial-orange {
-    color: #ff6b35;
+    color: #d7886b;
   }
 
   .border-editorial-cream {
@@ -123,6 +120,6 @@
   }
 
   .border-editorial-orange {
-    border-color: #ff6b35;
+    border-color: #dd7955;
   }
 }

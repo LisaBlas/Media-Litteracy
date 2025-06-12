@@ -108,7 +108,7 @@ function App() {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {filteredArticles.length > 0 ? (
             filteredArticles.slice(0, visibleArticleCount).map((article, index) => (
-              <ArticleCard key={article.url || index} article={article} index={index} />
+              <ArticleCard key={`${article.url}-${index}`} article={article} index={index} />
             ))
           ) : (
             !loading && <p className="text-editorial-orange col-span-full text-center py-10">No articles match the selected tags.</p>
