@@ -7,7 +7,10 @@
       "url": "https://www.nytimes.com/athletic/6420525/2025/06/11/thunder-pacers-nba-finals-bennedict-mathurin-tj-mcconnell/",
       "source": "The New York Times",
       "publishedAt": "2025-06-12T04:53:06Z",
-      "image": "https://static01.nyt.com/athletic/uploads/wp/2025/06/11230743/GettyImages-2219718083-scaled.jpg?width=1200&height=630&fit=cover"
+      "image": "https://static01.nyt.com/athletic/uploads/wp/2025/06/11230743/GettyImages-2219718083-scaled.jpg?width=1200&height=630&fit=cover",
+      "containsFallacy": true,
+      "fallacy": "",
+      "explanation": ""
     },
     {
       "title": "Spending Review 'renewing Britain' or 'reckless splurge'",

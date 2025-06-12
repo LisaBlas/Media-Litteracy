@@ -1,0 +1,88 @@
+{
+    "Fallacies": [
+        {
+            "name": "False Dichotomy",
+            "definition": "Presenting only two options when more exist."
+        },
+        {
+            "name": "Ad Hominem",
+            "definition": "Attacking the person instead of their argument."
+        },
+        {
+            "name": "Straw Man",
+            "definition": "Misrepresenting someone's position to make it easier to attack."
+        },
+        {
+            "name": "Appeal to Authority",
+            "definition": "Using an authority’s opinion in place of evidence."
+        },
+        {
+            "name": "Bandwagon",
+            "definition": "Claiming something is true simply because many believe it."
+        },
+        {
+            "name": "Appeal to Ignorance",
+            "definition": "Assuming a claim is true/false just because it hasn’t been disproven."
+        },
+        {
+            "name": "Slippery Slope",
+            "definition": "Asserting a minor action will lead to extreme consequences without evidence."
+        },
+        {
+            "name": "Circular Reasoning",
+            "definition": "Using the conclusion as a premise."
+        },
+        {
+            "name": "Hasty Generalization",
+            "definition": "Making broad claims from insufficient examples."
+        },
+        {
+            "name": "Red Herring",
+            "definition": "Introducing unrelated info to distract from the real issue."
+        },
+        {
+            "name": "False Cause",
+            "definition": "Assuming causation from sequence alone (“After A happened, B happened; therefore A caused B”)."
+        },
+        {
+            "name": "Equivocation",
+            "definition": "Using a word in different senses across premises."
+        },
+        {
+            "name": "No True Scotsman",
+            "definition": "Redefining a group to exclude counterexamples (“No true X would do Y”)."
+        },
+        {
+            "name": "Tu Quoque (“You too!”)",
+            "definition": "Dismissing criticism by charging hypocrisy."
+        },
+        {
+            "name": "Appeal to Emotion / Pity",
+            "definition": "Manipulating feelings instead of using logic."
+        },
+        {
+            "name": "Loaded Question",
+            "definition": "Asking a question that presumes something unproven."
+        },
+        {
+            "name": "Poisoning the Well",
+            "definition": "Presenting negative information to discredit someone before they speak."
+        },
+        {
+            "name": "Cherry-picking",
+            "definition": "Only using data that supports your argument and ignoring the rest."
+        },
+        {
+            "name": "Texas Sharpshooter",
+            "definition": "Focusing on similarities while ignoring differences to support a point."
+        },
+        {
+            "name": "Gambler’s Fallacy",
+            "definition": "Believing that past events affect future probability in random situations."
+        },
+        {
+            "name": "Middle Ground",
+            "definition": "Assuming the middle position between two extremes is always correct."
+        }
+    ]
+}
