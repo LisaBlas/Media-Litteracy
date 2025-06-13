@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ArticleCard from './components/ArticleCard';
 import TagFilter from './components/TagFilter';
@@ -76,10 +77,11 @@ function App() {
 
   return (
     <div className="min-h-screen">
+      <Navbar />
       <Hero />
 
       {/* Main Content */}
-      <main id="headline-cards" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <main id="fallacies" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <TagFilter 
           tags={availableTags} 
           selectedTags={selectedTags} 
@@ -110,6 +112,14 @@ function App() {
         </div>
         
       </main>
+
+      {/* About Section */}
+      <section id="about" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-white">
+        <h2 className="text-3xl font-bold text-center mb-8">About Media Fallacies</h2>
+        <p className="text-lg text-gray-300 text-center max-w-3xl mx-auto">
+          This project is dedicated to shedding light on the logical fallacies and cognitive biases prevalent in modern media. Our goal is to equip you with the critical thinking skills necessary to navigate the complex information landscape. By learning to identify these patterns, you can become a more discerning consumer of news and media.
+        </p>
+      </section>
 
       {/* Footer */}
       <footer className="bg-gray-800 text-gray-400">
