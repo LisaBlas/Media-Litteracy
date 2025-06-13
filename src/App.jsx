@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import Hero from './components/Hero';
 import ArticleCard from './components/ArticleCard';
-import TagFilter from './components/TagFilter'; // Import TagFilter
+import TagFilter from './components/TagFilter';
 import headlinesData from '../data/headlines.json';
 
 function App() {
@@ -64,39 +65,21 @@ function App() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-editorial-cream flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-editorial-charcoal mx-auto"></div>
-          <p className="mt-4 text-editorial-charcoal opacity-80">Loading articles...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-500 mx-auto"></div>
+          <p className="mt-4 text-gray-300 opacity-80">Loading articles...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-editorial-cream">
-      {/* Header */}
-      <header className="py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="font-playfair font-bold text-3xl sm:text-4xl text-editorial-charcoal">The Media Watch</h1>
-          </div>
-        </div>
-      </header>
+    <div className="min-h-screen">
+      <Hero />
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Introduction Section */}
-        <div className="text-center mb-16">
-          <h2 className="font-playfair font-bold text-4xl sm:text-5xl text-editorial-charcoal mb-4">
-            Uncovering the Narrative
-          </h2>
-          <p className="text-lg text-editorial-charcoal max-w-3xl mx-auto opacity-80">
-            We analyze today's headlines, exposing logical fallacies, biases, and misinformation. 
-            This is your guide to critical thinking in a complex media landscape.
-          </p>
-        </div>
-
+      <main id="headline-cards" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <TagFilter 
           tags={availableTags} 
           selectedTags={selectedTags} 
@@ -105,20 +88,20 @@ function App() {
         />
 
         {/* Articles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-12">
           {filteredArticles.length > 0 ? (
             filteredArticles.slice(0, visibleArticleCount).map((article, index) => (
               <ArticleCard key={`${article.url}-${index}`} article={article} index={index} />
             ))
           ) : (
-            !loading && <p className="text-editorial-orange col-span-full text-center py-10">No articles match the selected tags.</p>
+            !loading && <p className="text-orange-500 col-span-full text-center py-10">No articles match the selected tags.</p>
           )}
           {/* Load More Button */}
           {visibleArticleCount < filteredArticles.length && (
             <div className="col-span-full flex justify-center mt-8 mb-4">
               <button
                 onClick={() => setVisibleArticleCount(prevCount => prevCount + 9)}
-                className="font-playfair font-bold bg-editorial-charcoal text-editorial-cream py-3 px-10 text-lg hover:bg-gray-800 transition-colors duration-200"
+                className="font-bold bg-orange-500 text-white py-3 px-10 text-lg hover:bg-orange-600 transition-colors duration-200 rounded-lg"
               >
                 Load More
               </button>
@@ -129,7 +112,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-editorial-charcoal text-editorial-cream mt-16">
+      <footer className="bg-gray-800 text-gray-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
             <p className="text-sm opacity-60">
