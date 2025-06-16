@@ -8,6 +8,8 @@ module.exports = {
         bebas: ['Bebas Neue', 'sans-serif'],
       },
       colors: { // Add new colors section
+        'neon-cyan': '#22d3ee',
+        'editorial-orange': '#6F1D1B',
         brutalist: {
           background: '#121212', // Very dark background
           text: '#FFFFFF',       // Pure white text

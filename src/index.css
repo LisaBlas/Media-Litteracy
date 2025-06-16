@@ -37,6 +37,26 @@
     font-family: 'Playfair Display', serif;
   }
 
+  /* Additional custom styles */
+
+  .sticky-filter-container {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .sticky-filter-container:has(+ main .stuck) {
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(8px);
+  }
+
+
+
+
   /* Editorial scrollbar styles */
   .custom-scrollbar::-webkit-scrollbar {
     width: 4px;
