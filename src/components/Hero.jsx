@@ -7,11 +7,11 @@ const Hero = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [typedWord, setTypedWord] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
-  const words = ["Narrative.", "Fallacy.", "Headline.", "Deception."];
+  const words = ["Narratives.", "Fallacies.", "Headlines.", "Deceptions.", "Biases."];
 
   useEffect(() => {
     const current = words[currentWordIndex];
-    const speed = isDeleting ? 80 : 120;
+    const speed = isDeleting ? 80 : 55;
     const pause = isDeleting ? 300 : 1500;
 
     if (!isDeleting && typedWord === current) {
