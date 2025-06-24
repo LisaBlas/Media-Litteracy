@@ -42,6 +42,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-family: 'Playfair Display', serif;
   }
 
+  .font-bitter {
+    font-family: 'Bitter', serif;
+  }
+  .font-work-sans {
+    font-family: 'Work Sans', serif;
+  }
+  .font-numito {
+    font-family: 'Numito', serif;
+  }
   /* Additional custom styles */
 
   .sticky-filter-container {
@@ -122,16 +131,3 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border-color: #6F1D1B;
   }
 }
-
-/* CardFlip */
-.perspective-1000 {
-  perspective: 1000px;
-}
-
-.backface-hidden {
-  backface-visibility: hidden;
-}
-.rotate-y-180 {
-  transform: rotateY(180deg);
-}
-

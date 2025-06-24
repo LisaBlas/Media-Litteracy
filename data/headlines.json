@@ -11,7 +11,7 @@
       "publishedAt": "2025-06-12T10:03:22Z",
       "image": "https://image.cnbcfm.com/api/v1/image/108108612-17406808382025-02-27t182635z_956173787_rc243dape335_rtrmadp_0_usa-britain.jpeg?v=1749720305&w=1920&h=1080",
       "containsFallacy": true,
-      "fallacy": "False causality",
+      "fallacy": "Ad Hominem",
       "explanation": "The headline implies that the UK economy shrank because of Trump tariffs, without providing evidence of a direct causal relationship between the two."
     },
     {
@@ -33,7 +33,7 @@
       "publishedAt": "2025-06-12T10:03:22Z",
       "image": "https://image.cnbcfm.com/api/v1/image/108108612-17406808382025-02-27t182635z_956173787_rc243dape335_rtrmadp_0_usa-britain.jpeg?v=1749720305&w=1920&h=1080",
       "containsFallacy": true,
-      "fallacy": "False causality",
+      "fallacy": "Straw Man",
       "explanation": "The headline implies that the UK economy shrank because of Trump tariffs, without providing evidence of a direct causal relationship between the two."
     },
     {
@@ -44,7 +44,7 @@
       "publishedAt": "2025-06-12T10:03:22Z",
       "image": "https://image.cnbcfm.com/api/v1/image/108108612-17406808382025-02-27t182635z_956173787_rc243dape335_rtrmadp_0_usa-britain.jpeg?v=1749720305&w=1920&h=1080",
       "containsFallacy": true,
-      "fallacy": "False causality",
+      "fallacy": "Appeal to authority",
       "explanation": "The headline implies that the UK economy shrank because of Trump tariffs, without providing evidence of a direct causal relationship between the two."
     },
     {
@@ -55,7 +55,7 @@
       "publishedAt": "2025-06-12T10:03:22Z",
       "image": "https://image.cnbcfm.com/api/v1/image/108108612-17406808382025-02-27t182635z_956173787_rc243dape335_rtrmadp_0_usa-britain.jpeg?v=1749720305&w=1920&h=1080",
       "containsFallacy": true,
-      "fallacy": "False causality",
+      "fallacy": "Bandwagon",
       "explanation": "The headline implies that the UK economy shrank because of Trump tariffs, without providing evidence of a direct causal relationship between the two."
     },
     {
@@ -66,7 +66,7 @@
       "publishedAt": "2025-06-12T10:03:22Z",
       "image": "https://image.cnbcfm.com/api/v1/image/108108612-17406808382025-02-27t182635z_956173787_rc243dape335_rtrmadp_0_usa-britain.jpeg?v=1749720305&w=1920&h=1080",
       "containsFallacy": true,
-      "fallacy": "False causality",
+      "fallacy": "Appeal to Ignorance",
       "explanation": "The headline implies that the UK economy shrank because of Trump tariffs, without providing evidence of a direct causal relationship between the two."
     },
     {
@@ -77,7 +77,7 @@
       "publishedAt": "2025-06-12T10:03:22Z",
       "image": "https://image.cnbcfm.com/api/v1/image/108108612-17406808382025-02-27t182635z_956173787_rc243dape335_rtrmadp_0_usa-britain.jpeg?v=1749720305&w=1920&h=1080",
       "containsFallacy": true,
-      "fallacy": "False causality",
+      "fallacy": "Slippery Slope",
       "explanation": "The headline implies that the UK economy shrank because of Trump tariffs, without providing evidence of a direct causal relationship between the two."
     }
   ]

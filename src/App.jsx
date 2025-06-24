@@ -43,7 +43,7 @@ function App() {
     <Routes>
       <Route path="/course" element={<CoursePage />} />
       <Route path="/" element={
-        <div className="min-h-screen bg-editorial-orange">
+        <div className="min-h-screen">
           <Navbar />
           <Hero />
 
