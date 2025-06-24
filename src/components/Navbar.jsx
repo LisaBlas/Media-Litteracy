@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const scrollToSection = (id) => {
+    setIsOpen(false);
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -9,20 +14,39 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-gray-900 font-bold p-4 flex justify-between items-center sticky top-0 z-50">
+        <nav className="hero-background-pattern text-gray-900 font-mono p-4 flex justify-between items-center sticky top-0 z-50 border-b-2 border-editorial-orange">
       <div className="flex items-center">
-        {/* Placeholder for Logo */}
-        <div className=""></div> 
-        <h1 className="text-xl font-bold">Media Fallacies</h1>
+        <h1 className="text-xl font-bold font-playfair">Doublethink</h1>
       </div>
-      <div className="flex items-center space-x-6">
-        <a href="#" className="hover:text-blue-300">Home</a>
-        <a href="#fallacies" onClick={() => scrollToSection('fallacies')} className="hover:text-blue-300">Fallacies</a>
-        <a href="#about" onClick={() => scrollToSection('about')} className="hover:text-blue-300">About</a>
-        <button className="bg-editorial-orange hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-          Take the Course
+
+      {/* Desktop Menu */}
+      <div className="hidden md:flex items-center space-x-6 font-mono"> 
+        <a href="#" className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Home</a>
+        <a href="#fallacies" onClick={() => scrollToSection('fallacies')} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Examples</a>
+        <a href="#about" onClick={() => scrollToSection('about')} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">About</a>
+        <Link to="/course" className="bg-editorial-orange hover:opacity-90 text-white py-2 px-4 transition-all font-normal hover:font-bold">
+          Learn
+        </Link>
+      </div>
+
+      {/* Mobile Menu Button */}
+      <div className="md:hidden">
+        <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+          {isOpen ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
         </button>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full hero-background-pattern shadow-lg flex flex-col items-center space-y-4 py-4 border-b-2 border-editorial-orange">
+          <a href="#" onClick={() => setIsOpen(false)} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Home</a>
+          <a href="#fallacies" onClick={() => scrollToSection('fallacies')} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Examples</a>
+          <a href="#about" onClick={() => scrollToSection('about')} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">About</a>
+          <Link to="/course" className="bg-editorial-orange hover:opacity-90 text-white py-2 px-4 transition-all font-normal hover:font-bold">
+            Learn
+          </Link>
+        </div>
+      )}
     </nav>
   );
 };

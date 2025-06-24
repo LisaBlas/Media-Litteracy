@@ -4,6 +4,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      fontSize: {
+        '10xl': '10rem',
+      },
       fontFamily: {
         bebas: ['Bebas Neue', 'sans-serif'],
       },
