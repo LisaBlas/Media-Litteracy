@@ -1,6 +1,5 @@
 // Editorial Style ArticleCard Component
 import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { EyeIcon, XMarkIcon, MagnifyingGlassIcon, ExclamationTriangleIcon, CheckCircleIcon, LinkIcon } from '@heroicons/react/24/solid';
 import fallacyDefinitions from '../../data/fallacy-definitions.json';
@@ -195,9 +194,9 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
           
           {/* Footer Link */}
           <div className="mt-auto pt-4">
-            <Link to="/course" className={`block w-full text-center ${darkMode ? 'bg-orange-500 text-white hover:bg-orange-400' : 'border-2 border-editorial-orange text-editorial-orange hover:bg-editorial-orange hover:text-editorial-cream'} transition-colors duration-200 py-2 font-mono text-xs font-bold`}>
+            <a href={currentArticle.url} target="_blank" rel="noopener noreferrer" className={`block w-full text-center ${darkMode ? 'bg-orange-500 text-white hover:bg-orange-400' : 'border-2 border-editorial-orange text-editorial-orange hover:bg-editorial-orange hover:text-editorial-cream'} transition-colors duration-200 py-2 font-mono text-xs font-bold`}>
               Learn more in our course
-            </Link>
+            </a>
           </div>
         </div>
       </motion.div>
