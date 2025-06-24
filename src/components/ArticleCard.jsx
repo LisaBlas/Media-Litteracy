@@ -132,7 +132,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
         <div>
           <div className="mb-4">
             <span 
-              className="inline-block px-4 py-1 font-mono font-bold text-xs uppercase tracking-wider text-white shadow-md"
+              className="inline-block px-4 py-1 font-mono font-bold text-xs uppercase tracking-wider text-white"
               style={{ backgroundColor: fallacyColor }}
             >
               {currentArticle.fallacy || 'FALLACY'}
@@ -147,7 +147,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
           </div>
           
             
-          <h3 className={`font-work-sans font-bold text-4xl leading-tight mb-2 ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal opacity-90'}`}>
+          <h3 className={`font-work-sans font-bold text-3xl leading-tight mb-2 ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal opacity-90'}`}>
             "{currentArticle.title}"
           </h3>
         </div>
