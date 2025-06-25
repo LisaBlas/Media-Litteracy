@@ -11,6 +11,21 @@ import { FunnelIcon, XMarkIcon } from '@heroicons/react/24/solid';
 function App() {
   const [allArticles, setAllArticles] = useState([]);
   const [filteredArticles, setFilteredArticles] = useState([]);
+  const [activeFilters, setActiveFilters] = useState({
+    date: null,
+    source: null,
+    fallacy: null,
+  });
+  
+  const hasActiveFilters = Object.values(activeFilters).some(filter => filter !== null);
+
+  const clearAllFilters = () => {
+    setActiveFilters({
+      date: null,
+      source: null,
+      fallacy: null,
+    });
+  };
   const [loading, setLoading] = useState(true);
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
 
@@ -57,21 +72,36 @@ function App() {
     <Routes>
       <Route path="/course" element={<CoursePage />} />
       <Route path="/" element={
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-editorial-cream">
           <Navbar />
           <Hero />
 
           {/* Main Content */}
-          <main id="fallacies" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <main id="fallacies" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-editorial-cream">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-12 items-start">
               {/* Filter Section - Desktop */}
               <aside className="hidden md:block md:col-span-1">
-                <h2 className="text-2xl font-bold mb-6">Filters</h2>
-                <FilterSection headlines={allArticles} setFilteredHeadlines={setFilteredArticles} />
+                <div className="flex justify-between items-center mb-4">
+                  <h3 className="text-xl font-bold font-sans text-editorial-charcoal">Filter by:</h3>
+                  {hasActiveFilters && (
+                    <button 
+                      onClick={clearAllFilters}
+                      className="text-xs font-sans text-gray-500 hover:text-editorial-orange transition-colors"
+                    >
+                      Clear all
+                    </button>
+                  )}
+                </div>
+                <FilterSection 
+                  headlines={allArticles} 
+                  setFilteredHeadlines={setFilteredArticles} 
+                  activeFilters={activeFilters}
+                  setActiveFilters={setActiveFilters}
+                />
               </aside>
 
               {/* Articles Grid */}
-              <div id="headline-cards" className="col-span-1 md:col-span-3 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+              <div id="headline-cards" className="col-span-1 md:col-span-3 grid grid-cols-1 gap-8 lg:max-w-[800px] mx-auto">
                 {filteredArticles.length > 0 ? (
                   filteredArticles.map((article, index) => (
                     <ArticleCard key={`${article.url}-${index}`} article={article} index={index} />
@@ -90,18 +120,33 @@ function App() {
               className="fixed bottom-6 right-6 bg-editorial-orange text-white p-4 rounded-full shadow-lg z-40"
               aria-label="Open filters"
             >
-              <FunnelIcon className="h-6 w-6" />
+              <FunnelIcon className="h-6 w-6 text-editorial-cream" />
             </button>
 
             {isMobileFilterOpen && (
-              <div className="fixed inset-0 bg-white z-50 p-6 overflow-y-auto">
-                <div className="flex justify-between items-center mb-6">
-                  <h2 className="text-2xl font-bold">Filters</h2>
-                  <button onClick={() => setIsMobileFilterOpen(false)} aria-label="Close filters">
-                    <XMarkIcon className="h-8 w-8" />
-                  </button>
+              <div className="fixed inset-0 bg-editorial-cream z-50 p-6 overflow-y-auto">
+                <div className="flex justify-between items-center mb-4">
+                  <h2 className="text-xl font-bold text-editorial-charcoal">Filter by:</h2>
+                  <div className="flex items-center space-x-4">
+                    {hasActiveFilters && (
+                      <button 
+                        onClick={clearAllFilters}
+                        className="text-xs font-sans text-gray-500 hover:text-editorial-orange transition-colors"
+                      >
+                        Clear all
+                      </button>
+                    )}
+                    <button onClick={() => setIsMobileFilterOpen(false)} aria-label="Close filters">
+                      <XMarkIcon className="h-6 w-6 text-editorial-charcoal" />
+                    </button>
+                  </div>
                 </div>
-                <FilterSection headlines={allArticles} setFilteredHeadlines={setFilteredArticles} />
+                <FilterSection 
+                  headlines={allArticles} 
+                  setFilteredHeadlines={setFilteredArticles}
+                  activeFilters={activeFilters}
+                  setActiveFilters={setActiveFilters}
+                />
               </div>
             )}
           </div>

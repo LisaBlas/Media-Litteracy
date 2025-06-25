@@ -122,7 +122,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
     >
       {/* Editorial Front Face */}
       <div 
-        className={`w-full h-full border-2 ${darkMode ? 'bg-slate-800 border-slate-600 text-slate-100' : 'bg-editorial-cream border-editorial-charcoal text-editorial-charcoal'} p-4 flex flex-col justify-between cursor-pointer`}
+        className={`w-full h-full border-2 border-editorial-charcoal ${darkMode ? 'bg-slate-800 border-slate-600 text-slate-100' : 'bg-editorial-cream border-editorial-charcoal text-editorial-charcoal'} p-4 flex flex-col justify-between cursor-pointer`}
         onClick={handleReveal}
         onKeyDown={handleKeyDown}
         tabIndex={0}
@@ -130,15 +130,15 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
         aria-label={`Read more about ${currentArticle.title}`}
       >
         <div>
-          <div className="mb-4">
+          <div className="mb-1">
             <span 
-              className="inline-block px-4 py-1 font-mono font-bold text-xs uppercase tracking-wider text-white"
+              className="inline-block px-4 py-1 font-mono text-xs tracking-wider text-editorial-cream opacity-80"
               style={{ backgroundColor: fallacyColor }}
             >
               {currentArticle.fallacy || 'FALLACY'}
             </span>
             
-          <div className="mt-2 ml-1 space-y-2">
+          <div className="mt-6 ml-1 space-y-2">
             <div className={`text-xs ${darkMode ? 'text-slate-400' : 'text-editorial-charcoal'} opacity-60 font-mono`}>
               <p>{currentArticle.source} // {formatDate(currentArticle.publishedAt)}</p>
             </div>
@@ -147,7 +147,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
           </div>
           
             
-          <h3 className={`font-work-sans font-bold text-3xl leading-tight mb-2 ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal opacity-90'}`}>
+          <h3 className={`font-work-sans font-bold text-2xl leading-tight mb-4 mt-1 ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal'}`}>
             "{currentArticle.title}"
           </h3>
         </div>
@@ -162,11 +162,13 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
         </div>
       </div>
 
+      {/* Back face */}
+
       {/* Revealed Content Overlay */}
       <AnimatePresence>
         {isRevealed && (
           <motion.div
-            className={`absolute inset-0 ${darkMode ? 'bg-slate-700 text-slate-100' : 'bg-editorial-cream text-editorial-charcoal'} p-4 flex flex-col z-10 overflow-y-auto custom-scrollbar`}
+            className={`absolute inset-0 border-2 border-editorial-charcoal ${darkMode ? 'bg-slate-700 text-slate-100' : 'bg-editorial-cream text-editorial-charcoal'} p-4 flex flex-col z-10 overflow-y-auto custom-scrollbar`}
             variants={revealedContentVariants}
             initial="hidden"
             animate="visible"
@@ -179,33 +181,41 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
                 className={`absolute top-3 right-3 ${darkMode ? 'text-slate-300 hover:text-orange-400' : 'text-editorial-cream hover:text-editorial-orange'}`}
                 aria-label="Close details"
               >
-                <XMarkIcon className="w-5 h-5 text-editorial-orange" />
+                <XMarkIcon className="w-5 h-5 text-editorial-charcoal" />
               </button>
               
-              {/* Top Section: Icon + Fallacy Name */}
-              <div className={`absolute left-4 w-14 h-14 border-2 bg-editorial-orange ${darkMode ? 'border-orange-400' : 'border-editorial-orange'} flex items-center justify-center`}>
-                <MagnifyingGlassIcon className={`${darkMode ? 'text-editorial-cream' : 'text-editorial-cream'} w-10 h-10`} />
-              </div>
-              <div className="text-center pt-4 pb-2">
-                <h5 className="font-mono uppercase font-bold text-lg text-editorial-orange mb-12">{currentArticle.fallacy}</h5>
+              {/* Top Section: Fallacy Pill and Definition */}
+              <div className="flex flex-col md:flex-row gap-4 mb-4">
+                <div className="flex-shrink-0">
+                  <span 
+                    className="inline-flex items-center px-4 py-1 font-mono font-bold text-xs tracking-extrawide text-editorial-cream opacity-80"
+                    style={{ backgroundColor: fallacyColor, height: '1.5rem' }}
+                  >
+                    {currentArticle.fallacy || 'FALLACY'}
+                  </span>
+                </div>
+                {fallacyDefinition && (
+                  <div className="relative flex items-start md:items-center h-auto md:h-7 w-full md:w-auto">
+                    <div 
+                      className="absolute left-0 h-full w-0.5 md:h-6" 
+                      style={{ backgroundColor: fallacyColor }}
+                    />
+                    <p 
+                      className="leading-relaxed text-sm ml-3 italic"
+                      style={{ color: fallacyColor, opacity: darkMode ? 0.9 : 1 }}
+                    >
+                      {fallacyDefinition}
+                    </p>
+                  </div>
+                )}
               </div>
 
               {/* Content Wrapper */}
               <div className="flex-grow space-y-4 text-sm">
-                {/* Definition Section */}
-                {fallacyDefinition && (
-                  <div className="relative pl-4">
-                    <div className={`absolute left-0 top-0 h-full w-0.5 ${darkMode ? 'bg-slate-600' : 'border-editorial-orange border-opacity-20 border-2'}`} />
-                    <h6 className={`font-mono text-xs uppercase tracking-wider font-bold ${darkMode ? 'text-slate-400' : 'text-editorial-orange'} mb-1`}>Definition:</h6>
-                    <p className="leading-relaxed opacity-90 mb-6">{fallacyDefinition}</p>
-                  </div>
-                )}
 
                 {/* Analysis Section */}
-                <div className="relative pl-4">
-                  <div className={`absolute left-0 top-0 h-full w-0.5 ${darkMode ? 'bg-slate-600' : 'border-editorial-orange border-opacity-20 border-2'}`} />
-                  <h6 className={`font-mono text-xs uppercase tracking-wider font-bold ${darkMode ? 'text-slate-400' : 'text-editorial-orange'} mb-1`}>Analysis of Headline:</h6>
-                  <p className="leading-relaxed opacity-90">
+                <div className="relative">
+                  <p className="leading-relaxed mb-2 text-editorial-charcoal">
                     {currentArticle.explanation}
                     <a href={currentArticle.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="inline-flex items-center ml-2 text-editorial-orange underline hover:text-editorial-charcoal transition-colors duration-200">
                       <span className="mr-1">Read original article</span>

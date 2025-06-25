@@ -56,13 +56,13 @@ const Hero = () => {
         <div className="flex justify-center gap-4">
           <button 
             onClick={scrollToCards}
-            className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-sm font-bold py-3 px-6 transition-colors duration-100 transform hover:scale-105"
+            className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-sm py-3 px-6 transition-colors duration-100 transform hover:scale-105"
           >
             Explore Media Fallacies
           </button>
           <Link 
             to="/course"
-            className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-sm font-bold py-3 px-6 transition-colors duration-100 transform hover:scale-105"
+            className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-sm py-3 px-6 transition-colors duration-100 transform hover:scale-105"
           >
             Discover the Course
           </Link>

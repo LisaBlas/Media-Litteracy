@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import fallacyDefinitions from '../../data/fallacy-definitions.json';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
 
-const FilterSection = ({ headlines, setFilteredHeadlines }) => {
-  const [activeFilters, setActiveFilters] = useState({
-    date: null,
-    source: null,
-    fallacy: null,
-  });
+const FilterSection = ({ 
+  headlines, 
+  setFilteredHeadlines, 
+  activeFilters, 
+  setActiveFilters 
+}) => {
   const [openCategories, setOpenCategories] = useState({ date: true, source: false, fallacy: false });
 
   const allFallacies = Object.keys(fallacyDefinitions);
@@ -94,14 +94,14 @@ const FilterSection = ({ headlines, setFilteredHeadlines }) => {
   return (
     <div className="text-editorial-charcoal">
       {Object.entries(filters).map(([key, { label, options }]) => (
-        <div key={key} className="mb-6 pb-6 border-b border-gray-300 last:border-b-0">
-          <div onClick={() => toggleCategory(key)} className="flex justify-between items-center mb-4 cursor-pointer">
-            <h3 className="text-lg font-semibold uppercase tracking-wider">{label}</h3>
+        <div key={key} className="mb-4 pb-4 border-b border-gray-300 last:border-b-0">
+          <div className="flex justify-between items-center cursor-pointer font-sans" onClick={() => toggleCategory(key)}>
+            <h3 className="text-md font-semibold tracking-wider font-sans mb-2 text-editorial-charcoal">{label}</h3>
             <div className="flex items-center">
               {activeFilters[key] && (
                 <button 
                   onClick={(e) => clearFilter(key, e)}
-                  className="text-sm text-gray-500 hover:text-editorial-charcoal mr-2"
+                  className="text-xs text-gray-500 hover:text-editorial-charcoal mr-2 font-sans"
                 >
                   Clear
                 </button>
@@ -115,10 +115,10 @@ const FilterSection = ({ headlines, setFilteredHeadlines }) => {
                 <button
                   key={option}
                   onClick={() => handleFilterSelect(key, option)}
-                  className={`inline-block border rounded-md px-3 py-1 text-sm transition-colors duration-200 ${
+                  className={`inline-block border px-3 py-1 text-xs transition-colors duration-200 ${
                     activeFilters[key] === option 
-                    ? 'bg-editorial-charcoal text-white border-editorial-charcoal' 
-                    : 'bg-transparent text-editorial-charcoal border-editorial-charcoal hover:bg-editorial-charcoal hover:text-white'
+                    ? 'bg-editorial-orange border-editorial-orange font-mono text-editorial-cream' 
+                    : 'bg-transparent text-editorial-charcoal border-editorial-charcoal hover:bg-editorial-orange hover:border-editorial-orange hover:text-editorial-cream font-mono'
                   }`}
                 >
                   {option}
