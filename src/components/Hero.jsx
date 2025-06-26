@@ -7,7 +7,7 @@ const Hero = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [typedWord, setTypedWord] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
-  const words = ["Narratives.", "Fallacies.", "Headlines.", "Deceptions.", "Biases."];
+  const words = ["Fallacies.", "Biases.", "Facts.", "Fictions."];
 
   useEffect(() => {
     const current = words[currentWordIndex];
@@ -41,30 +41,30 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative py-40 hero-background-pattern">
+    <section className="relative py-24 sm:py-40 hero-background-pattern shadow-md">
       <div className="max-w-6xl mx-auto text-center px-4 md:px-8">
-        <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold font-playfair mb-14 text-editorial-charcoal flex flex-col items-center justify-center min-h-[12rem] md:min-h-[18rem]">
+        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold font-playfair mb-8 sm:mb-16 text-editorial-charcoal flex flex-col items-center justify-center min-h-[10rem] md:min-h-[18rem] leading-extra-tight sm:leading-relaxed">
           <span className="block">Uncovering the</span>
           <span className="block text-editorial-orange mt-6">
             {typedWord}
             <span className="border-r-2 border-editorial-orange animate-pulse ml-1" />
           </span>
         </h1>
-        <p className="text-lg md:text-xl text-editorial-charcoal max-w-2xl mx-auto mb-10 text-editorial-charcoal">
-          Your essential guide to critical thinking in our complex media landscape. Your essential guide to critical thinking in our complex media landscape.
+        <p className="text-base sm:text-sm md:text-xl text-editorial-charcoal max-w-2xl mx-auto mb-6 sm:mb-10 text-editorial-charcoal">
+        You don’t need to be an expert to think critically. All you need is a curious mind and the right tools to start spotting fallacies and biases. 
         </p>
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-3 sm:gap-4">
           <button 
             onClick={scrollToCards}
-            className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-sm py-3 px-6 transition-colors duration-100 transform hover:scale-105"
+            className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-xs sm:text-sm py-3 px-6 transition-colors duration-100 transform hover:scale-105"
           >
-            Explore Media Fallacies
+            Explore our first Tool
           </button>
           <Link 
             to="/course"
-            className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-sm py-3 px-6 transition-colors duration-100 transform hover:scale-105"
+            className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-xs sm:text-sm py-3 px-6 transition-colors duration-100 transform hover:scale-105"
           >
-            Discover the Course
+            Discover our Course
           </Link>
         </div>
             </div>
@@ -72,8 +72,8 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 5.8 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        transition={{ duration: 0.8, delay: 2 }}
+        className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2"
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}

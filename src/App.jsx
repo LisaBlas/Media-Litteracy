@@ -77,7 +77,7 @@ function App() {
           <Hero />
 
           {/* Main Content */}
-          <main id="fallacies" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-editorial-cream">
+          <main id="fallacies" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-12 items-start">
               {/* Filter Section - Desktop */}
               <aside className="hidden md:block md:col-span-1">

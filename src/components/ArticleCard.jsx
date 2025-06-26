@@ -122,7 +122,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
     >
       {/* Editorial Front Face */}
       <div 
-        className={`w-full h-full border-2 border-editorial-charcoal ${darkMode ? 'bg-slate-800 border-slate-600 text-slate-100' : 'bg-editorial-cream border-editorial-charcoal text-editorial-charcoal'} p-4 flex flex-col justify-between cursor-pointer`}
+        className={`w-full h-full border-2 border-editorial-charcoal bg-editorial-cream ${darkMode ? 'bg-slate-800 border-slate-600 text-slate-100' : 'bg-editorial-cream border-editorial-charcoal text-editorial-charcoal'} p-4 flex flex-col justify-between cursor-pointer`}
         onClick={handleReveal}
         onKeyDown={handleKeyDown}
         tabIndex={0}
@@ -132,7 +132,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
         <div>
           <div className="mb-1">
             <span 
-              className="inline-block px-4 py-1 font-mono text-xs tracking-wider text-editorial-cream opacity-80"
+              className="inline-block px-4 py-1 font-mono text-xs tracking-extrawide text-editorial-cream opacity-80"
               style={{ backgroundColor: fallacyColor }}
             >
               {currentArticle.fallacy || 'FALLACY'}
@@ -168,7 +168,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
       <AnimatePresence>
         {isRevealed && (
           <motion.div
-            className={`absolute inset-0 border-2 border-editorial-charcoal ${darkMode ? 'bg-slate-700 text-slate-100' : 'bg-editorial-cream text-editorial-charcoal'} p-4 flex flex-col z-10 overflow-y-auto custom-scrollbar`}
+            className={`absolute inset-0 border-2 border-editorial-charcoal bg-editorial-cream ${darkMode ? 'bg-slate-700 text-slate-100' : 'bg-editorial-cream text-editorial-charcoal'} p-4 flex flex-col z-10 overflow-y-auto custom-scrollbar`}
             variants={revealedContentVariants}
             initial="hidden"
             animate="visible"
@@ -188,7 +188,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
               <div className="flex flex-col md:flex-row gap-4 mb-4">
                 <div className="flex-shrink-0">
                   <span 
-                    className="inline-flex items-center px-4 py-1 font-mono font-bold text-xs tracking-extrawide text-editorial-cream opacity-80"
+                    className="inline-flex items-center px-4 py-1 font-mono text-xs tracking-extrawide text-editorial-cream opacity-80"
                     style={{ backgroundColor: fallacyColor, height: '1.5rem' }}
                   >
                     {currentArticle.fallacy || 'FALLACY'}
