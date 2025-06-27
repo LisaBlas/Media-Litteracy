@@ -32,8 +32,62 @@ jobs:
           const GNEWS_API_KEY = process.env.GNEWS_API_KEY;
           const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
           
-Articles.length}`);
-            return allArticles;
+          // Configuration
+          const SEARCH_QUERIES = ['technology', 'politics', 'business', 'health', 'science'];
+          const ARTICLES_PER_REQUEST = 10;
+          const TOTAL_REQUESTS = SEARCH_QUERIES.length;
+
+          function makeRequest(url, options) {
+            return new Promise((resolve, reject) => {
+              const req = https.request(url, options, (res) => {
+                let data = '';
+                res.on('data', (chunk) => data += chunk);
+                res.on('end', () => {
+                  try {
+                    resolve(JSON.parse(data));
+                  } catch (error) {
+                    reject(new Error(`Failed to parse JSON: ${error.message}`));
+                  }
+                });
+              });
+              req.on('error', reject);
+              if (options.body) {
+                req.write(options.body);
+              }
+              req.end();
+            });
+          }
+
+          async function fetchAllArticles() {
+            const allArticles = [];
+            
+            for (const query of SEARCH_QUERIES) {
+              console.log(`Fetching articles for query: ${query}`);
+              try {
+                const url = `https://gnews.io/api/v4/search?q=${encodeURIComponent(query)}&lang=en&country=us&max=${ARTICLES_PER_REQUEST}&apikey=${GNEWS_API_KEY}`;
+                const response = await makeRequest(url, { method: 'GET' });
+                
+                if (response.articles && Array.isArray(response.articles)) {
+                  allArticles.push(...response.articles);
+                  console.log(`Fetched ${response.articles.length} articles for query: ${query}`);
+                } else {
+                  console.warn(`No articles found for query: ${query}`);
+                }
+                
+                // Add delay between requests to respect rate limits
+                await new Promise(resolve => setTimeout(resolve, 1000));
+              } catch (error) {
+                console.error(`Error fetching articles for query "${query}":`, error.message);
+              }
+            }
+            
+            // Remove duplicates based on URL
+            const uniqueArticles = allArticles.filter((article, index, self) => 
+              index === self.findIndex(a => a.url === article.url)
+            );
+            
+            console.log(`Total unique articles fetched: ${uniqueArticles.length}`);
+            return uniqueArticles;
           }
 
           async function analyzeHeadline(headline, fallacyDefinitions) {
