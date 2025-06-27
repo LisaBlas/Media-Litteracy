@@ -70,7 +70,7 @@ jobs:
           Only return the JSON object and nothing else.`;
 
             const requestBody = JSON.stringify({
-              model: 'openai/gpt-3.5-turbo',
+              model: 'mistralai/mistral-small-3.2',
               messages: [{ role: 'user', content: prompt }],
               temperature: 0.3,
               max_tokens: 200,
