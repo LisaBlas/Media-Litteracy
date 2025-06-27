@@ -32,70 +32,7 @@ jobs:
           const GNEWS_API_KEY = process.env.GNEWS_API_KEY;
           const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
           
-          // Configuration for pagination
-          const ARTICLES_PER_REQUEST = 10;
-          const TOTAL_REQUESTS = 4;
-          const TOTAL_ARTICLES = ARTICLES_PER_REQUEST * TOTAL_REQUESTS; // 40 total
-
-          function buildGNewsUrl(page, articlesPerPage) {
-            return `https://gnews.io/api/v4/search?q=news&lang=en&country=us&max=${articlesPerPage}&page=${page}&apikey=${GNEWS_API_KEY}`;
-          }
-
-          function makeRequest(url, options = {}) {
-            return new Promise((resolve, reject) => {
-              const req = https.request(url, options, (res) => {
-                let data = '';
-                res.on('data', (chunk) => (data += chunk));
-                res.on('end', () => {
-                  try {
-                    resolve(JSON.parse(data));
-                  } catch (error) {
-                    resolve(data); // Return raw data if not JSON
-                  }
-                });
-              });
-              req.on('error', reject);
-              if (options.body) {
-                req.write(options.body);
-              }
-              req.end();
-            });
-          }
-
-          async function fetchAllArticles() {
-            const allArticles = [];
-            
-            console.log(`Fetching ${TOTAL_ARTICLES} articles across ${TOTAL_REQUESTS} API calls...`);
-            
-            for (let page = 1; page <= TOTAL_REQUESTS; page++) {
-              console.log(`Fetching page ${page}/${TOTAL_REQUESTS} (${ARTICLES_PER_REQUEST} articles)...`);
-              
-              const apiUrl = buildGNewsUrl(page, ARTICLES_PER_REQUEST);
-              
-              try {
-                const newsData = await makeRequest(apiUrl);
-                
-                if (!newsData.articles || newsData.articles.length === 0) {
-                  console.warn(`No articles found in page ${page}:`, newsData);
-                  continue;
-                }
-                
-                console.log(`Page ${page}: Retrieved ${newsData.articles.length} articles`);
-                allArticles.push(...newsData.articles);
-                
-                // Add delay between API calls to respect rate limits
-                if (page < TOTAL_REQUESTS) {
-                  console.log('Waiting 2 seconds before next API call...');
-                  await new Promise(resolve => setTimeout(resolve, 2000));
-                }
-                
-              } catch (error) {
-                console.error(`Error fetching page ${page}:`, error.message);
-                // Continue with other pages even if one fails
-              }
-            }
-            
-            console.log(`Total articles fetched: ${allArticles.length}`);
+Articles.length}`);
             return allArticles;
           }
 
@@ -275,9 +212,10 @@ jobs:
               
               // Summary
               console.log('\n=== SUMMARY ===');
-              console.log(`Total API calls made: ${TOTAL_REQUESTS}`);
-              console.log(`Articles per call: ${ARTICLES_PER_REQUEST}`);
-              console.log(`Total articles fetched: ${allArticles.length}`);
+              console.log(`Total search queries: ${TOTAL_REQUESTS}`);
+              console.log(`Search queries used: ${SEARCH_QUERIES.join(', ')}`);
+              console.log(`Articles per query: ${ARTICLES_PER_REQUEST}`);
+              console.log(`Total unique articles fetched: ${allArticles.length}`);
               console.log(`Total articles analyzed: ${analyzedHeadlines.length}`);
               console.log(`Headlines with fallacies: ${fallacyHeadlines.length}`);
               console.log(`New unique fallacy headlines added: ${newFallacyHeadlines.length}`);
