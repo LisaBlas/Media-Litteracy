@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2025-06-27T10:09:12.537Z",
+  "lastUpdated": "2025-06-27T10:12:36.063Z",
   "totalAnalyzed": 10,
-  "fallaciesFound": 0,
-  "totalFallacyHeadlines": 7,
+  "fallaciesFound": 3,
+  "totalFallacyHeadlines": 10,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -80,6 +80,54 @@
       "containsFallacy": true,
       "fallacy": "Slippery Slope",
       "explanation": "The headline implies that the UK economy shrank because of Trump tariffs, without providing evidence of a direct causal relationship between the two."
+    },
+    {
+      "title": "Hegseth attacks old Fox News colleague's reporting on Iran strikes",
+      "description": "Fox management had no immediate comment on what Hegseth said. Fox analyst Brit Hume called it an attack she did not deserve.",
+      "content": "Media Pete Hegseth attacks old Fox News colleague’s reporting on Iran strikes intelligence evaluation “But, Jennifer, you’ve been about the worst, the one who misrepresents the most intentionally what the president says.” Defense Secretary Pete Hegse... [2777 chars]",
+      "url": "https://www.boston.com/news/media/2025/06/26/pete-hegseth-attacks-old-fox-news-colleagues-reporting-on-iran-strikes-intelligence-evaluation/",
+      "image": "https://bdc2020.o0bc.com/wp-content/uploads/2025/06/Mideast_Wars_US_Iran_94105-685db363680cc-768x432.jpg",
+      "publishedAt": "2025-06-26T21:15:00Z",
+      "source": {
+        "name": "Boston.com",
+        "url": "https://www.boston.com"
+      },
+      "containsFallacy": true,
+      "fallacy": "Poisoning the Well",
+      "explanation": "The headline suggests that Hegseth's criticism of his colleague's reporting is inherently biased or invalid because of their past association, potentially prejudicing the audience against the colleague's work without substantive evidence.",
+      "analyzedAt": "2025-06-27T10:12:12.270Z"
+    },
+    {
+      "title": "Phoenix Mercury announce devastating injury news, new signing",
+      "description": "Rookie standout Lexi Held suffered a partially collapsed lung, while Megan McConnell has been waived after fracturing her knee.",
+      "content": "The Phoenix Mercury announced two major injuries to rookie players on Thursday. Guard Lexi Held, who has become a key rotation player — averaging 8.7 points in 20.7 minutes per night — suffered a partially collapsed lung last Thursday. Held’s timelin... [1388 chars]",
+      "url": "https://www.sbnation.com/wnba/2025/6/26/24456537/phoenix-mercury-injury-news-lexi-held-megan-mcconnell-kiana-williams",
+      "image": "https://cdn.vox-cdn.com/thumbor/iqQF4p957-zWHFmyJseTpHr96j8=/0x0:3900x2042/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/26039197/2220184010.jpg",
+      "publishedAt": "2025-06-26T18:19:06Z",
+      "source": {
+        "name": "SB Nation",
+        "url": "https://www.sbnation.com"
+      },
+      "containsFallacy": true,
+      "fallacy": "Appeal to Emotion / Pity",
+      "explanation": "The headline uses emotionally charged language ('devastating injury news') to evoke sympathy or concern, which could influence the audience's perception without providing substantive information.",
+      "analyzedAt": "2025-06-27T10:12:18.917Z"
+    },
+    {
+      "title": "ICE detainees now being held in 'horrific' MDC Brooklyn federal jail",
+      "description": "More than 100 ICE detainees are now being housed at the notorious MDC Brooklyn federal jail, along with the likes of Sean \"Diddy\" Combs and alleged CEO-killer Luigi Mangione, multiple sources tell the Daily News.",
+      "content": "The notorious MDC Brooklyn federal jail has started taking in ICE detainees, with more than 100 now housed in the Sunset Park lockup that also houses Sean “Diddy” Combs and alleged healthcare CEO-killer Luigi Mangione, sources tell the Daily News.\nTh... [4441 chars]",
+      "url": "https://www.nydailynews.com/2025/06/25/ice-detainees-held-horrific-mdc-brooklyn-federal-jail/",
+      "image": "https://www.nydailynews.com/wp-content/uploads/2023/12/DNFL-P3-20200828-083929.jpg?w=1024&h=683",
+      "publishedAt": "2025-06-25T21:16:32Z",
+      "source": {
+        "name": "New York Daily News",
+        "url": "https://www.nydailynews.com"
+      },
+      "containsFallacy": true,
+      "fallacy": "Appeal to Emotion / Pity",
+      "explanation": "The headline uses emotionally charged language ('horrific') to evoke a strong emotional response rather than presenting objective facts or evidence.",
+      "analyzedAt": "2025-06-27T10:12:36.063Z"
     }
   ]
 }
