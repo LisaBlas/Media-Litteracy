@@ -138,13 +138,20 @@ jobs:
                 console.log(`Analyzing headline ${index + 1}/${newsData.articles.length}: ${article.title}`);
                 const analysis = await analyzeHeadline(article.title, fallacyDefinitions);
 
-                analyzedHeadlines.push({
-                  ...article,
+                // Normalize the article structure to match your required format
+                const normalizedArticle = {
+                  title: article.title,
+                  description: article.description,
+                  url: article.url,
+                  source: typeof article.source === 'string' ? article.source : (article.source?.name || 'Unknown'),
+                  publishedAt: article.publishedAt,
+                  image: article.image,
                   containsFallacy: analysis.containsFallacy || false,
                   fallacy: analysis.fallacy || null,
-                  explanation: analysis.explanation || null,
-                  analyzedAt: new Date().toISOString(),
-                });
+                  explanation: analysis.explanation || null
+                };
+
+                analyzedHeadlines.push(normalizedArticle);
 
                 if (index < newsData.articles.length - 1) {
                   await new Promise((resolve) => setTimeout(resolve, 1000)); // 1s delay
