@@ -1,7 +1,8 @@
 {
-  "lastUpdated": "2025-06-12T11:03:58.001Z",
+  "lastUpdated": "2025-06-27T09:43:44.644Z",
   "totalAnalyzed": 10,
-  "fallaciesFound": 2,
+  "fallaciesFound": 0,
+  "totalFallacyHeadlines": 7,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",

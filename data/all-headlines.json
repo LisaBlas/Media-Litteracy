@@ -1,5 +1,7 @@
 {
-  "lastUpdated": "2025-06-12T11:03:58.001Z",
+  "lastUpdated": "2025-06-27T09:43:44.644Z",
+  "totalAnalyzed": 10,
+  "totalHeadlines": 20,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -110,6 +112,166 @@
       "containsFallacy": false,
       "fallacy": null,
       "explanation": null
+    },
+    {
+      "title": "Stock market today: Live updates",
+      "description": "The Nasdaq Composite jumped nearly 1%, also coming within striking distance of a fresh record. The Dow popped about 0.14%.",
+      "content": "Futures tied to the S&P 500 and the Nasdaq 100 hit record highs Friday, surpassing all-time intraday highs and mounting a stunning comeback from the lows set in April.\nThis comes ahead of a data deluge, including inflation numbers, with the market ov... [1224 chars]",
+      "url": "https://www.cnbc.com/2025/06/26/stock-market-today-live-updates.html",
+      "image": "https://image.cnbcfm.com/api/v1/image/108162535-1750691270567-NYSE_Traders-OB-Photo-20250623-CC-PRESS-8.jpg?v=1750691492&w=1920&h=1080",
+      "publishedAt": "2025-06-27T09:12:00Z",
+      "source": {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T09:43:34.785Z"
+    },
+    {
+      "title": "China, U.S. confirm details of their trade deal, Beijing says",
+      "description": "The statement came after U.S. President Donald Trump said that both sides had signed a trade deal, without providing further details.",
+      "content": "The U.S. and China have confirmed details of a trade framework that seeks to allow rare earth exports and easing of tech restrictions, according to a statement released by China's Ministry of Commerce Friday afternoon.\nChina will review and approve e... [1801 chars]",
+      "url": "https://www.cnbc.com/2025/06/27/china-us-agree-details-of-london-trade-framework-trade-agreement-beijing.html",
+      "image": "https://image.cnbcfm.com/api/v1/image/108125504-1743647668222-gettyimages-2203167412-vcg111528617940.jpeg?v=1751007253&w=1920&h=1080",
+      "publishedAt": "2025-06-27T07:08:36Z",
+      "source": {
+        "name": "CNBC",
+        "url": "https://www.cnbc.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T09:43:35.856Z"
+    },
+    {
+      "title": "Japan executes ‘Twitter killer’ who murdered and dismembered nine people",
+      "description": "Japan has executed a man dubbed the “Twitter killer,” who was convicted of murdering and dismembering nine people, mostly women, in the country’s first use of capital punishment in nearly three years.",
+      "content": "Tokyo CNN —\nJapan has executed a man dubbed the “Twitter killer,” who was convicted of murdering and dismembering nine people, mostly women, in the country’s first use of capital punishment in nearly three years.\nTakahiro Shiraishi, 34, was hanged Fr... [3211 chars]",
+      "url": "https://www.cnn.com/2025/06/26/asia/japan-takahiro-shiraishi-executed-intl-hnk",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/ap25178093465036.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2025-06-27T06:04:00Z",
+      "source": {
+        "name": "CNN",
+        "url": "https://www.cnn.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T09:43:36.949Z"
+    },
+    {
+      "title": "Stock Market Today: Dow, S&P Live Updates for June 27",
+      "description": "Asian stocks and European futures advanced, and a gauge of global equities reached another record high, on trade-deal optimism and increased expectations for Federal Reserve interest-rate cuts this year.",
+      "content": "Asian stocks and European futures advanced, and a gauge of global equities reached another record high, on trade-deal optimism and increased expectations for Federal Reserve interest-rate cuts this year.\nAsia-Pacific stocks gained as much as 0.7% to ... [290 chars]",
+      "url": "https://www.bloomberg.com/news/articles/2025-06-26/stock-market-today-dow-s-p-live-updates",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iJsa_V7nEuUI/v0/1200x675.png",
+      "publishedAt": "2025-06-27T05:54:00Z",
+      "source": {
+        "name": "Bloomberg",
+        "url": "https://www.bloomberg.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T09:43:38.055Z"
+    },
+    {
+      "title": "Tesla shake-up: Who is Omead Afshar? Senior executive reportedly fired by Elon Musk amid slumping sales in key markets",
+      "description": "International Business News: Omead Afshar, a key aide to Elon Musk and Tesla's VP of Manufacturing, is now out of job. This happened amidst Tesla facing sales challenges in North",
+      "content": "File photo: Omead Afshar (left) and Elon Musk (Picture credit: X, ANI)\nWho is Omead Afshar?\nOmead Afshar, one of Elon Musk ’s closest aides and Tesla’s vice president of manufacturing and operations, has been reportedlyfired by Musk as the electric v... [2552 chars]",
+      "url": "https://timesofindia.indiatimes.com/business/international-business/tesla-shake-up-who-is-omead-afshar-senior-executive-fired-by-elon-musk-amid-slumping-sales-in-key-markets/articleshow/122103380.cms",
+      "image": "https://static.toiimg.com/thumb/msid-122103528,width-1070,height-580,imgsize-628805,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2025-06-27T04:14:00Z",
+      "source": {
+        "name": "Times of India",
+        "url": "https://timesofindia.indiatimes.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T09:43:39.154Z"
+    },
+    {
+      "title": "Supreme Court meets Friday to decide birthright citizenship and other cases",
+      "description": "The Supreme Court is meeting Friday to decide the final six cases of its term, including President Donald Trump’s bid to enforce his executive order denying birthright citizenship to U.S.",
+      "content": "WASHINGTON (AP) — The Supreme Court is meeting Friday to decide the final six cases of its term, including President Donald Trump’s bid to enforce his executive order denying birthright citizenship to U.S.-born children of parents who are in the coun... [3162 chars]",
+      "url": "https://apnews.com/article/supreme-court-trump-birthright-citizenship-2f8e856024885aa58d323c05cfeeeea6",
+      "image": "https://dims.apnews.com/dims4/default/8d3db8e/2147483647/strip/true/crop/4779x2688+0+249/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F16%2Fd1%2F0af4196451f37b5b11d3254b2cac%2F02cc1e71f0624503bd5fe40c25d74ea1",
+      "publishedAt": "2025-06-27T04:01:00Z",
+      "source": {
+        "name": "AP News",
+        "url": "https://apnews.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T09:43:40.328Z"
+    },
+    {
+      "title": "'Dukes of Hazzard' Actor Was 79",
+      "description": "Rick Hurst, the actor known for playing Deputy Cletus Hogg on 'The Dukes of Hazzard', has died. He was 79.",
+      "content": "Rick Hurst, the actor known for playing Deputy Cletus Hogg on The Dukes of Hazzard, has died. He was 79.\nAccording to the actor’s wife Candace Kaniecki, he died unexpectedly on Thursday in Los Angeles, TMZ reported. His cause of death was not immedia... [2190 chars]",
+      "url": "https://deadline.com/2025/06/rick-hurst-dies-79-1236444118/",
+      "image": "https://deadline.com/wp-content/uploads/2025/06/Rick-Hurst.jpg?w=1000",
+      "publishedAt": "2025-06-27T03:51:00Z",
+      "source": {
+        "name": "Deadline",
+        "url": "https://deadline.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T09:43:41.415Z"
+    },
+    {
+      "title": "Hawaiian Airlines reports 'cybersecurity event;' no flight disruptions",
+      "description": "Hawaiian Airlines assures the community that flights remain safe and on schedule despite a recent cybersecurity incident affecting their IT systems.",
+      "content": "HONOLULU (Island News) – Hawaiian Airlines reported that a “cybersecurity event” has affected some of its IT systems.\nOn Thursday morning, Hawaiian Airline officials confirmed that flights are operating safely and as scheduled.\nThe Hawaii Department ... [1215 chars]",
+      "url": "https://www.kitv.com/news/local/hawaiian-airlines-reports-cybersecurity-event-no-flight-disruptions/article_f58ea739-0dbf-4e0b-9f56-42b44b4003c6.html",
+      "image": "https://bloximages.newyork1.vip.townnews.com/kitv.com/content/tncms/assets/v3/editorial/1/2c/12c30572-3075-11ed-93bf-c7bd8000286a/631b9318dab27.image.jpg?crop=1895%2C995%2C0%2C49&resize=1200%2C630&order=crop%2Cresize",
+      "publishedAt": "2025-06-27T03:47:33Z",
+      "source": {
+        "name": "KITV",
+        "url": "https://www.kitv.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T09:43:42.478Z"
+    },
+    {
+      "title": "Wander Franco found guilty of sexually abusing minor",
+      "description": "Rays shortstop Wander Franco was found guilty of sexual abuse of a minor in his native Dominican Republic. Franco, 24, was sentenced to two years of suspended prison time, according to reporter Juan Arturo Recio.",
+      "content": "Wander Franco was found guilty of sexual abuse of a minor in his native Dominican Republic. However, the Rays shortstop dodged jail time despite pleas from prosecutors to put him behind bars.\nFranco was sentenced to a two-year suspended prison senten... [3415 chars]",
+      "url": "https://nypost.com/2025/06/26/sports/wander-franco-found-guilty-of-sexually-abusing-minor/",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/newspress-collage-ondunfrav-1750979746710.jpg?quality=75&strip=all&1750965396&w=1024",
+      "publishedAt": "2025-06-27T03:22:07Z",
+      "source": {
+        "name": "New York Post",
+        "url": "https://nypost.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T09:43:43.544Z"
+    },
+    {
+      "title": "Wander Franco: Tampa Bay Rays player found guilty in sexual abuse case, imposed two-year suspended sentence",
+      "description": "A court in Puerto Plata, Dominican Republic, found baseball player Wander Franco — of the Tampa Bay Rays — guilty of abuse and sexual exploitation of a minor and imposed a two-year prison sentence, though the sanction was suspended with the restriction that he not approach minors.",
+      "content": "CNN —\nA court in Puerto Plata, Dominican Republic, found baseball player Wander Franco — of the Tampa Bay Rays — guilty of abuse and sexual exploitation of a minor and imposed a two-year prison sentence, though the sanction was suspended with the res... [2466 chars]",
+      "url": "https://www.cnn.com/2025/06/26/sport/wander-franco-guilty-suspended-sentence-spt",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/ap25177820438054.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2025-06-27T03:06:00Z",
+      "source": {
+        "name": "CNN",
+        "url": "https://www.cnn.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T09:43:44.643Z"
     }
   ]
 }
