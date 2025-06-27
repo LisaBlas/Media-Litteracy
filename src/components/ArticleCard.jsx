@@ -109,7 +109,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
 
   return (
     <motion.div
-      className="relative w-full h-90 overflow-hidden rounded-lg shadow-lg"
+      className="relative w-full h-90 border-2 border-editorial-charcoal rounded-lg overflow-hidden shadow-lg"
       ref={cardRef}
       variants={cardVariants}
       initial="initial"
@@ -122,7 +122,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
     >
       {/* Editorial Front Face */}
       <div 
-        className={`w-full h-full border-2 border-editorial-charcoal bg-editorial-cream ${darkMode ? 'bg-slate-800 border-slate-600 text-slate-100' : 'bg-editorial-cream border-editorial-charcoal text-editorial-charcoal'} p-4 flex flex-col justify-between cursor-pointer`}
+        className={`w-full h-full card-background-pattern bg-editorial-beige ${darkMode ? 'bg-slate-800 border-slate-600 text-slate-100' : 'bg-editorial-cream border-editorial-charcoal text-editorial-charcoal'} p-4 flex flex-col justify-between cursor-pointer`}
         onClick={handleReveal}
         onKeyDown={handleKeyDown}
         tabIndex={0}
@@ -168,7 +168,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
       <AnimatePresence>
         {isRevealed && (
           <motion.div
-            className={`absolute inset-0 border-2 border-editorial-charcoal bg-editorial-cream ${darkMode ? 'bg-slate-700 text-slate-100' : 'bg-editorial-cream text-editorial-charcoal'} p-4 flex flex-col z-10 overflow-y-auto custom-scrollbar`}
+            className={`absolute inset-0 bg-editorial-cream ${darkMode ? 'bg-slate-700 text-slate-100' : 'bg-editorial-cream text-editorial-charcoal'} p-4 flex flex-col z-10 overflow-y-auto custom-scrollbar`}
             variants={revealedContentVariants}
             initial="hidden"
             animate="visible"
