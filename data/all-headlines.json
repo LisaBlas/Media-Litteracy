@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-06-27T10:03:21.093Z",
-  "totalAnalyzed": 0,
-  "totalHeadlines": 20,
+  "lastUpdated": "2025-06-27T10:09:12.537Z",
+  "totalAnalyzed": 10,
+  "totalHeadlines": 30,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -272,6 +272,166 @@
       "fallacy": null,
       "explanation": "Invalid API response structure.",
       "analyzedAt": "2025-06-27T09:43:44.643Z"
+    },
+    {
+      "title": "2025 NBA Draft trade tracker: Latest deals, news as Lakers move up twice in second round, Suns acquire big man",
+      "description": "The NBA trade market heated up around the 2025 Draft",
+      "content": "The 2025 NBA Draft is officially in the books, and there were plenty of surprises along the way. NBA teams did not wait until draft night to start making trades, however. Multiple All-Stars were dealt prior to Wednesday's first round, as the Rockets ... [3484 chars]",
+      "url": "https://www.cbssports.com/nba/news/2025-nba-draft-trade-tracker-latest-deals-news-as-lakers-move-up-twice-in-second-round-suns-acquire-big-man/",
+      "image": "https://sportshub.cbsistatic.com/i/r/2025/06/26/a4ef6af4-108d-44a1-8066-b6aa911fca92/thumbnail/1200x675/c81392bc5244ef835d42f0ea1e8578e0/mark-williams-getty-1.png",
+      "publishedAt": "2025-06-27T02:59:00Z",
+      "source": {
+        "name": "CBS Sports",
+        "url": "https://www.cbssports.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T10:09:00.890Z"
+    },
+    {
+      "title": "Top Startup and Tech Funding News - June 26, 2025",
+      "description": "It’s Thursday, June 26, 2025, and the capital spigot hasn’t slowed one bit. From seed-stage breakthroughs to billion-dollar moonshots, today’s tech funding news shows investors are going all in on next-gen AI, automation, and industrial tech. Startups tackling some of the most complex problems—enterprise data pipelines, AI-native customer support, energy materials, and even voice-based risk",
+      "content": "It’s Thursday, June 26, 2025, and the capital spigot hasn’t slowed one bit. From seed-stage breakthroughs to billion-dollar moonshots, today’s tech funding news shows investors are going all in on next-gen AI, automation, and industrial tech. Startup... [14827 chars]",
+      "url": "https://techstartups.com/2025/06/26/top-startup-and-tech-funding-news-june-26-2025/",
+      "image": "https://techstartups.com/wp-content/uploads/2025/06/WayPoint-Founders.jpg",
+      "publishedAt": "2025-06-26T23:33:25Z",
+      "source": {
+        "name": "TechStartups.com",
+        "url": "https://techstartups.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T10:09:01.996Z"
+    },
+    {
+      "title": "Hegseth attacks old Fox News colleague's reporting on Iran strikes",
+      "description": "Fox management had no immediate comment on what Hegseth said. Fox analyst Brit Hume called it an attack she did not deserve.",
+      "content": "Media Pete Hegseth attacks old Fox News colleague’s reporting on Iran strikes intelligence evaluation “But, Jennifer, you’ve been about the worst, the one who misrepresents the most intentionally what the president says.” Defense Secretary Pete Hegse... [2777 chars]",
+      "url": "https://www.boston.com/news/media/2025/06/26/pete-hegseth-attacks-old-fox-news-colleagues-reporting-on-iran-strikes-intelligence-evaluation/",
+      "image": "https://bdc2020.o0bc.com/wp-content/uploads/2025/06/Mideast_Wars_US_Iran_94105-685db363680cc-768x432.jpg",
+      "publishedAt": "2025-06-26T21:15:00Z",
+      "source": {
+        "name": "Boston.com",
+        "url": "https://www.boston.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T10:09:04.908Z"
+    },
+    {
+      "title": "Pete Hegseth attacks old Fox News colleague's reporting on Iran strikes intelligence evaluation",
+      "description": "Less than a year ago, Pete Hegseth and Jennifer Griffin were colleagues at Fox News Channel.",
+      "content": "Defense Secretary Pete Hegseth criticized his former Fox News colleague Jennifer Griffin as “about the worst, the one who misrepresents the most intentionally what the president says” in a Pentagon news conference Thursday.\nGriffin, Fox’s chief natio... [2561 chars]",
+      "url": "https://www.clickondetroit.com/entertainment/2025/06/26/pete-hegseth-attacks-old-fox-news-colleagues-reporting-on-iran-strikes-intelligence-evaluation/",
+      "image": "https://res.cloudinary.com/graham-media-group/image/upload/f_auto/q_auto/c_thumb,w_700/v1/media/gmg/TRRPANBMUZHNZMVFRSJTEKRR7Y.jpg?_a=DATAg1eAZAA0",
+      "publishedAt": "2025-06-26T20:49:20Z",
+      "source": {
+        "name": "WDIV ClickOnDetroit",
+        "url": "https://www.clickondetroit.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T10:09:05.986Z"
+    },
+    {
+      "title": "Phoenix Mercury announce devastating injury news, new signing",
+      "description": "Rookie standout Lexi Held suffered a partially collapsed lung, while Megan McConnell has been waived after fracturing her knee.",
+      "content": "The Phoenix Mercury announced two major injuries to rookie players on Thursday. Guard Lexi Held, who has become a key rotation player — averaging 8.7 points in 20.7 minutes per night — suffered a partially collapsed lung last Thursday. Held’s timelin... [1388 chars]",
+      "url": "https://www.sbnation.com/wnba/2025/6/26/24456537/phoenix-mercury-injury-news-lexi-held-megan-mcconnell-kiana-williams",
+      "image": "https://cdn.vox-cdn.com/thumbor/iqQF4p957-zWHFmyJseTpHr96j8=/0x0:3900x2042/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/26039197/2220184010.jpg",
+      "publishedAt": "2025-06-26T18:19:06Z",
+      "source": {
+        "name": "SB Nation",
+        "url": "https://www.sbnation.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T10:09:07.056Z"
+    },
+    {
+      "title": "Here's Everything We Know",
+      "description": "'Ransom Canyon' has been renewed for a second season at Netflix, and the news has fans wondering what happens next.",
+      "content": "Ransom Canyon has been renewed for a second season at Netflix, and the news has fans thrilled. Read on to discover everything we know about Ransom Canyon Season 2.\nWhat Is Ransom Canyon?\nIMDb describes Ransom Canyon as a \"romance-fueled family drama ... [3783 chars]",
+      "url": "https://tasteofcountry.com/ransom-canyon-season-2-details-what-we-know/",
+      "image": "https://townsquare.media/site/204/files/2025/05/attachment-ransom-canyon-season-2-details.jpg?w=1200&q=75&format=natural",
+      "publishedAt": "2025-06-26T18:15:27Z",
+      "source": {
+        "name": "Taste of Country",
+        "url": "https://tasteofcountry.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T10:09:08.141Z"
+    },
+    {
+      "title": "Live updates: Latest Celtics news in 2025 NBA Draft second round",
+      "description": "Who will the Celtics target in the second round of the 2025 NBA Draft? Will they swing a trade? We're tracking the latest updates here.",
+      "content": "What to Know The Celtics took 19-year-old Spanish guard Hugo Gonzalez with the No. 28 pick in Round 1.\nBoston traded the No. 32 pick for picks 46, 57, and two future second-rounders.\nCeltics selected Kentucky center Amari Williams at No. 46.\nJoin Tom... [810 chars]",
+      "url": "https://www.nbcboston.com/news/sports/nba/boston-celtics/live-updates-2025-nba-draft-second-round-picks-tracker-trades/3752934/",
+      "image": "https://media.nbcboston.com/2025/05/Brad-Stevens-GettyImages-2215587801.jpg?quality=85&strip=all&resize=1200%2C675",
+      "publishedAt": "2025-06-26T14:58:07Z",
+      "source": {
+        "name": "NBC10 Boston",
+        "url": "https://www.nbcboston.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T10:09:09.218Z"
+    },
+    {
+      "title": "Pasta should be cooked this way to make it healthy",
+      "description": "According to Michelle Hauser, a clinical associate professor of surgery at Stanford Health Care, al dente pasta is \"more chewable and digestible,\" she told Stanford Medicine News Center.",
+      "content": "When people think of eating a healthy diet, a bowl full of pasta is not the first thing that comes to mind.\nHowever, experts say that cooking pasta a specific way can actually be better for you nutritionally.\nAl dente — pasta that is cooked but still... [2405 chars]",
+      "url": "https://nypost.com/2025/06/25/lifestyle/pasta-should-be-cooked-this-way-to-make-it-healthy/",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/pasta-comp.jpg?quality=75&strip=all&w=1024",
+      "publishedAt": "2025-06-26T01:39:53Z",
+      "source": {
+        "name": "New York Post",
+        "url": "https://nypost.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T10:09:10.302Z"
+    },
+    {
+      "title": "Top Startup and Tech Funding News - June 25, 2025",
+      "description": "It’s Wednesday, June 25, 2025, and the midweek tech funding push is strong. Today’s deals reveal where the smartest money is going—AI infrastructure, prediction markets, developer tools, and privacy-first encryption. From bold Series C plays to scrappy seed rounds, startups are attracting capital to rewire everything from how we bet on global events to how",
+      "content": "It’s Wednesday, June 25, 2025, and the midweek tech funding push is strong. Today’s deals reveal where the smartest money is going—AI infrastructure, prediction markets, developer tools, and privacy-first encryption. From bold Series C plays to scrap... [8183 chars]",
+      "url": "https://techstartups.com/2025/06/25/top-startup-and-tech-funding-news-june-25-2025/",
+      "image": "https://techstartups.com/wp-content/uploads/2025/06/Better-Auth-Founders-960x509.jpg",
+      "publishedAt": "2025-06-25T23:05:59Z",
+      "source": {
+        "name": "TechStartups.com",
+        "url": "https://techstartups.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T10:09:11.465Z"
+    },
+    {
+      "title": "ICE detainees now being held in 'horrific' MDC Brooklyn federal jail",
+      "description": "More than 100 ICE detainees are now being housed at the notorious MDC Brooklyn federal jail, along with the likes of Sean \"Diddy\" Combs and alleged CEO-killer Luigi Mangione, multiple sources tell the Daily News.",
+      "content": "The notorious MDC Brooklyn federal jail has started taking in ICE detainees, with more than 100 now housed in the Sunset Park lockup that also houses Sean “Diddy” Combs and alleged healthcare CEO-killer Luigi Mangione, sources tell the Daily News.\nTh... [4441 chars]",
+      "url": "https://www.nydailynews.com/2025/06/25/ice-detainees-held-horrific-mdc-brooklyn-federal-jail/",
+      "image": "https://www.nydailynews.com/wp-content/uploads/2023/12/DNFL-P3-20200828-083929.jpg?w=1024&h=683",
+      "publishedAt": "2025-06-25T21:16:32Z",
+      "source": {
+        "name": "New York Daily News",
+        "url": "https://www.nydailynews.com"
+      },
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "Invalid API response structure.",
+      "analyzedAt": "2025-06-27T10:09:12.536Z"
     }
   ]
 }
