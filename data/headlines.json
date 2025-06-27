@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2025-06-27T13:00:53.331Z",
+  "lastUpdated": "2025-06-27T13:11:17.989Z",
   "totalAnalyzed": 48,
-  "fallaciesFound": 0,
-  "totalFallacyHeadlines": 11,
+  "fallaciesFound": 14,
+  "totalFallacyHeadlines": 25,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -139,6 +139,160 @@
       "containsFallacy": true,
       "fallacy": "Ad Hominem",
       "explanation": "The headline suggests that Pete Hegseth is attacking a colleague's reporting, which implies a personal attack rather than addressing the substance of the reporting. This could be an example of an Ad Hominem fallacy if the attack is based on the colleague's identity or past actions rather than the merits of the intelligence evaluation."
+    },
+    {
+      "title": "10 Tech Brands So Popular In America, You Probably Didn't Realize They're Owned By China",
+      "description": "The technology market is a multi-national world that spans continents and corporations. Which household names trace roots back to Chinese investment?",
+      "url": "https://www.slashgear.com/1890416/popular-tech-companies-in-usa-owned-by-china/",
+      "source": "SlashGear",
+      "publishedAt": "2025-06-25T14:30:00Z",
+      "image": "https://www.slashgear.com/img/gallery/10-tech-brands-so-popular-in-america-you-probably-didnt-realize-theyre-owned-by-china/l-intro-1750336448.jpg",
+      "containsFallacy": true,
+      "fallacy": "Hasty Generalization",
+      "explanation": "The headline implies that because 10 tech brands are popular in America and owned by China, this is a widespread or representative trend, which may not be true. It generalizes from a small sample to a broader conclusion without sufficient evidence."
+    },
+    {
+      "title": "Drone debris found in Ukraine indicates Russia is using new technology from Iran",
+      "description": "Last week, Ukrainian drone hunters searching through the debris of Russia's nightly assault on their cities found a drone that was different to the rest.",
+      "url": "https://apnews.com/article/russia-iran-drones-shahed-ukraine-israel-strikes-3ddeb853845f0ea5f81878165af07bfd",
+      "source": "The Associated Press",
+      "publishedAt": "2025-06-25T09:23:11Z",
+      "image": "https://dims.apnews.com/dims4/default/e2d7c74/2147483647/strip/true/crop/8640x4860+0+450/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F67%2F81%2Fd253e0943205b99f3c6657cc5524%2F60eac961390941c28e7409a00b87f661",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline assumes that the presence of drone debris in Ukraine directly indicates that Russia is using new technology from Iran, without providing evidence or logical reasoning to establish a causal link between the two."
+    },
+    {
+      "title": "Trump blasts Zohran Mamdani as a '100% Communist Lunatic' in scathing NYC mayoral rant",
+      "description": "President Trump blasted Zohran Mamdani’s politics – and looks – Wednesday after the socialist’s stunning upset in New York’s Democratic mayoral primary.",
+      "url": "https://nypost.com/2025/06/25/us-news/trump-blasts-zohran-mamdani-as-a-100-communist-lunatic-in-scathing-nyc-mayoral-rant/",
+      "source": "New York Post",
+      "publishedAt": "2025-06-25T19:28:32Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/COMP-3RC2G9FAK7M6Y-66332953-3.jpg?quality=75&strip=all&w=1024",
+      "containsFallacy": true,
+      "fallacy": "Ad Hominem",
+      "explanation": "The headline uses a personal attack ('100% Communist Lunatic') to discredit Zohran Mamdani rather than addressing his arguments or policies."
+    },
+    {
+      "title": "Obama’s awkward call for a broad-scale Trump resistance",
+      "description": "Barack Obama delved into domestic politics Tuesday night in a way he rarely does – and the content was pretty remarkable.",
+      "url": "https://edition.cnn.com/2025/06/18/politics/obama-trump-resistance-analysis",
+      "source": "Cable News Network",
+      "publishedAt": "2025-06-18T17:53:11Z",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/c-gettyimages-2182720646.jpg?c=16x9&q=w_800,c_fill",
+      "containsFallacy": true,
+      "fallacy": "Loaded Question",
+      "explanation": "The headline implies that Obama's call for resistance is inherently awkward, which presumes a negative judgment without evidence or context. This is a loaded question because it assumes the audience will agree with the negative framing."
+    },
+    {
+      "title": "Taking on Israel’s greatest foe has banished Netanyahu’s political troubles in an instant",
+      "description": "Benjamin Netanyahu is once again firmly in control of Israeli politics.",
+      "url": "https://edition.cnn.com/2025/06/17/middleeast/israel-iran-netanyahu-motivation-intl-latam",
+      "source": "Cable News Network",
+      "publishedAt": "2025-06-17T19:15:14Z",
+      "image": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2219687692.jpg?c=16x9&q=w_800,c_fill",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline implies that Netanyahu's political troubles were resolved solely by taking on Israel's greatest foe, suggesting a direct and immediate causal relationship without evidence or context."
+    },
+    {
+      "title": "How Trump's golden escalator ride changed America",
+      "description": "Ten years ago, President Donald Trump kicked off the remaking of politics and America when he rode a golden escalator to launch his first presidential campaign.",
+      "url": "https://www.washingtonexaminer.com/news/white-house/3441842/trump-golden-escalator-ride-10-years-maga/",
+      "source": "Washington Examiner",
+      "publishedAt": "2025-06-16T11:51:13Z",
+      "image": "https://www.washingtonexaminer.com/wp-content/uploads/2025/06/Trump-escalator-2015.webp",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline implies that Trump's golden escalator ride directly caused significant changes in America, which is an oversimplification of a complex event and its effects. It suggests a direct and singular cause without sufficient evidence or logical connection."
+    },
+    {
+      "title": "After Debut of 'Upfront Pricing,' Uber Began Raking In Profits",
+      "description": "A new study out of Columbia Business School claims Uber has been using a secretive algorithm to boost its profits, largely at the expense of both drivers and riders. The research,...",
+      "url": "https://www.newser.com/story/370876/ubers-algorithm-shift-great-for-uber-not-drivers-or-riders.html",
+      "source": "Newser",
+      "publishedAt": "2025-06-25T19:20:00Z",
+      "image": "https://img2-azrcdn.newser.com/image/1618581-12-20250625093717.jpeg",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline implies that the debut of 'Upfront Pricing' directly caused Uber to begin raking in profits, without providing evidence that the two events are causally linked. This is a logical fallacy because correlation does not necessarily imply causation."
+    },
+    {
+      "title": "87-Year-Old McDonald’s Menu Item Will Disappear Forever in Weeks",
+      "description": "The McDonald's and Krispy Kreme collaboration has come to a close, highlighting struggles with profitability and business model sustainability.",
+      "url": "https://kdhlradio.com/ixp/204/p/mcdonalds-krispy-kreme-partnership-ending/",
+      "source": "kdhlradio.com",
+      "publishedAt": "2025-06-25T19:01:06Z",
+      "image": "https://townsquare.media/site/204/files/2025/06/attachment-Untitled-design-2025-06-25T062724.511.jpg?w=1200&q=75&format=natural",
+      "containsFallacy": true,
+      "fallacy": "Appeal to Emotion / Pity",
+      "explanation": "The headline uses the age of the menu item (87 years) and the impending disappearance to evoke an emotional response, potentially manipulating the reader's feelings to care about the item's removal."
+    },
+    {
+      "title": "Nvidia shares hit record high as Wall Street shakes off anxiety about AI chip export controls",
+      "description": "Nvidia shares closed at an all-time high on Wednesday as Wall Street investors shook off fears that US limits on chip exports to China would hurt the company’s business.",
+      "url": "https://nypost.com/2025/06/25/business/nvidia-shares-hit-record-high-as-wall-street-shakes-off-anxiety-about-ai-chip-export-controls/",
+      "source": "New York Post",
+      "publishedAt": "2025-06-25T18:27:46Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/nvidia-logo-seen-illustration-taken-106377860.jpg?quality=75&strip=all&w=1024",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline implies that Nvidia's record high shares are directly caused by Wall Street 'shaking off anxiety' about AI chip export controls, suggesting a direct causal relationship without evidence or context."
+    },
+    {
+      "title": "Murder Suspect Vandalized School Days Before Killing: Police",
+      "description": "Murder Suspect Vandalized The Summit School Days Before Davidsonville Killing: Police - Annapolis, MD - A murder suspect painted a swastika on a school, police said. The same man is accused of killing a Davidsonville business owner.",
+      "url": "https://patch.com/maryland/annapolis/murder-suspect-vandalized-summit-school-days-davidsonville-killing-police",
+      "source": "Joliet, IL Patch",
+      "publishedAt": "2025-06-25T18:03:56Z",
+      "image": "https://patch.com/img/cdn20/users/24287450/20250625/012930/styles/patch_image/public/d0e62340-648b-42c9-a967-6cf664e25905___25132612067.jpg",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline implies a causal relationship between the vandalism and the murder without providing evidence that the two events are directly connected."
+    },
+    {
+      "title": "Sad last days of Netflix reality show realtor killed in Hamptons",
+      "description": "Sara Burack, the Hamptons realtor featured on Netflix reality show \"Million Dollar Beach House\" who died in a hit-and-run last week, was \"homeless by choice\" and suffering from mental health issues despite an outpouring of family support, sources told The Post.",
+      "url": "https://nypost.com/2025/06/27/lifestyle/sad-last-days-of-netflix-reality-show-realtor-killed-in-hamptons/",
+      "source": "New York Post",
+      "publishedAt": "2025-06-27T10:00:00Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/newspress-collage-cjt4wn4by-1750970349438_720.jpg?quality=75&strip=all&w=720",
+      "containsFallacy": true,
+      "fallacy": "Appeal to Emotion / Pity",
+      "explanation": "The headline uses emotionally charged language ('Sad last days', 'killed') to evoke sympathy or pity, which may distract from objective analysis of the event."
+    },
+    {
+      "title": "RFK Jr. and his new vaccine committee are obsessing over thimerosal, a preservative antivaxxers have falsely tied to autism despite zero evidence of causation",
+      "description": "Some public health experts contend the thimerosal discussion will unnecessarily raise doubt in vaccines.",
+      "url": "https://fortune.com/2025/06/26/rfk-jr-vaccine-advisory-committee-thimerosal-antivax-acip-cdc/",
+      "source": "Fortune",
+      "publishedAt": "2025-06-26T04:00:00Z",
+      "image": "https://fortune.com/img-assets/wp-content/uploads/2025/06/GettyImages-2221202616-e1750946592261.jpg?resize=1200,600",
+      "containsFallacy": true,
+      "fallacy": "Poisoning the Well",
+      "explanation": "The headline preemptively discredits RFK Jr. and his committee by associating them with 'antivaxxers' and their 'false' claims, which may bias the reader against their arguments before they are even presented."
+    },
+    {
+      "title": "Urgent warning about 'hidden risk' of e-cigarettes and vapes",
+      "description": "A new study — published Wednesday in the journal ACS Central Science — revealed that e-cigarettes release a shocking amount of toxic metals.",
+      "url": "https://nypost.com/2025/06/25/health/urgent-warning-about-hidden-risk-of-e-cigarettes-and-vapes/",
+      "source": "New York Post",
+      "publishedAt": "2025-06-25T18:24:48Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/hand-holding-e-cigarette-vape-103754488.jpg?quality=75&strip=all&w=1024",
+      "containsFallacy": true,
+      "fallacy": "Appeal to Emotion / Pity",
+      "explanation": "The headline uses emotionally charged language ('urgent warning', 'hidden risk') to provoke concern or fear, which may appeal to emotions rather than presenting clear, logical evidence."
+    },
+    {
+      "title": "Those cuts to 'overhead' costs in research? They do real damage",
+      "description": "Indirect costs are fat targets for budget slashers, but beware: They make science possible. They don’t pay for the chromatograph I use in my experiments, but they do pay for the electricity to run it.",
+      "url": "https://www.latimes.com/opinion/story/2025-06-24/national-science-foundation-overhead-research-funding",
+      "source": "Los Angeles Times",
+      "publishedAt": "2025-06-24T14:00:00Z",
+      "image": "https://ca-times.brightspotcdn.com/dims4/default/ebe4d4a/2147483647/strip/true/crop/2400x1260+0+194/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd9%2F8a%2F5efaf80345c2bec95a52ffab8877%2F159329.MN.0618.spill.12.CMC.jpg",
+      "containsFallacy": true,
+      "fallacy": "Loaded Question",
+      "explanation": "The headline uses the phrase 'overhead' costs in quotes, implying a negative or dismissive connotation without evidence, which can be seen as a loaded question by framing the issue in a biased way."
     }
   ]
 }
