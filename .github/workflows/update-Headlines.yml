@@ -127,6 +127,8 @@ jobs:
             try {
               const response = await makeRequest('https://openrouter.ai/api/v1/chat/completions', options);
 
+              console.log(`API response for "${headline}":`, JSON.stringify(response, null, 2));
+
               if (response.choices && response.choices[0] && response.choices[0].message) {
                 const content = response.choices[0].message.content.trim();
                 try {
