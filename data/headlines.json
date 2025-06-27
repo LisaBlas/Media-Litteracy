@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2025-06-27T10:12:36.063Z",
-  "totalAnalyzed": 10,
-  "fallaciesFound": 3,
-  "totalFallacyHeadlines": 10,
+  "lastUpdated": "2025-06-27T12:44:33.783Z",
+  "totalAnalyzed": 40,
+  "fallaciesFound": 1,
+  "totalFallacyHeadlines": 11,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -128,6 +128,17 @@
       "fallacy": "Appeal to Emotion / Pity",
       "explanation": "The headline uses emotionally charged language ('horrific') to evoke a strong emotional response rather than presenting objective facts or evidence.",
       "analyzedAt": "2025-06-27T10:12:36.063Z"
+    },
+    {
+      "title": "Pete Hegseth attacks old Fox News colleague's reporting on Iran strikes intelligence evaluation",
+      "description": "Less than a year ago, Pete Hegseth and Jennifer Griffin were colleagues at Fox News Channel.",
+      "url": "https://www.clickondetroit.com/entertainment/2025/06/26/pete-hegseth-attacks-old-fox-news-colleagues-reporting-on-iran-strikes-intelligence-evaluation/",
+      "source": "WDIV ClickOnDetroit",
+      "publishedAt": "2025-06-26T20:49:20Z",
+      "image": "https://res.cloudinary.com/graham-media-group/image/upload/f_auto/q_auto/c_thumb,w_700/v1/media/gmg/TRRPANBMUZHNZMVFRSJTEKRR7Y.jpg?_a=DATAg1eAZAA0",
+      "containsFallacy": true,
+      "fallacy": "Ad Hominem",
+      "explanation": "The headline suggests that Pete Hegseth is attacking a colleague's reporting, which implies a personal attack rather than addressing the substance of the reporting. This could be an example of an Ad Hominem fallacy if the attack is based on the colleague's identity or past actions rather than the merits of the intelligence evaluation."
     }
   ]
 }

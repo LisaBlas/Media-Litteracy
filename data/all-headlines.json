@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-06-27T10:12:36.064Z",
-  "totalAnalyzed": 0,
-  "totalHeadlines": 30,
+  "lastUpdated": "2025-06-27T12:44:33.784Z",
+  "totalAnalyzed": 4,
+  "totalHeadlines": 34,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -432,6 +432,50 @@
       "fallacy": null,
       "explanation": "Invalid API response structure.",
       "analyzedAt": "2025-06-27T10:09:12.536Z"
+    },
+    {
+      "title": "Take the Greater Boston news quiz, June 27, 2025",
+      "description": "Test your knowledge of the Karen Read acquittal, a burgeoning bug, and a hella hot Tuesday in this week’s Greater Boston news quiz.",
+      "url": "https://www.boston.com/community/quizzes/2025/06/27/greater-boston-news-quiz-june-27-2025-karen-read-heat-wave-invasive-insect/",
+      "source": "Boston.com",
+      "publishedAt": "2025-06-27T09:00:00Z",
+      "image": "https://bdc2020.o0bc.com/wp-content/uploads/2025/06/quiz_beach-685d4f263fa9f-768x432.jpg",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "The headline is a simple announcement of a news quiz and does not contain any logical fallacies from the provided list."
+    },
+    {
+      "title": "Take the Greater Boston news quiz, June 27, 2025",
+      "description": "Test your knowledge of the Karen Read acquittal, a burgeoning bug, and a hella hot Tuesday in this week’s Greater Boston news quiz.",
+      "url": "https://www.boston.com/community/quizzes/2025/06/27/greater-boston-news-quiz-june-27-2025-karen-read-heat-wave-invasive-insect/",
+      "source": "Boston.com",
+      "publishedAt": "2025-06-27T09:00:00Z",
+      "image": "https://bdc2020.o0bc.com/wp-content/uploads/2025/06/quiz_beach-685d4f263fa9f-768x432.jpg",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "The headline does not contain any logical fallacies from the specified list."
+    },
+    {
+      "title": "Take the Greater Boston news quiz, June 27, 2025",
+      "description": "Test your knowledge of the Karen Read acquittal, a burgeoning bug, and a hella hot Tuesday in this week’s Greater Boston news quiz.",
+      "url": "https://www.boston.com/community/quizzes/2025/06/27/greater-boston-news-quiz-june-27-2025-karen-read-heat-wave-invasive-insect/",
+      "source": "Boston.com",
+      "publishedAt": "2025-06-27T09:00:00Z",
+      "image": "https://bdc2020.o0bc.com/wp-content/uploads/2025/06/quiz_beach-685d4f263fa9f-768x432.jpg",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "The headline is a simple announcement of a news quiz and does not contain any logical fallacies from the specified list."
+    },
+    {
+      "title": "Take the Greater Boston news quiz, June 27, 2025",
+      "description": "Test your knowledge of the Karen Read acquittal, a burgeoning bug, and a hella hot Tuesday in this week’s Greater Boston news quiz.",
+      "url": "https://www.boston.com/community/quizzes/2025/06/27/greater-boston-news-quiz-june-27-2025-karen-read-heat-wave-invasive-insect/",
+      "source": "Boston.com",
+      "publishedAt": "2025-06-27T09:00:00Z",
+      "image": "https://bdc2020.o0bc.com/wp-content/uploads/2025/06/quiz_beach-685d4f263fa9f-768x432.jpg",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": "The headline is a simple announcement of a news quiz and does not contain any logical fallacies from the specified list."
     }
   ]
 }
