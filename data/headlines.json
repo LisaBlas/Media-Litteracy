@@ -88,10 +88,7 @@
       "url": "https://www.boston.com/news/media/2025/06/26/pete-hegseth-attacks-old-fox-news-colleagues-reporting-on-iran-strikes-intelligence-evaluation/",
       "image": "https://bdc2020.o0bc.com/wp-content/uploads/2025/06/Mideast_Wars_US_Iran_94105-685db363680cc-768x432.jpg",
       "publishedAt": "2025-06-26T21:15:00Z",
-      "source": {
-        "name": "Boston.com",
-        "url": "https://www.boston.com"
-      },
+      "source": "Boston.com",
       "containsFallacy": true,
       "fallacy": "Poisoning the Well",
       "explanation": "The headline suggests that Hegseth's criticism of his colleague's reporting is inherently biased or invalid because of their past association, potentially prejudicing the audience against the colleague's work without substantive evidence.",
@@ -104,10 +101,7 @@
       "url": "https://www.sbnation.com/wnba/2025/6/26/24456537/phoenix-mercury-injury-news-lexi-held-megan-mcconnell-kiana-williams",
       "image": "https://cdn.vox-cdn.com/thumbor/iqQF4p957-zWHFmyJseTpHr96j8=/0x0:3900x2042/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/26039197/2220184010.jpg",
       "publishedAt": "2025-06-26T18:19:06Z",
-      "source": {
-        "name": "SB Nation",
-        "url": "https://www.sbnation.com"
-      },
+      "source": "SB Nation",
       "containsFallacy": true,
       "fallacy": "Appeal to Emotion / Pity",
       "explanation": "The headline uses emotionally charged language ('devastating injury news') to evoke sympathy or concern, which could influence the audience's perception without providing substantive information.",
@@ -120,10 +114,7 @@
       "url": "https://www.nydailynews.com/2025/06/25/ice-detainees-held-horrific-mdc-brooklyn-federal-jail/",
       "image": "https://www.nydailynews.com/wp-content/uploads/2023/12/DNFL-P3-20200828-083929.jpg?w=1024&h=683",
       "publishedAt": "2025-06-25T21:16:32Z",
-      "source": {
-        "name": "New York Daily News",
-        "url": "https://www.nydailynews.com"
-      },
+      "source": "New York Daily News",
       "containsFallacy": true,
       "fallacy": "Appeal to Emotion / Pity",
       "explanation": "The headline uses emotionally charged language ('horrific') to evoke a strong emotional response rather than presenting objective facts or evidence.",
