@@ -2,6 +2,7 @@ name: Update News Headlines with Fallacy Analysis
 
 on:
   workflow_dispatch: # Allow manual triggering
+  # Comment for github push
 
 permissions:
   contents: write
