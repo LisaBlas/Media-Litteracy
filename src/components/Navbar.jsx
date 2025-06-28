@@ -56,8 +56,8 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-6 font-mono text-editorial-charcoal">
-        <a href="#" className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Home</a>
-        <a href="#fallacies" onClick={() => scrollToSection('fallacies')} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Tools</a>
+        <Link to="/" className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Home</Link>
+        <Link to="/articles" className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Articles</Link>
         <a href="#about" onClick={() => scrollToSection('about')} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">About</a>
         <Link to="/course" className="bg-editorial-orange hover:opacity-90 text-white py-2 px-4 transition-all font-normal hover:font-bold">
           Learn
@@ -74,10 +74,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full border-t-2 border-editorial-orange bg-editorial-cream flex flex-col items-center space-y-4 py-4 shadow-md">
-          <a href="#" onClick={() => setIsOpen(false)} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Home</a>
-          <a href="#fallacies" onClick={() => scrollToSection('fallacies')} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Tools</a>
+          <Link to="/" onClick={() => setIsOpen(false)} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Home</Link>
+          <Link to="/articles" onClick={() => setIsOpen(false)} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Articles</Link>
           <a href="#about" onClick={() => scrollToSection('about')} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">About</a>
-          <Link to="/course" className="bg-editorial-orange hover:opacity-90 text-white py-2 px-4 transition-all font-normal">
+          <Link to="/course" onClick={() => setIsOpen(false)} className="bg-editorial-orange hover:opacity-90 text-white py-2 px-4 transition-all font-normal">
             Learn
           </Link>
         </div>
