@@ -2,6 +2,8 @@ name: Update News Headlines with Fallacy Analysis
 
 on:
   workflow_dispatch: # Allow manual triggering
+  schedule:
+    - cron: '0 */6 * * *' # Run every 6 hours
   # Comment for github
 
 permissions:
@@ -35,47 +37,48 @@ jobs:
           // Configuration - Targeted search queries for controversial topics
           const SEARCH_QUERIES = [
             // Gender and Transgender Issues
-  '("transgender rights" OR "gender identity" OR "LGBTQ+ discrimination" OR "bathroom bills" OR "trans athletes" OR "gender ideology" OR "gender-affirming care" OR "preferred pronouns")',
-
-  // Protests and Civil Unrest
-  '("BLM protest" OR "civil unrest" OR "peaceful protest" OR "police brutality" OR "demonstrators" OR "antifa" OR "racial justice protest")',
-
-  // Systemic Racism and Social Justice
-  '("systemic racism" OR "racial equity" OR "white privilege" OR "critical race theory" OR "DEI programs" OR "diversity equity inclusion" OR "affirmative action")',
-
-  // Immigration
-  '("undocumented immigrants" OR "asylum seekers" OR "migrant rights" OR "border policy" OR "sanctuary cities" OR "family separation" OR "DACA" OR "immigration reform")',
-
-  // Israel and Global Conflicts
-  '("Israel-Palestine" OR "Gaza conflict" OR "pro-Palestinian protest" OR "Israel apartheid" OR "Middle East violence" OR "Hamas" OR "Israeli occupation")',
-
-  // Climate Change and Environmental Policy
-  '("climate crisis" OR "climate emergency" OR "global warming" OR "green new deal" OR "environmental justice" OR "fossil fuels divestment" OR "carbon neutrality")',
-
-  // Elections and Political Campaigns
-  '("election integrity" OR "voter suppression" OR "mail-in ballots" OR "gerrymandering" OR "voting rights act" OR "democracy in crisis" OR "campaign donations")',
-
-  // Public Health (Vaccines, Pandemics)
-  '("vaccine mandate" OR "public health order" OR "COVID-19 response" OR "anti-vax misinformation" OR "mask compliance" OR "pandemic policy" OR "boosters")',
-
-  // Crime and Policing
-  '("defund the police" OR "police accountability" OR "mass incarceration" OR "restorative justice" OR "bail reform" OR "criminal justice reform")',
-
-  // Technology and AI
-  '("AI ethics" OR "algorithmic bias" OR "social media moderation" OR "big tech regulation" OR "surveillance capitalism" OR "digital misinformation" OR "deepfakes")'
+            '"transgender rights" OR "gender identity" OR "LGBTQ+ discrimination" OR "bathroom bills" OR "trans athletes" OR "gender ideology" OR "gender-affirming care" OR "preferred pronouns"',
+            
+            // Protests and Civil Unrest
+            '"BLM protest" OR "civil unrest" OR "peaceful protest" OR "police brutality" OR "demonstrators" OR "antifa" OR "racial justice protest"',
+            
+            // Systemic Racism and Social Justice
+            '"systemic racism" OR "racial equity" OR "white privilege" OR "critical race theory" OR "DEI programs" OR "diversity equity inclusion" OR "affirmative action"',
+            
+            // Immigration
+            '"undocumented immigrants" OR "asylum seekers" OR "migrant rights" OR "border policy" OR "sanctuary cities" OR "family separation" OR "DACA" OR "immigration reform"',
+            
+            // Israel and Global Conflicts
+            '"Israel-Palestine" OR "Gaza conflict" OR "pro-Palestinian protest" OR "Israel apartheid" OR "Middle East violence" OR "Hamas" OR "Israeli occupation"',
+            
+            // Climate Change and Environmental Policy
+            '"climate crisis" OR "climate emergency" OR "global warming" OR "green new deal" OR "environmental justice" OR "fossil fuels divestment" OR "carbon neutrality"',
+            
+            // Elections and Political Campaigns
+            '"election integrity" OR "voter suppression" OR "mail-in ballots" OR "gerrymandering" OR "voting rights act" OR "democracy in crisis" OR "campaign donations"',
+            
+            // Public Health (Vaccines, Pandemics)
+            '"vaccine mandate" OR "public health order" OR "COVID-19 response" OR "anti-vax misinformation" OR "mask compliance" OR "pandemic policy" OR "boosters"',
+            
+            // Crime and Policing
+            '"defund the police" OR "police accountability" OR "mass incarceration" OR "restorative justice" OR "bail reform" OR "criminal justice reform"',
+            
+            // Technology and AI
+            '"AI ethics" OR "algorithmic bias" OR "social media moderation" OR "big tech regulation" OR "surveillance capitalism" OR "digital misinformation" OR "deepfakes"'
           ];
 
           // Keywords to exclude from searches
           const EXCLUDE_KEYWORDS = [
             'sports', 'entertainment', 'celebrity', 'movies', 'music', 'fashion', 
             'lifestyle', 'travel', 'food', 'recipes', 'gaming', 'streaming',
-            'awards', 'hollywood', 'netflix', 'spotify', 'tiktok dance',
-            'weather forecast', 'horoscope', 'astrology', 'lottery',
-            'stock market daily', 'cryptocurrency price', 'bitcoin price'
+            'awards', 'hollywood', 'netflix', 'spotify', 'tiktok',
+            'weather', 'horoscope', 'astrology', 'lottery',
+            'stock market', 'cryptocurrency', 'bitcoin'
           ];
 
-          const ARTICLES_PER_REQUEST = 2; // Reduced to get more diverse content
-          const TOTAL_REQUESTS = SEARCH_QUERIES.length;
+          const ARTICLES_PER_REQUEST = 5; // Increased since we have fewer, more targeted queries
+          const MAX_RETRIES = 3;
+          const DELAY_BETWEEN_REQUESTS = 2000; // 2 seconds between requests
 
           function makeRequest(url, options) {
             return new Promise((resolve, reject) => {
@@ -83,14 +86,22 @@ jobs:
                 let data = '';
                 res.on('data', (chunk) => data += chunk);
                 res.on('end', () => {
-                  try {
-                    resolve(JSON.parse(data));
-                  } catch (error) {
-                    reject(new Error(`Failed to parse JSON: ${error.message}`));
+                  if (res.statusCode >= 200 && res.statusCode < 300) {
+                    try {
+                      resolve(JSON.parse(data));
+                    } catch (error) {
+                      reject(new Error(`Failed to parse JSON: ${error.message}`));
+                    }
+                  } else {
+                    reject(new Error(`HTTP ${res.statusCode}: ${data}`));
                   }
                 });
               });
               req.on('error', reject);
+              req.setTimeout(30000, () => {
+                req.destroy();
+                reject(new Error('Request timeout'));
+              });
               if (options.body) {
                 req.write(options.body);
               }
@@ -103,38 +114,115 @@ jobs:
             return EXCLUDE_KEYWORDS.some(keyword => text.includes(keyword.toLowerCase()));
           }
 
+          async function fetchArticlesWithRetry(query, retries = MAX_RETRIES) {
+            for (let attempt = 1; attempt <= retries; attempt++) {
+              try {
+                console.log(`Attempt ${attempt}/${retries} for query: ${query.substring(0, 60)}...`);
+                
+                // Handle complex queries by properly encoding them
+                const encodedQuery = encodeURIComponent(query);
+                const url = `https://gnews.io/api/v4/search?q=${encodedQuery}&lang=en&country=us&max=${ARTICLES_PER_REQUEST}&apikey=${GNEWS_API_KEY}`;
+                
+                console.log(`Full URL length: ${url.length} characters`);
+                
+                const response = await makeRequest(url, { method: 'GET' });
+                
+                if (response.error) {
+                  throw new Error(`GNews API Error: ${response.error}`);
+                }
+                
+                if (response.articles && Array.isArray(response.articles)) {
+                  const filteredArticles = response.articles.filter(article => 
+                    article.title && 
+                    article.url && 
+                    !containsExcludedKeywords(article.title, article.description)
+                  );
+                  
+                  console.log(`Fetched ${response.articles.length} articles, ${filteredArticles.length} after filtering`);
+                  return filteredArticles;
+                } else {
+                  console.warn(`No articles array in response for query: ${query.substring(0, 60)}...`);
+                  if (response.totalArticles !== undefined) {
+                    console.log(`API reports ${response.totalArticles} total articles available`);
+                  }
+                  return [];
+                }
+              } catch (error) {
+                console.error(`Attempt ${attempt} failed for query "${query.substring(0, 60)}...": ${error.message}`);
+                
+                // If URL is too long, try a fallback approach
+                if (error.message.includes('414') || error.message.includes('URI Too Long')) {
+                  console.log('Query too long, trying fallback approach...');
+                  return await tryFallbackQueries(query);
+                }
+                
+                if (attempt === retries) {
+                  console.error(`All ${retries} attempts failed for query: ${query.substring(0, 60)}...`);
+                  return [];
+                }
+                // Wait before retrying with exponential backoff
+                await new Promise(resolve => setTimeout(resolve, 2000 * attempt));
+              }
+            }
+            return [];
+          }
+
+          async function tryFallbackQueries(originalQuery) {
+            console.log('Using fallback strategy for long query...');
+            // Split the complex OR query into smaller chunks
+            const terms = originalQuery.split(' OR ').map(term => term.replace(/"/g, ''));
+            const chunks = [];
+            
+            // Group terms into smaller chunks of 3-4 terms each
+            for (let i = 0; i < terms.length; i += 3) {
+              const chunk = terms.slice(i, i + 3);
+              chunks.push(chunk.join(' OR '));
+            }
+            
+            const allArticles = [];
+            for (const chunk of chunks) {
+              try {
+                const url = `https://gnews.io/api/v4/search?q=${encodeURIComponent(chunk)}&lang=en&country=us&max=${Math.ceil(ARTICLES_PER_REQUEST / chunks.length)}&apikey=${GNEWS_API_KEY}`;
+                const response = await makeRequest(url, { method: 'GET' });
+                
+                if (response.articles && Array.isArray(response.articles)) {
+                  allArticles.push(...response.articles);
+                }
+                
+                // Small delay between chunk requests
+                await new Promise(resolve => setTimeout(resolve, 500));
+              } catch (error) {
+                console.error(`Fallback chunk failed: ${error.message}`);
+              }
+            }
+            
+            // Remove duplicates and filter
+            const uniqueArticles = allArticles
+              .filter((article, index, self) => 
+                index === self.findIndex(a => a.url === article.url)
+              )
+              .filter(article => 
+                article.title && 
+                article.url && 
+                !containsExcludedKeywords(article.title, article.description)
+              );
+            
+            console.log(`Fallback approach yielded ${uniqueArticles.length} unique articles`);
+            return uniqueArticles;
+          }
+
           async function fetchAllArticles() {
             const allArticles = [];
             
             for (const [index, query] of SEARCH_QUERIES.entries()) {
-              console.log(`Fetching articles for query ${index + 1}/${SEARCH_QUERIES.length}: ${query.substring(0, 50)}...`);
-              try {
-                // Add exclude keywords to the query
-                const excludeString = EXCLUDE_KEYWORDS.map(kw => `-${kw}`).join(' ');
-                const fullQuery = `${query} ${excludeString}`;
-                
-                const url = `https://gnews.io/api/v4/search?q=${encodeURIComponent(fullQuery)}&lang=en&country=us&max=${ARTICLES_PER_REQUEST}&apikey=${GNEWS_API_KEY}`;
-                const response = await makeRequest(url, { method: 'GET' });
-                
-                if (response.articles && Array.isArray(response.articles)) {
-                  // Additional filtering to remove excluded content
-                  const filteredArticles = response.articles.filter(article => 
-                    !containsExcludedKeywords(article.title, article.description)
-                  );
-                  
-                  allArticles.push(...filteredArticles);
-                  console.log(`Fetched ${response.articles.length} articles, ${filteredArticles.length} after filtering`);
-                } else {
-                  console.warn(`No articles found for query: ${query.substring(0, 50)}...`);
-                  if (response.error) {
-                    console.error(`API Error: ${response.error}`);
-                  }
-                }
-                
-                // Add delay between requests to respect rate limits
-                await new Promise(resolve => setTimeout(resolve, 1200));
-              } catch (error) {
-                console.error(`Error fetching articles for query "${query.substring(0, 50)}...":`, error.message);
+              console.log(`Processing query ${index + 1}/${SEARCH_QUERIES.length}`);
+              
+              const articles = await fetchArticlesWithRetry(query);
+              allArticles.push(...articles);
+              
+              // Add delay between requests to respect rate limits
+              if (index < SEARCH_QUERIES.length - 1) {
+                await new Promise(resolve => setTimeout(resolve, DELAY_BETWEEN_REQUESTS));
               }
             }
             
@@ -143,37 +231,38 @@ jobs:
               index === self.findIndex(a => a.url === article.url)
             );
             
-            console.log(`Total unique articles fetched: ${uniqueArticles.length}`);
+            console.log(`Total articles fetched: ${allArticles.length}`);
+            console.log(`Unique articles after deduplication: ${uniqueArticles.length}`);
             return uniqueArticles;
           }
 
-          async function analyzeHeadline(headline, fallacyDefinitions) {
+          async function analyzeHeadlineWithRetry(headline, fallacyDefinitions, retries = MAX_RETRIES) {
             const fallacyList = Object.keys(fallacyDefinitions).join('", "');
-            const prompt = `Analyze the following news headline for logical fallacies: "${headline}"
+            const prompt = `Analyze this news headline for logical fallacies: "${headline}"
 
-          Please respond with a JSON object in this exact format:
+          Respond with JSON in this exact format:
           {
             "containsFallacy": true/false,
-            "fallacy": "type of fallacy if found, or null",
-            "explanation": "A brief explanation of why it is a fallacy, or null if no fallacy is found."
+            "fallacy": "exact fallacy name from the list or null",
+            "explanation": "brief explanation or null"
           }
 
-          IMPORTANT: If you identify a fallacy, the value for the "fallacy" key MUST be an exact match from the following list: "${fallacyList}".
-
-          If the headline does not contain a fallacy from that specific list, you MUST set "containsFallacy" to false and "fallacy" to null. Do not identify fallacies that are not on this list.
-          Only return the JSON object and nothing else.`;
+          Only identify fallacies from this list: "${fallacyList}"
+          
+          If no fallacy from this specific list is found, set containsFallacy to false and fallacy to null.
+          Return only the JSON object.`;
 
             const requestBody = JSON.stringify({
-              model: 'mistralai/mistral-small-3.2-24b-instruct:free',
+              model: 'mistralai/mistral-7b-instruct:free',
               messages: [{ role: 'user', content: prompt }],
-              temperature: 0.3,
-              max_tokens: 200,
+              temperature: 0.2,
+              max_tokens: 150,
             });
 
             const options = {
               method: 'POST',
               headers: {
-                Authorization: `Bearer ${OPENROUTER_API_KEY}`,
+                'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
                 'Content-Type': 'application/json',
                 'HTTP-Referer': 'https://github.com/Alviz-git/Media-Litteracy',
                 'X-Title': 'Media Literacy Fallacy Detection',
@@ -181,45 +270,82 @@ jobs:
               body: requestBody,
             };
 
-            try {
-              const response = await makeRequest('https://openrouter.ai/api/v1/chat/completions', options);
+            for (let attempt = 1; attempt <= retries; attempt++) {
+              try {
+                console.log(`Analyzing (attempt ${attempt}): ${headline.substring(0, 60)}...`);
+                
+                const response = await makeRequest('https://openrouter.ai/api/v1/chat/completions', options);
 
-              if (response.choices && response.choices[0] && response.choices[0].message) {
-                const content = response.choices[0].message.content.trim();
-                try {
-                  const jsonMatch = content.match(/\{[\s\S]*\}/);
+                if (response.error) {
+                  throw new Error(`OpenRouter API Error: ${JSON.stringify(response.error)}`);
+                }
+
+                if (response.choices && response.choices[0] && response.choices[0].message) {
+                  const content = response.choices[0].message.content.trim();
+                  
+                  // Try to extract JSON from the response
+                  const jsonMatch = content.match(/\{[\s\S]*?\}/);
                   if (jsonMatch) {
                     const analysis = JSON.parse(jsonMatch[0]);
+                    
+                    // Validate the fallacy is in our list
                     if (analysis.fallacy && !Object.keys(fallacyDefinitions).includes(analysis.fallacy)) {
-                      console.log(`Warning: AI returned a fallacy "${analysis.fallacy}" not in the defined list. Overriding.`);
+                      console.log(`Warning: AI returned invalid fallacy "${analysis.fallacy}", setting to null`);
                       analysis.containsFallacy = false;
                       analysis.fallacy = null;
                     }
+                    
                     return analysis;
+                  } else {
+                    throw new Error('No valid JSON found in response');
                   }
-                  throw new Error('No JSON object found in response');
-                } catch (parseError) {
-                  console.error(`Failed to parse analysis for "${headline}":`, content, parseError);
-                  return { containsFallacy: false, fallacy: null, explanation: `Parsing failed: ${parseError.message}` };
+                } else {
+                  throw new Error('Invalid API response structure');
                 }
-              } else {
-                console.error(`No valid choices in API response for "${headline}"`);
-                if (response.error) {
-                  console.error(`API Error: ${JSON.stringify(response.error)}`);
+              } catch (error) {
+                console.error(`Analysis attempt ${attempt} failed: ${error.message}`);
+                if (attempt === retries) {
+                  console.error(`All ${retries} analysis attempts failed for: ${headline.substring(0, 60)}...`);
+                  return { 
+                    containsFallacy: false, 
+                    fallacy: null, 
+                    explanation: `Analysis failed after ${retries} attempts: ${error.message}` 
+                  };
                 }
-                return { containsFallacy: false, fallacy: null, explanation: 'Invalid API response structure.' };
+                // Wait before retrying
+                await new Promise(resolve => setTimeout(resolve, 1000 * attempt));
               }
-            } catch (error) {
-              console.error(`Error analyzing "${headline}":`, error.message);
-              return { containsFallacy: false, fallacy: null, explanation: error.message };
             }
+          }
+
+          async function loadExistingData(filePath) {
+            if (fs.existsSync(filePath)) {
+              try {
+                const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+                console.log(`Loaded ${data.headlines?.length || 0} existing headlines from ${filePath}`);
+                return data;
+              } catch (error) {
+                console.warn(`Could not parse ${filePath}, starting fresh:`, error.message);
+              }
+            }
+            return { headlines: [] };
           }
 
           async function main() {
             try {
+              // Validate required files and environment variables
+              if (!GNEWS_API_KEY || !OPENROUTER_API_KEY) {
+                throw new Error('Required API keys not found in environment variables');
+              }
+
+              if (!fs.existsSync('data/fallacy-definitions.json')) {
+                throw new Error('fallacy-definitions.json not found in data directory');
+              }
+
               const fallacyDefinitions = JSON.parse(fs.readFileSync('data/fallacy-definitions.json', 'utf8'));
+              console.log(`Loaded ${Object.keys(fallacyDefinitions).length} fallacy definitions`);
               
-              // Fetch all articles using targeted queries
+              // Fetch all articles
               const allArticles = await fetchAllArticles();
               
               if (allArticles.length === 0) {
@@ -227,21 +353,21 @@ jobs:
                 process.exit(1);
               }
 
-              console.log(`Analyzing ${allArticles.length} headlines...`);
+              console.log(`Starting analysis of ${allArticles.length} headlines...`);
               const analyzedHeadlines = [];
 
               for (const [index, article] of allArticles.entries()) {
-                console.log(`Analyzing headline ${index + 1}/${allArticles.length}: ${article.title}`);
-                const analysis = await analyzeHeadline(article.title, fallacyDefinitions);
+                console.log(`\nAnalyzing ${index + 1}/${allArticles.length}`);
+                
+                const analysis = await analyzeHeadlineWithRetry(article.title, fallacyDefinitions);
 
-                // Normalize the article structure to match your required format
                 const normalizedArticle = {
                   title: article.title,
-                  description: article.description,
+                  description: article.description || '',
                   url: article.url,
                   source: typeof article.source === 'string' ? article.source : (article.source?.name || 'Unknown'),
                   publishedAt: article.publishedAt,
-                  image: article.image,
+                  image: article.image || '',
                   containsFallacy: analysis.containsFallacy || false,
                   fallacy: analysis.fallacy || null,
                   explanation: analysis.explanation || null,
@@ -250,104 +376,62 @@ jobs:
 
                 analyzedHeadlines.push(normalizedArticle);
 
-                // Add delay between analysis calls
+                // Small delay between analyses
                 if (index < allArticles.length - 1) {
-                  await new Promise((resolve) => setTimeout(resolve, 1000)); // 1s delay
+                  await new Promise(resolve => setTimeout(resolve, 800));
                 }
               }
 
-              const fallacyHeadlines = analyzedHeadlines.filter((a) => a.containsFallacy);
-              console.log(`Found ${fallacyHeadlines.length} headlines with fallacies out of ${analyzedHeadlines.length} total.`);
+              const fallacyHeadlines = analyzedHeadlines.filter(a => a.containsFallacy);
+              console.log(`\nFound ${fallacyHeadlines.length} headlines with fallacies out of ${analyzedHeadlines.length} total`);
 
-              // Load existing headlines if the file exists
-              let existingData = { headlines: [] };
-              const headlinesFilePath = 'data/headlines.json';
+              // Load and update existing data
+              const existingFallacyData = await loadExistingData('data/headlines.json');
+              const existingAllData = await loadExistingData('data/all-headlines.json');
+
+              // Filter out duplicates
+              const existingFallacyUrls = new Set((existingFallacyData.headlines || []).map(h => h.url));
+              const existingAllUrls = new Set((existingAllData.headlines || []).map(h => h.url));
               
-              if (fs.existsSync(headlinesFilePath)) {
-                try {
-                  existingData = JSON.parse(fs.readFileSync(headlinesFilePath, 'utf8'));
-                  console.log(`Loaded ${existingData.headlines.length} existing headlines.`);
-                } catch (error) {
-                  console.warn('Could not parse existing headlines.json, starting fresh:', error.message);
-                  existingData = { headlines: [] };
-                }
-              }
+              const newFallacyHeadlines = fallacyHeadlines.filter(h => !existingFallacyUrls.has(h.url));
+              const newAllHeadlines = analyzedHeadlines.filter(h => !existingAllUrls.has(h.url));
 
-              // Filter out duplicates based on title and URL
-              const existingUrls = new Set((existingData.headlines || []).map(h => h.url));
-              const newFallacyHeadlines = fallacyHeadlines.filter(h => !existingUrls.has(h.url));
-              
-              console.log(`${newFallacyHeadlines.length} new unique headlines with fallacies to add.`);
+              console.log(`${newFallacyHeadlines.length} new fallacy headlines to add`);
+              console.log(`${newAllHeadlines.length} new total headlines to add`);
 
-              // Append new headlines to existing ones
-              const allFallacyHeadlines = [...(existingData.headlines || []), ...newFallacyHeadlines];
-
-              const output = {
+              // Prepare output data
+              const fallacyOutput = {
                 lastUpdated: new Date().toISOString(),
                 totalAnalyzed: analyzedHeadlines.length,
-                fallaciesFound: newFallacyHeadlines.length,
-                totalFallacyHeadlines: allFallacyHeadlines.length,
-                headlines: allFallacyHeadlines,
+                newFallaciesFound: newFallacyHeadlines.length,
+                totalFallacyHeadlines: (existingFallacyData.headlines || []).length + newFallacyHeadlines.length,
+                headlines: [...(existingFallacyData.headlines || []), ...newFallacyHeadlines],
               };
-
-              // Load existing all-headlines data
-              let existingAllData = { headlines: [] };
-              const allHeadlinesFilePath = 'data/all-headlines.json';
-              
-              if (fs.existsSync(allHeadlinesFilePath)) {
-                try {
-                  existingAllData = JSON.parse(fs.readFileSync(allHeadlinesFilePath, 'utf8'));
-                  console.log(`Loaded ${existingAllData.headlines.length} existing all-headlines.`);
-                } catch (error) {
-                  console.warn('Could not parse existing all-headlines.json, starting fresh:', error.message);
-                  existingAllData = { headlines: [] };
-                }
-              }
-
-              // Filter out duplicates for all headlines
-              const existingAllUrls = new Set((existingAllData.headlines || []).map(h => h.url));
-              const newAllHeadlines = analyzedHeadlines.filter(h => !existingAllUrls.has(h.url));
-              
-              console.log(`${newAllHeadlines.length} new unique headlines (all) to add.`);
-
-              // Append new headlines to existing ones
-              const allHeadlines = [...(existingAllData.headlines || []), ...newAllHeadlines];
 
               const allOutput = {
                 lastUpdated: new Date().toISOString(),
                 totalAnalyzed: newAllHeadlines.length,
-                totalHeadlines: allHeadlines.length,
-                headlines: allHeadlines,
+                totalHeadlines: (existingAllData.headlines || []).length + newAllHeadlines.length,
+                headlines: [...(existingAllData.headlines || []), ...newAllHeadlines],
               };
 
-              if (!fs.existsSync('data')) fs.mkdirSync('data');
-              fs.writeFileSync('data/headlines.json', JSON.stringify(output, null, 2));
+              // Ensure data directory exists and write files
+              if (!fs.existsSync('data')) {
+                fs.mkdirSync('data', { recursive: true });
+              }
+              
+              fs.writeFileSync('data/headlines.json', JSON.stringify(fallacyOutput, null, 2));
               fs.writeFileSync('data/all-headlines.json', JSON.stringify(allOutput, null, 2));
-              console.log('Analysis complete. Files updated with new headlines appended.');
               
-              // Enhanced Summary
-              console.log('\n=== SUMMARY ===');
-              console.log(`Total targeted search queries: ${TOTAL_REQUESTS}`);
-              console.log(`Articles per query: ${ARTICLES_PER_REQUEST}`);
-              console.log(`Total unique articles fetched: ${allArticles.length}`);
-              console.log(`Total articles analyzed: ${analyzedHeadlines.length}`);
+              console.log('\n=== ANALYSIS COMPLETE ===');
+              console.log(`Total queries processed: ${SEARCH_QUERIES.length}`);
+              console.log(`Total articles fetched: ${allArticles.length}`);
               console.log(`Headlines with fallacies: ${fallacyHeadlines.length}`);
-              console.log(`New unique fallacy headlines added: ${newFallacyHeadlines.length}`);
-              console.log(`Excluded keywords: ${EXCLUDE_KEYWORDS.join(', ')}`);
-              
-              // Topic breakdown
-              console.log('\n=== TOPIC COVERAGE ===');
-              const topics = [
-                'Gender/Transgender', 'Protests/Civil Unrest', 'Systemic Racism', 
-                'Immigration', 'Israel-Palestine', 'Climate Change', 
-                'Elections/Politics', 'Public Health', 'Crime/Policing', 'Technology/AI'
-              ];
-              topics.forEach((topic, i) => {
-                console.log(`${topic}: ${Math.floor(i * 2 * ARTICLES_PER_REQUEST / TOTAL_REQUESTS * allArticles.length)} queries processed`);
-              });
+              console.log(`New fallacy headlines added: ${newFallacyHeadlines.length}`);
+              console.log(`Files updated successfully`);
               
             } catch (error) {
-              console.error('Error in main function:', error);
+              console.error('Fatal error in main function:', error);
               process.exit(1);
             }
           }
@@ -364,6 +448,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update targeted news headlines with fallacy analysis - $(date)"
+            git commit -m "Update news headlines with fallacy analysis - $(date '+%Y-%m-%d %H:%M:%S')"
             git push
           fi
