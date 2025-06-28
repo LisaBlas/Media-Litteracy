@@ -48,17 +48,17 @@ jobs:
             // Immigration
             '"undocumented immigrants" OR "asylum seekers" OR "migrant rights" OR "border policy" OR "sanctuary cities" OR "family separation" OR "DACA" OR "immigration reform"',
             
+            // Far-Right
+            '"far-right" OR "right-wing" OR "far-right protests"',
+            
             // Israel and Global Conflicts
             '"Israel-Palestine" OR "Gaza conflict" OR "pro-Palestinian protest" OR "Israel apartheid" OR "Middle East violence" OR "Hamas" OR "Israeli occupation"',
             
             // Climate Change and Environmental Policy
             '"climate crisis" OR "climate emergency" OR "global warming" OR "green new deal" OR "environmental justice" OR "fossil fuels divestment" OR "carbon neutrality"',
             
-            // Elections and Political Campaigns
-            '"election integrity" OR "voter suppression" OR "mail-in ballots" OR "gerrymandering" OR "voting rights act" OR "democracy in crisis" OR "campaign donations"',
-            
             // Public Health (Vaccines, Pandemics)
-            '"vaccine mandate" OR "public health order" OR "COVID-19 response" OR "anti-vax misinformation" OR "mask compliance" OR "pandemic policy" OR "boosters"',
+            '"vaccine mandate" OR "public health order" OR "COVID-19" OR "anti-vax misinformation" OR "mask compliance" OR "pandemic policy" OR "boosters"',
             
             // Crime and Policing
             '"defund the police" OR "police accountability" OR "mass incarceration" OR "restorative justice" OR "bail reform" OR "criminal justice reform"',
@@ -253,7 +253,7 @@ jobs:
           Return only the JSON object.`;
 
             const requestBody = JSON.stringify({
-              model: 'mistralai/mistral-7b-instruct:free',
+              model: 'openai/gpt-4.1-nano-2025-04-14',
               messages: [{ role: 'user', content: prompt }],
               temperature: 0.2,
               max_tokens: 150,
