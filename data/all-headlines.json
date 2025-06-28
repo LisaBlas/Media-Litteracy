@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-06-28T11:51:10.024Z",
-  "totalAnalyzed": 49,
-  "totalHeadlines": 130,
+  "lastUpdated": "2025-06-28T12:20:18.187Z",
+  "totalAnalyzed": 9,
+  "totalHeadlines": 139,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -1581,6 +1581,114 @@
       "fallacy": null,
       "explanation": "Analysis failed after 3 attempts: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: free-models-per-day. Add 5 credits to unlock 1000 free model requests per day\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"50\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Reset\":\"1751155200000\"},\"provider_name\":null}},\"user_id\":\"user_2yHBhgdi5qjeDC2O30w1kiKeFRA\"}",
       "analyzedAt": "2025-06-28T11:51:10.022Z"
+    },
+    {
+      "title": "Providence households to receive mailer for dealing with ICE",
+      "description": "The mailer is “in direct response to the brutal and unconstitutional enforcement tactics currently being undertaken by the far-right federal administration,” officials said.",
+      "url": "https://www.bostonglobe.com/2025/06/25/metro/providence-immigrants-rights-postcard-ice/",
+      "source": "The Boston Globe",
+      "publishedAt": "2025-06-25T04:00:00Z",
+      "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/K3UBG74A6JWC6ROOOZLUDSXXX4.jpg?auth=2db7e1bb0d5b1886420e4ff1f8b63f9d46150078b34523e73c3631e325d80ad8&width=1440",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-06-28T12:19:41.348Z"
+    },
+    {
+      "title": "Tucker Carlson sarcastically floats nuking Iran if they actually try killing Trump in fiery clash with Ted Cruz over Israel conflict",
+      "description": "Right-wing pundit Tucker Carlson suggested that the US should contemplate nuking Iran if allegations are true that the theocratic regime has been conspiring to assassinate President Trump, during a fiery two-hour debate with Sen. Ted Cruz.",
+      "url": "https://nypost.com/2025/06/18/us-news/tucker-carlson-floats-nuking-iran-if-they-are-actually-trying-to-assassinate-president-trump-in-epic-clash-with-sen-ted-cruz-over-israel-conflict/",
+      "source": "New York Post",
+      "publishedAt": "2025-06-18T22:00:51Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/106731226.jpg?quality=75&strip=all&w=1024",
+      "containsFallacy": true,
+      "fallacy": "Slippery Slope",
+      "explanation": "The headline suggests that floating the idea of nuking Iran could lead to extreme and catastrophic consequences without sufficient evidence, implying a chain of events that may not necessarily follow from the initial statement.",
+      "analyzedAt": "2025-06-28T12:19:43.065Z"
+    },
+    {
+      "title": "Tucker Carlson, Ted Cruz Clash Over Israel's Meaning In Bible",
+      "description": "The right-wing pundit's clash with the senator comes as Republicans debate whether or not to dig deeper into conflict in the Middle East.",
+      "url": "https://www.huffpost.com/entry/tucker-carlson-ted-cruz-define-israel_n_6853187ce4b07c6cc415d440",
+      "source": "The Huffington Post",
+      "publishedAt": "2025-06-18T21:40:30Z",
+      "image": "https://img.huffingtonpost.com/asset/685325501900000c77247808.jpeg?cache=ZbR90n8Pyg&ops=1200_630",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-06-28T12:19:44.355Z"
+    },
+    {
+      "title": "How accused Minnesota assassin Vance Boelter transitioned from popular local athlete to radical far-right Christian",
+      "description": "Accused Minnesota assassin Vance Boelter was a popular high-school athlete before becoming born again in his teens, moving into a tent in the park to preach and eventually morphing into an apparent far-right Christian.",
+      "url": "https://nypost.com/2025/06/17/us-news/accused-minnesota-assassin-vance-boelters-transformation-to-far-right-christian/",
+      "source": "New York Post",
+      "publishedAt": "2025-06-17T21:44:02Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/newspress-collage-3oarvgyn0-1750195726690.jpg?quality=75&strip=all&1750181464&w=1024",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-06-28T12:19:45.512Z"
+    },
+    {
+      "title": "Alex Jones accused of shielding more than $5 million in assets",
+      "description": "The trustee overseeing Jones' personal bankruptcy case is accusing the far-right conspiracy theorist of trying to shield more than $5 million.",
+      "url": "https://www.nbcboston.com/news/national-international/alex-jones-accused-trying-to-shield-assets-sandy-hook-families-seek-payment/3744747/",
+      "source": "NBC10 Boston",
+      "publishedAt": "2025-06-17T17:24:25Z",
+      "image": "https://media.nbcboston.com/2022/09/Alex-Jones-3.jpg?quality=85&strip=all&resize=1200%2C675",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-06-28T12:19:46.657Z"
+    },
+    {
+      "title": "New CDC vaccine advisers discuss COVID-19, RSV shots",
+      "description": "U.S. Health Secretary Robert F. Kennedy Jr.’s new vaccine advisory panel plans to revisit long-settled questions about childhood vaccines.",
+      "url": "https://apnews.com/article/cdc-vaccine-advisers-covid19-rsv-a85baa8a9296fd857af5ce33ae3b6cfd",
+      "source": "The Associated Press",
+      "publishedAt": "2025-06-25T18:10:32Z",
+      "image": "https://dims.apnews.com/dims4/default/9ce076c/2147483647/strip/true/crop/5631x3167+0+293/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F99%2F41%2F0637478ddfcc758ff1d1ee8c9b3f%2Fffc54fc7a03f44eca56df917a9a51c03",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-06-28T12:20:01.650Z"
+    },
+    {
+      "title": "Dallas-area family pleads guilty to fraud in pandemic-era Paycheck Protection Program",
+      "description": "Seven members of a North Texas family stole tens of thousands of dollars from a federal COVID-19 program.",
+      "url": "https://www.dallasnews.com/news/courts/2025/06/25/dallas-area-family-pleads-guilty-to-fraud-in-pandemic-era-paycheck-protection-program/",
+      "source": "The Dallas Morning News",
+      "publishedAt": "2025-06-25T16:30:00Z",
+      "image": "https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/v2/OFVNRIJOH5AJZAKCJY6A5L4GCQ.jpg?auth=d95f506abbce5399b1ad0b05daa76f6638ebb073457be4db4632c52991f03c20&height=630&width=1200&focal=1934,1420&quality=80",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-06-28T12:20:02.895Z"
+    },
+    {
+      "title": "Louisiana Workforce Commission employee pleads guilty to wire fraud, defrauding state for $200,000",
+      "description": "A former Louisiana Workforce Commission employee pled guilty to wire fraud after using emergency financial assistance enacted during the COVID-19 pandemic to defraud the state of $200,000.",
+      "url": "https://www.wbrz.com/news/louisiana-workforce-commission-employee-pleads-guilty-to-wire-fraud-defrauding-state-for-200-000",
+      "source": "WBRZ",
+      "publishedAt": "2025-06-25T04:00:00Z",
+      "image": "https://dcer237tfveol.cloudfront.net/v2/wKXMRq0WvrCM-60eGVqjZwMZjwNe2yTx5sARELE8f6pjtZASebMY2GcjlCAtDKQtAF_9bU9s2I-Bka1cTmKIKSMDs3RPytRTDqLcBDFDJqdA6juZqOhuQ6yp7z3T9AdFLkz41ZAFjd7z1cdj8qBU96",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-06-28T12:20:04.039Z"
+    },
+    {
+      "title": "HIV: Supercharged Vaccine Could Protect Well With Just One Dose",
+      "description": "The approach employed by the research team could be used against other diseases—including COVID-19 and influenza.",
+      "url": "https://www.newsweek.com/hiv-vaccine-supercharged-dual-adjuvant-immune-2088030",
+      "source": "Newsweek",
+      "publishedAt": "2025-06-19T15:59:04Z",
+      "image": "https://d.newsweek.com/en/full/2667125/man-receives-vaccination.jpg",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-06-28T12:20:05.358Z"
     }
   ]
 }

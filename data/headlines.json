@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2025-06-28T11:51:10.024Z",
+  "lastUpdated": "2025-06-28T12:20:18.187Z",
   "totalAnalyzed": 49,
-  "newFallaciesFound": 0,
-  "totalFallacyHeadlines": 25,
+  "newFallaciesFound": 10,
+  "totalFallacyHeadlines": 35,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -284,6 +284,126 @@
       "containsFallacy": true,
       "fallacy": "Loaded Question",
       "explanation": "The headline uses the phrase 'overhead' costs in quotes, implying a negative or dismissive connotation without evidence, which can be seen as a loaded question by framing the issue in a biased way."
+    },
+    {
+      "title": "Trump Jr Says Obama Getting Nobel Prize Over Father Is 'Affirmative Action'",
+      "description": "Barack Obama won the Nobel Peace Prize in 2009 for his \"extraordinary efforts to strengthen international diplomacy and cooperation between peoples.\"",
+      "url": "https://www.newsweek.com/donald-trump-jr-nobel-peace-prize-barack-obama-affirmative-action-2090362",
+      "source": "Newsweek",
+      "publishedAt": "2025-06-25T08:39:06Z",
+      "image": "https://d.newsweek.com/en/full/2670806/trump.jpg",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline suggests a causal relationship between Obama receiving the Nobel Prize and affirmative action, implying one causes the other without evidence, which is a false causality fallacy.",
+      "analyzedAt": "2025-06-28T12:19:28.237Z"
+    },
+    {
+      "title": "Ilia Topuria Hit With Dana White Privilege Jab by Umar Nurmagomedov Amid Islam’s Welterweight Revelation",
+      "description": "Umar Nurmagomedov reveals the UFC brass played a key role in Islam Makhachev’s move to the 170 lbs division, without fighting Ilia Topuria",
+      "url": "https://www.essentiallysports.com/ufc-mma-news-ilia-topuria-hit-with-dana-white-privilege-jab-by-umar-nurmagomedov-amid-islams-welterweight-revelation/",
+      "source": "Essentially Sports",
+      "publishedAt": "2025-06-15T17:13:37Z",
+      "image": "https://image-cdn.essentiallysports.com/wp-content/uploads/Ilia-Topuria-Dana-White-Islam-Makhachev.png",
+      "containsFallacy": true,
+      "fallacy": "Red Herring",
+      "explanation": "The headline introduces unrelated topics—Ilia Topuria, Dana White Privilege, Umar Nurmagomedov, and Islam’s welterweight revelation—without clear logical connection, potentially diverting attention from the main issue.",
+      "analyzedAt": "2025-06-28T12:19:29.742Z"
+    },
+    {
+      "title": "Paddy Pimblett Puts Arman Tsarukyan in Check for Exposing Alleged Dana White Privilege",
+      "description": "Paddy Pimblett lashes out at Arman Tsarukyan after facing Dana White privilige accusation. Is a new grudge match on the way?",
+      "url": "https://www.essentiallysports.com/ufc-mma-news-paddy-pimblett-puts-arman-tsarukyan-in-check-for-exposing-alleged-dana-white-privilege/",
+      "source": "Essentially Sports",
+      "publishedAt": "2025-05-31T17:00:40Z",
+      "image": "https://image-cdn.essentiallysports.com/wp-content/uploads/Paddy-Pimblett-Arman-Tsarukyan.png",
+      "containsFallacy": true,
+      "fallacy": "Red Herring",
+      "explanation": "The headline shifts focus from the actual issue of alleged privilege to Paddy Pimblett's response, potentially diverting attention away from the core controversy.",
+      "analyzedAt": "2025-06-28T12:19:31.081Z"
+    },
+    {
+      "title": "Here's what Harvard must do to appease Trump",
+      "description": "President Trump’s antisemitism task force is demanding Harvard eliminate DEI and affirmative action, allow third-party oversight of many of its biggest academic programs and turn over the identities of international students and anti-Israel protesters.",
+      "url": "https://nypost.com/2025/05/27/us-news/heres-what-harvard-must-do-to-appease-trump-including-leadership-change/",
+      "source": "New York Post",
+      "publishedAt": "2025-05-27T23:20:30Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/05/105414865.jpg?quality=75&strip=all&w=1024",
+      "containsFallacy": true,
+      "fallacy": "False Dichotomy",
+      "explanation": "The headline implies that Harvard must choose between appeasing Trump or facing negative consequences, presenting only two options and ignoring other possibilities.",
+      "analyzedAt": "2025-06-28T12:19:32.514Z"
+    },
+    {
+      "title": "Virginia GOP embraced a diverse ticket in this year’s elections. Then things got complicated",
+      "description": "Republicans engaged in scrubbing the federal government of DEI programs are fielding a historically diverse ticket in Virginia in one of the only states holding elections this year.",
+      "url": "https://www.nbcnews.com/nbc-out/out-politics-and-policy/virginia-gop-embraced-diverse-ticket-years-elections-things-got-compli-rcna206722",
+      "source": "NBC News",
+      "publishedAt": "2025-05-14T13:31:14Z",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-05/250514-John-Reid-ch-0926-56cda2.jpg",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline suggests that embracing a diverse ticket directly caused things to get complicated, implying a causal relationship without evidence, which is a false causality fallacy.",
+      "analyzedAt": "2025-06-28T12:19:33.810Z"
+    },
+    {
+      "title": "Why Legalizing Immigrants Doesn’t Benefit the America We Know",
+      "description": "Undocumented immigrants are perfect for the economy, the author argues, since they do the jobs most people don't want, with few benefits.",
+      "url": "https://www.westword.com/news/opinion-legalizing-immigration-would-upset-america-we-know-24808664",
+      "source": "Westword",
+      "publishedAt": "2025-06-15T14:15:00Z",
+      "image": "https://media2.westword.com/den/imager/why-legalizing-immigrants-doesnt-benefit-the-america-we-know/u/r-landingfeature/24808928/undocumentedimmigrant.webp?cb=1749919265",
+      "containsFallacy": true,
+      "fallacy": "False Dichotomy",
+      "explanation": "The headline suggests that there are only two options: either keep the current state or face negative consequences, ignoring other possibilities or nuanced outcomes.",
+      "analyzedAt": "2025-06-28T12:19:40.093Z"
+    },
+    {
+      "title": "Tucker Carlson sarcastically floats nuking Iran if they actually try killing Trump in fiery clash with Ted Cruz over Israel conflict",
+      "description": "Right-wing pundit Tucker Carlson suggested that the US should contemplate nuking Iran if allegations are true that the theocratic regime has been conspiring to assassinate President Trump, during a fiery two-hour debate with Sen. Ted Cruz.",
+      "url": "https://nypost.com/2025/06/18/us-news/tucker-carlson-floats-nuking-iran-if-they-are-actually-trying-to-assassinate-president-trump-in-epic-clash-with-sen-ted-cruz-over-israel-conflict/",
+      "source": "New York Post",
+      "publishedAt": "2025-06-18T22:00:51Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/106731226.jpg?quality=75&strip=all&w=1024",
+      "containsFallacy": true,
+      "fallacy": "Slippery Slope",
+      "explanation": "The headline suggests that floating the idea of nuking Iran could lead to extreme and catastrophic consequences without sufficient evidence, implying a chain of events that may not necessarily follow from the initial statement.",
+      "analyzedAt": "2025-06-28T12:19:43.065Z"
+    },
+    {
+      "title": "Climate Crisis 'Evil Twin' Is Coming for Marine Life",
+      "description": "\"It is a line between functional and failing ecosystems.\"",
+      "url": "https://www.newsweek.com/climate-crisis-evil-twin-coming-marine-life-2084740",
+      "source": "Newsweek",
+      "publishedAt": "2025-06-16T07:59:58Z",
+      "image": "https://d.newsweek.com/en/full/2662091/ocean-acidification.jpg",
+      "containsFallacy": true,
+      "fallacy": "Appeal to Emotion / Pity",
+      "explanation": "The headline uses emotionally charged language ('Evil Twin') to evoke fear or concern, which is an appeal to emotion rather than presenting factual evidence.",
+      "analyzedAt": "2025-06-28T12:19:57.820Z"
+    },
+    {
+      "title": "Destruction of Swiss village highlights the dangers as the world's glaciers melt",
+      "description": "The landslide that buried a Swiss village and riverbed is refocusing attention on the role of global warming in glacier collapses around the world.",
+      "url": "https://apnews.com/article/switzerland-glacier-collapse-climate-change-blatten-landslide-19f5661487bc02e47d8d8f0afdc74afd",
+      "source": "The Associated Press",
+      "publishedAt": "2025-05-30T02:54:13Z",
+      "image": "https://dims.apnews.com/dims4/default/c952757/2147483647/strip/true/crop/8163x4592+0+425/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F7d%2F07%2F59e43a9eb09960a6ff6a4743c525%2F15945700e80645a7bdec434586e603ce",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline suggests that the destruction of a Swiss village directly highlights the dangers of melting glaciers, implying a causal relationship without sufficient evidence, which is a false causality fallacy.",
+      "analyzedAt": "2025-06-28T12:19:59.310Z"
+    },
+    {
+      "title": "After Mr. Deepfakes shut down forever, one creator could face a $450K fine",
+      "description": "Australia’s online safety regulator asks for severe fine to combat flood of AI porn.",
+      "url": "https://arstechnica.com/tech-policy/2025/05/after-mr-deepfakes-shut-down-forever-one-creator-could-face-a-450k-fine/",
+      "source": "Ars Technica",
+      "publishedAt": "2025-05-27T15:34:19Z",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2025/05/GettyImages-633243615-1152x648.jpg",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline suggests that the shutdown of Mr. Deepfakes directly causes a creator to face a fine, implying a causal relationship without evidence, which may be a false causality fallacy.",
+      "analyzedAt": "2025-06-28T12:20:15.792Z"
     }
   ]
 }
