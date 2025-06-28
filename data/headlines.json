@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2025-06-28T12:20:18.187Z",
+  "lastUpdated": "2025-06-28T12:51:37.826Z",
   "totalAnalyzed": 49,
-  "newFallaciesFound": 10,
-  "totalFallacyHeadlines": 35,
+  "newFallaciesFound": 1,
+  "totalFallacyHeadlines": 31,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -349,6 +349,18 @@
       "fallacy": "False Causality",
       "explanation": "The headline suggests that the shutdown of Mr. Deepfakes directly causes a creator to face a fine, implying a causal relationship without evidence, which may be a false causality fallacy.",
       "analyzedAt": "2025-06-28T12:20:15.792Z"
+    },
+    {
+      "title": "How accused Minnesota assassin Vance Boelter transitioned from popular local athlete to radical far-right Christian",
+      "description": "Accused Minnesota assassin Vance Boelter was a popular high-school athlete before becoming born again in his teens, moving into a tent in the park to preach and eventually morphing into an apparent far-right Christian.",
+      "url": "https://nypost.com/2025/06/17/us-news/accused-minnesota-assassin-vance-boelters-transformation-to-far-right-christian/",
+      "source": "New York Post",
+      "publishedAt": "2025-06-17T21:44:02Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/newspress-collage-3oarvgyn0-1750195726690.jpg?quality=75&strip=all&1750181464&w=1024",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline suggests a direct causal link between Boelter's transition from athlete to radical Christian and his alleged actions, implying one caused the other without evidence, which is a false causality fallacy.",
+      "analyzedAt": "2025-06-28T12:51:04.503Z"
     }
   ]
 }
