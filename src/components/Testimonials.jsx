@@ -17,13 +17,14 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-12 text-center">
+    <section className="min-h-screen flex flex-col justify-center bg-editorial-cream py-20">
+      <div className="container mx-auto px-6 max-w-6xl">
+        <h2 className="font-serif text-4xl md:text-5xl text-gray-800 text-center mb-20">What People Are Saying</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {testimonials.map((testimonial, index) => (
-            <div key={index}>
-              <p className="font-serif text-lg italic text-gray-700 mb-4">"{testimonial.quote}"</p>
-              <p className="font-bold text-gray-800">- {testimonial.author}</p>
+            <div key={index} className="bg-white p-8 rounded-lg shadow-lg flex flex-col">
+              <p className="font-serif text-xl italic text-gray-700 mb-6 flex-grow">“{testimonial.quote}”</p>
+              <p className="font-sans font-semibold text-gray-800 text-right">— {testimonial.author}</p>
             </div>
           ))}
         </div>

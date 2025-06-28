@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import ToolsOverview from '../components/ToolsOverview';
+import FallacyDetector from '../components/FallacyDetector';
 import HowItWorks from '../components/HowItWorks';
 import CourseSpotlight from '../components/CourseSpotlight';
 import ResourcesCommunity from '../components/ResourcesCommunity';
@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <div className="bg-editorial-cream">
       <Hero />
-      <ToolsOverview />
+      <FallacyDetector />
       <HowItWorks />
       <CourseSpotlight />
       <ResourcesCommunity />
