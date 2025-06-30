@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-06-30T02:22:08.248Z",
-  "totalAnalyzed": 0,
-  "totalHeadlines": 140,
+  "lastUpdated": "2025-06-30T06:41:10.765Z",
+  "totalAnalyzed": 1,
+  "totalHeadlines": 141,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -1701,6 +1701,18 @@
       "fallacy": null,
       "explanation": null,
       "analyzedAt": "2025-06-29T02:26:57.592Z"
+    },
+    {
+      "title": "Israel orders evacuations in northern Gaza as Trump calls for war to end",
+      "description": "The Israeli military ordered Palestinians to evacuate areas in northern Gaza on Sunday before intensified fighting against Hamas, as US President Donald Trump called for an end to the war amid renewed efforts to broker a ceasefire.",
+      "url": "https://nypost.com/2025/06/29/world-news/israel-orders-northern-gaza-evacuations-as-trump-calls-for-hamas-war-to-end/",
+      "source": "New York Post",
+      "publishedAt": "2025-06-29T08:54:44Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/israel-trump.jpg?quality=75&strip=all&1751172871&w=1024",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-06-30T06:40:37.852Z"
     }
   ]
 }
