@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-07-01T02:28:52.842Z",
-  "totalAnalyzed": 0,
-  "totalHeadlines": 141,
+  "lastUpdated": "2025-07-01T06:41:17.295Z",
+  "totalAnalyzed": 1,
+  "totalHeadlines": 142,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -1713,6 +1713,18 @@
       "fallacy": null,
       "explanation": null,
       "analyzedAt": "2025-06-30T06:40:37.852Z"
+    },
+    {
+      "title": "Mediators pushing Israel and Hamas to resume talks",
+      "description": "The United States, Qatar, and Egypt have acted as mediators throughout the war, which began after Hamas's Oct. 7, 2023, terrorist attack on Israel.",
+      "url": "https://www.washingtonexaminer.com/news/3458355/israel-gaza-mediators-pushing-resume-talks/",
+      "source": "Washington Examiner",
+      "publishedAt": "2025-06-30T20:29:50Z",
+      "image": "https://www.washingtonexaminer.com/wp-content/uploads/2025/06/Trump-Netanyahu.webp",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-07-01T06:40:40.401Z"
     }
   ]
 }
