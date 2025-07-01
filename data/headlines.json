@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2025-06-28T12:20:18.187Z",
+  "lastUpdated": "2025-07-01T12:57:14.161Z",
   "totalAnalyzed": 49,
-  "newFallaciesFound": 10,
-  "totalFallacyHeadlines": 35,
+  "newFallaciesFound": 0,
+  "totalFallacyHeadlines": 33,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -349,6 +349,42 @@
       "fallacy": "False Causality",
       "explanation": "The headline suggests that the shutdown of Mr. Deepfakes directly causes a creator to face a fine, implying a causal relationship without evidence, which may be a false causality fallacy.",
       "analyzedAt": "2025-06-28T12:20:15.792Z"
+    },
+    {
+      "title": "How accused Minnesota assassin Vance Boelter transitioned from popular local athlete to radical far-right Christian",
+      "description": "Accused Minnesota assassin Vance Boelter was a popular high-school athlete before becoming born again in his teens, moving into a tent in the park to preach and eventually morphing into an apparent far-right Christian.",
+      "url": "https://nypost.com/2025/06/17/us-news/accused-minnesota-assassin-vance-boelters-transformation-to-far-right-christian/",
+      "source": "New York Post",
+      "publishedAt": "2025-06-17T21:44:02Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/newspress-collage-3oarvgyn0-1750195726690.jpg?quality=75&strip=all&1750181464&w=1024",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline suggests a direct causal link between Boelter's transition from athlete to radical Christian and his alleged actions, implying one caused the other without evidence, which is a false causality fallacy.",
+      "analyzedAt": "2025-06-28T12:51:04.503Z"
+    },
+    {
+      "title": "In line with Trump, North Carolina legislature takes aim at transgender rights",
+      "description": "The North Carolina Senate advanced two bills that deal with transgender issues as lawmakers prepare for their anticipated summer recess by this week's end.",
+      "url": "https://apnews.com/article/transgender-lgbtq-north-carolina-bill-61af70e490fc2240eac282afd3982d9b",
+      "source": "The Associated Press",
+      "publishedAt": "2025-06-25T00:28:46Z",
+      "image": "https://dims.apnews.com/dims4/default/4a8c217/2147483647/strip/true/crop/3888x2187+0+203/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F31%2Faa%2F638aa82307c708a28bcd7c62e6ac%2F7e1feb6151af497cbb8eda4d9f738dd3",
+      "containsFallacy": true,
+      "fallacy": "False Causality",
+      "explanation": "The headline suggests a causal link between Trump's actions and the North Carolina legislature's actions without providing evidence, implying that one directly causes the other.",
+      "analyzedAt": "2025-06-30T06:40:04.696Z"
+    },
+    {
+      "title": "US Supreme Court upheld Tennessee's ban on trans care. Families of trans kids worry what's next",
+      "description": "A U.S. Supreme Court decision upholding Tennessee’s ban on gender-affirming care for minors is leaving transgender children and their parents uncertain and anxious about its impact.",
+      "url": "https://apnews.com/article/supreme-court-tennessee-transgender-health-care-b782fde1c386fd8adcbeabaa3c5e8ec2",
+      "source": "The Associated Press",
+      "publishedAt": "2025-06-19T01:00:44Z",
+      "image": "https://dims.apnews.com/dims4/default/c790717/2147483647/strip/true/crop/8137x4577+0+424/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fa6%2Fd3%2F33074489e7889cd87493845b07e8%2F23fd55c1d9bf49999fe0218d23210f86",
+      "containsFallacy": true,
+      "fallacy": "Slippery Slope",
+      "explanation": "The headline suggests that the Supreme Court's decision will inevitably lead to further negative consequences for trans kids and their families without providing evidence for such a progression.",
+      "analyzedAt": "2025-07-01T02:27:36.176Z"
     }
   ]
 }

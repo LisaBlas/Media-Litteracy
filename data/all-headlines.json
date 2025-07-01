@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-06-28T12:20:18.187Z",
-  "totalAnalyzed": 9,
-  "totalHeadlines": 139,
+  "lastUpdated": "2025-07-01T12:57:14.161Z",
+  "totalAnalyzed": 0,
+  "totalHeadlines": 142,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -1689,6 +1689,42 @@
       "fallacy": null,
       "explanation": null,
       "analyzedAt": "2025-06-28T12:20:05.358Z"
+    },
+    {
+      "title": "Israeli strikes kill dozens in Gaza as Trump says ceasefire possible \"next week\"",
+      "description": "The strikes come as President Trump on Friday said there could be a ceasefire agreement between Israel and Hamas within the next week.",
+      "url": "https://www.cbsnews.com/news/israel-gaza-strikes-hamas-ceasefire-prospects/",
+      "source": "CBS News",
+      "publishedAt": "2025-06-28T16:32:12Z",
+      "image": "https://assets1.cbsnewsstatic.com/hub/i/r/2025/06/28/4c2f2697-3e77-4602-8613-bc2615353906/thumbnail/1200x630/42c70c600c68d8eae1d195648857a6c8/gettyimages-2221709551.jpg",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-06-29T02:26:57.592Z"
+    },
+    {
+      "title": "Israel orders evacuations in northern Gaza as Trump calls for war to end",
+      "description": "The Israeli military ordered Palestinians to evacuate areas in northern Gaza on Sunday before intensified fighting against Hamas, as US President Donald Trump called for an end to the war amid renewed efforts to broker a ceasefire.",
+      "url": "https://nypost.com/2025/06/29/world-news/israel-orders-northern-gaza-evacuations-as-trump-calls-for-hamas-war-to-end/",
+      "source": "New York Post",
+      "publishedAt": "2025-06-29T08:54:44Z",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/israel-trump.jpg?quality=75&strip=all&1751172871&w=1024",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-06-30T06:40:37.852Z"
+    },
+    {
+      "title": "Mediators pushing Israel and Hamas to resume talks",
+      "description": "The United States, Qatar, and Egypt have acted as mediators throughout the war, which began after Hamas's Oct. 7, 2023, terrorist attack on Israel.",
+      "url": "https://www.washingtonexaminer.com/news/3458355/israel-gaza-mediators-pushing-resume-talks/",
+      "source": "Washington Examiner",
+      "publishedAt": "2025-06-30T20:29:50Z",
+      "image": "https://www.washingtonexaminer.com/wp-content/uploads/2025/06/Trump-Netanyahu.webp",
+      "containsFallacy": false,
+      "fallacy": null,
+      "explanation": null,
+      "analyzedAt": "2025-07-01T06:40:40.401Z"
     }
   ]
 }
