@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2025-06-30T18:38:29.017Z",
+  "lastUpdated": "2025-07-01T02:28:52.842Z",
   "totalAnalyzed": 49,
-  "newFallaciesFound": 0,
-  "totalFallacyHeadlines": 32,
+  "newFallaciesFound": 1,
+  "totalFallacyHeadlines": 33,
   "headlines": [
     {
       "title": "UK economy shrank sharply in April as Trump tariffs kicked in",
@@ -373,6 +373,18 @@
       "fallacy": "False Causality",
       "explanation": "The headline suggests a causal link between Trump's actions and the North Carolina legislature's actions without providing evidence, implying that one directly causes the other.",
       "analyzedAt": "2025-06-30T06:40:04.696Z"
+    },
+    {
+      "title": "US Supreme Court upheld Tennessee's ban on trans care. Families of trans kids worry what's next",
+      "description": "A U.S. Supreme Court decision upholding Tennessee’s ban on gender-affirming care for minors is leaving transgender children and their parents uncertain and anxious about its impact.",
+      "url": "https://apnews.com/article/supreme-court-tennessee-transgender-health-care-b782fde1c386fd8adcbeabaa3c5e8ec2",
+      "source": "The Associated Press",
+      "publishedAt": "2025-06-19T01:00:44Z",
+      "image": "https://dims.apnews.com/dims4/default/c790717/2147483647/strip/true/crop/8137x4577+0+424/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fa6%2Fd3%2F33074489e7889cd87493845b07e8%2F23fd55c1d9bf49999fe0218d23210f86",
+      "containsFallacy": true,
+      "fallacy": "Slippery Slope",
+      "explanation": "The headline suggests that the Supreme Court's decision will inevitably lead to further negative consequences for trans kids and their families without providing evidence for such a progression.",
+      "analyzedAt": "2025-07-01T02:27:36.176Z"
     }
   ]
 }
