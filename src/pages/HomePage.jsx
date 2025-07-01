@@ -1,10 +1,8 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import FallacyDetector from '../components/FallacyDetector';
-import HowItWorks from '../components/HowItWorks';
 import CourseSpotlight from '../components/CourseSpotlight';
 import ResourcesCommunity from '../components/ResourcesCommunity';
-import Testimonials from '../components/Testimonials';
 import NewsletterSignup from '../components/NewsletterSignup';
 import Footer from '../components/Footer';
 
@@ -13,10 +11,8 @@ const HomePage = () => {
     <div className="bg-editorial-cream">
       <Hero />
       <FallacyDetector />
-      <HowItWorks />
       <CourseSpotlight />
       <ResourcesCommunity />
-      <Testimonials />
       <NewsletterSignup />
       <Footer />
     </div>

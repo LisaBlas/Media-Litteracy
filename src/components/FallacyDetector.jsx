@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import ArticleCard from './ArticleCard';
 
 const FallacyDetector = () => {
+  const navigate = useNavigate();
+  
   // A sample article to display in the ArticleCard
   const dummyArticle = {
     title: "Global Coffee Shortage Looms, Experts Warn of Price Surge",
@@ -16,16 +19,10 @@ const FallacyDetector = () => {
   };
 
   const benefits = [
-    "Instant fallacy detection in headlines",
+    "Fallacy detection in recent headlines",
     "Clear, jargon-free explanations",
     "Identify patterns of media manipulation",
     "Strengthen your critical thinking skills",
-  ];
-
-  const howItWorksSteps = [
-    { id: '01', name: 'Paste a Headline', description: 'Copy any news headline from an article you want to check.' },
-    { id: '02', name: 'Get Instant Analysis', description: 'Our AI analyzes the text for over a dozen common logical fallacies.' },
-    { id: '03', name: 'Understand the Bias', description: 'Receive a clear breakdown of the potential manipulation tactics at play.' },
   ];
 
   return (
@@ -67,18 +64,14 @@ const FallacyDetector = () => {
               </ul>
             </div>
 
-            {/* How It Works Steps */}
+            {/* Fallacy Tool Button */}
             <div>
-              <h3 className="font-sans font-semibold uppercase tracking-wider text-gray-500 mb-6">How It Works</h3>
-              <div className="space-y-6 border-l-2 border-gray-200 ml-2">
-                {howItWorksSteps.map((step) => (
-                  <div key={step.id} className="relative pl-8">
-                    <div className="absolute -left-2.5 top-1 h-4 w-4 bg-burgundy rounded-full border-4 border-editorial-cream"></div>
-                    <p className="font-serif text-xl font-semibold text-gray-800">{step.name}</p>
-                    <p className="text-gray-600">{step.description}</p>
-                  </div>
-                ))}
-              </div>
+              <button 
+                onClick={() => navigate('/articles')}
+                className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-xs sm:text-sm py-3 px-6 transition-colors duration-100 transform hover:scale-105"
+              >
+                Explore our first Tool
+              </button>
             </div>
 
           </div>
