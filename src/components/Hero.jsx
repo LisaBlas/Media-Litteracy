@@ -50,7 +50,7 @@ const Hero = () => {
             <span className="border-r-2 border-editorial-orange animate-pulse ml-1" />
           </span>
         </h1>
-        <p className="text-base sm:text-sm md:text-xl text-editorial-charcoal max-w-2xl mx-auto mb-6 sm:mb-10 text-editorial-charcoal">
+        <p className="text-base font-light sm:text-sm md:text-xl text-editorial-charcoal max-w-2xl mx-auto mb-6 sm:mb-10 text-editorial-charcoal">
         You don’t need to be an expert to think critically. All you need is a curious mind and the right tools to start spotting fallacies and biases. 
         </p>
         <div className="flex justify-center gap-3 sm:gap-4">

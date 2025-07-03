@@ -109,7 +109,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
 
   return (
     <motion.div
-      className="relative w-full h-90 border-2 border-editorial-charcoal rounded-lg overflow-hidden shadow-lg"
+      className="relative w-full h-90 border-2 rounded-lg overflow-hidden shadow-lg" style={{ borderColor: fallacyColor }}
       ref={cardRef}
       variants={cardVariants}
       initial="initial"
@@ -132,7 +132,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
         <div>
           <div className="mb-1">
             <span 
-              className="inline-block px-4 py-1 font-mono text-xs tracking-extrawide text-editorial-cream opacity-80"
+              className="inline-block px-4 py-1 font-bold text-xs tracking-extrawide text-editorial-cream opacity-80"
               style={{ backgroundColor: fallacyColor }}
             >
               {currentArticle.fallacy || 'FALLACY'}
@@ -188,7 +188,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
               <div className="flex flex-col md:flex-row gap-4 mb-4">
                 <div className="flex-shrink-0">
                   <span 
-                    className="inline-flex items-center px-4 py-1 font-mono text-xs tracking-extrawide text-editorial-cream opacity-80"
+                    className="inline-flex items-center px-4 py-1 font-bold text-xs tracking-extrawide text-editorial-cream opacity-80"
                     style={{ backgroundColor: fallacyColor, height: '1.5rem' }}
                   >
                     {currentArticle.fallacy || 'FALLACY'}
@@ -201,7 +201,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
                       style={{ backgroundColor: fallacyColor }}
                     />
                     <p 
-                      className="leading-relaxed text-sm ml-3 italic"
+                      className="leading-relaxed text-xs ml-3 italic font-bold"
                       style={{ color: fallacyColor, opacity: darkMode ? 0.9 : 1 }}
                     >
                       {fallacyDefinition}
@@ -215,7 +215,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
 
                 {/* Analysis Section */}
                 <div className="relative">
-                  <p className="leading-relaxed mb-2 text-editorial-charcoal">
+                  <p className="leading-relaxed mb-2 text-black font-light">
                     {currentArticle.explanation}
                     <a href={currentArticle.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="inline-flex items-center ml-2 text-editorial-orange underline hover:text-editorial-charcoal transition-colors duration-200">
                       <span className="mr-1">Read original article</span>
