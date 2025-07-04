@@ -34,15 +34,18 @@ const pillars = [
 
 const ResourcesCommunity = () => {
   return (
-    <section className="min-h-screen flex items-center bg-white py-20">
+    <section className="min-h-screen flex items-center bg-beige-100 py-20">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl">
         {/* Left Column */}
         <div>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-gray-800 mb-4">
-            Who We Are
+          <h2 className="font-playfair font-bold text-editorial-orange opacity-40 text-2xl md:text-3xl lg:text-3xl mb-4">
+            About us:
           </h2>
-          <h3 className="text-xl md:text-2xl text-burgundy font-light mb-2">
-            Using AI to Empower Critical Thinking
+          <h2 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-editorial-charcoal mb-4">
+            Who we are and why we care
+          </h2>
+          <h3 className="text-xl md:text-2xl text-editorial-orange font-light mb-2">
+            Using great Design and new AI Tools for Good
           </h3>
           {/* External Links */}
           <div className="flex items-center space-x-4 mb-6">
@@ -50,7 +53,7 @@ const ResourcesCommunity = () => {
               href="https://x.com/BerliozGordon"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-burgundy hover:text-gray-800 transition-colors"
+              className="text-burgundy hover:text-editorial-charcoal transition-colors"
               aria-label="X profile"
             >
               <XIcon className="h-6 w-6" />
@@ -59,16 +62,16 @@ const ResourcesCommunity = () => {
               href="https://lisablas.github.io/BleepBloop/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-burgundy hover:text-gray-800 transition-colors"
+              className="text-burgundy hover:text-editorial-charcoal transition-colors"
               aria-label="Portfolio website"
             >
               <GlobeAltIcon className="h-6 w-6" />
             </a>
           </div>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            We’re a small team of engineers and designers on a mission to shine a light on hidden fallacies and bias in the news.
+          <p className="text-editorial-charcoal font-light leading-relaxed mb-4 text-lg">
+           We're a design and development duo creating digital experiences and services. Our mission is to shine a light on hidden fallacies and bias in the news.
           </p>
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-editorial-charcoal font-light leading-relaxed text-lg">
             By combining cutting-edge AI with time-tested journalistic rigor, we equip everyone—from students to professionals—to question what they read.
           </p>
         </div>

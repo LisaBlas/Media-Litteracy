@@ -31,7 +31,7 @@ const ArticlesPage = () => {
     fetchArticles();
   }, []);
 
-  if (loading) return <div className="text-center p-8">Loading articles...</div>;
+  if (loading) return <div className="text-center p-8 bg-editorial-cream">Loading articles...</div>;
   if (error) return <div className="text-center p-8 text-red-500">{error}</div>;
 
   return (

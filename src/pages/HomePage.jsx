@@ -3,7 +3,6 @@ import Hero from '../components/Hero';
 import FallacyDetector from '../components/FallacyDetector';
 import CourseSpotlight from '../components/CourseSpotlight';
 import ResourcesCommunity from '../components/ResourcesCommunity';
-import NewsletterSignup from '../components/NewsletterSignup';
 import Footer from '../components/Footer';
 
 const HomePage = () => {
@@ -13,7 +12,6 @@ const HomePage = () => {
       <FallacyDetector />
       <CourseSpotlight />
       <ResourcesCommunity />
-      <NewsletterSignup />
       <Footer />
     </div>
   );

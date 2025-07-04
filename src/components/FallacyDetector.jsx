@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CheckIcon } from '@heroicons/react/24/solid';
+import checkIcon from '../../Images/check.svg';
 import ArticleCard from './ArticleCard';
 import axios from 'axios';
 
@@ -76,10 +76,8 @@ const FallacyDetector = () => {
               <ul className="space-y-4">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-center">
-                    <span className="inline-flex items-center justify-center h-4 w-4 bg-editorial-orange rounded-full mr-3 flex-shrink-0">
-                      <CheckIcon className="h-3 w-3 text-white font-bold" />
-                    </span>
-                    <span className="text-md font-light text-editorial-charcoal">{benefit}</span>
+                    <img src={checkIcon} alt="" className="h-4 w-4 mr-3 flex-shrink-0" />
+                    <span className="text-lg font-light text-editorial-charcoal">{benefit}</span>
                   </li>
                 ))}
               </ul>
