@@ -12,25 +12,25 @@ const CourseSpotlight = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="min-h-screen flex items-center bg-editorial-orange py-20">
+    <section className="min-h-screen flex items-center bg-editorial-orange overflow-x-hidden py-24 md:py-32 lg:py-48">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-16">
           
           {/* Left side: Text content */}
           <div className="md:w-5/12 text-center md:text-left text-editorial-cream">
             <h2 className="font-playfair text-4xl font-bold md:text-4xl mb-4 opacity-40">
-              Course coming soon:
+              Course coming soon
             </h2>
             <h2 className="font-playfair text-6xl font-bold md:text-6xl mb-8">
               Critical Thinking in Everyday Life
             </h2>
             <p className="text-lg mb-10 font-light">
-              Learn to navigate fallacies, biases and contentious topics with easy explanations based on real world examples. Become more aware and confident by practising with our interactive, AI supported tools and downloadable content. You can explore the modules in any order and at your own pace. 
+              Learn to navigate fallacies, biases and contentious topics with easy explanations based on real world examples. Become more aware and confident by practising with our interactive, AI supported tools and downloadable content. Explore the modules in any order and at your own pace. 
             </p>
             <p className="text-lg mb-10 font-light">
               We're still hard at work perfecting the course - join the waitlist to be notified when it's ready. The first 20 curious minds will receive a discount code!
             </p>
-            <form className="flex flex-col md:flex-row items-left justify-left gap-4 max-w-xl text-editorial-orange">
+            <form className="flex flex-col md:flex-row items-left justify-left gap-4 max-w-xl">
               <input
                 type="email"
                 placeholder="your.email@example.com"

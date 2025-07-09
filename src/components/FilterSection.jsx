@@ -93,6 +93,8 @@ const FilterSection = ({
 
   return (
     <div className="text-editorial-charcoal">
+      {/* Header for medium and large screens */}
+      <h2 className="hidden md:block text-2xl font-bold font-playfair mb-4 text-editorial-charcoal">Filter by:</h2>
       {Object.entries(filters).map(([key, { label, options }]) => (
         <div key={key} className="mb-4 pb-4 border-b border-gray-300 last:border-b-0">
           <div className="flex justify-between items-center cursor-pointer font-sans" onClick={() => toggleCategory(key)}>

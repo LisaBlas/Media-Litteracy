@@ -132,7 +132,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
         <div>
           <div className="mb-1">
             <span 
-              className="inline-block px-4 py-1 font-bold text-xs tracking-extrawide text-editorial-cream opacity-80"
+              className="inline-block px-4 py-1 text-xs tracking-extrawide text-editorial-cream opacity-80"
               style={{ backgroundColor: fallacyColor }}
             >
               {currentArticle.fallacy || 'FALLACY'}
@@ -147,12 +147,12 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
           </div>
           
             
-          <h3 className={`font-work-sans font-bold text-2xl leading-tight mb-4 mt-1 ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal'}`}>
+          <h3 className={`font-work-sans font-bold text-2xl leading-tight mb-6 mt-1 ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal'}`}>
             "{currentArticle.title}"
           </h3>
         </div>
         <div className="flex items-center self-end opacity-80">
-          <p className="text-xs font-mono mr-2">REVEAL MORE</p>
+          <p className="text-xs font-mono mr-2 leading-extratight">Click to reveal</p>
           <motion.div 
             animate={{ rotate: isHovered ? 360 : 0 }}
             transition={{ duration: 0.4 }}
@@ -168,27 +168,26 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
       <AnimatePresence>
         {isRevealed && (
           <motion.div
-            className={`absolute inset-0 bg-editorial-cream ${darkMode ? 'bg-slate-700 text-slate-100' : 'bg-editorial-cream text-editorial-charcoal'} p-4 flex flex-col z-10 overflow-y-auto custom-scrollbar`}
+            onClick={handleClose}
+            className={`absolute inset-0 cursor-pointer bg-editorial-cream ${darkMode ? 'bg-slate-700 text-slate-100' : 'bg-editorial-cream text-editorial-charcoal'} p-4 flex flex-col z-10 overflow-y-auto custom-scrollbar`}
             variants={revealedContentVariants}
             initial="hidden"
             animate="visible"
             exit="exit"
-            onClick={handleClose}
           >
-            <div className="flex flex-col h-full" onClick={(e) => e.stopPropagation()}>
+            <div className="flex flex-col h-full">
               <button 
                 onClick={handleClose}
                 className={`absolute top-3 right-3 ${darkMode ? 'text-slate-300 hover:text-orange-400' : 'text-editorial-cream hover:text-editorial-orange'}`}
                 aria-label="Close details"
               >
-                <XMarkIcon className="w-5 h-5 text-editorial-charcoal" />
               </button>
               
               {/* Top Section: Fallacy Pill and Definition */}
               <div className="flex flex-col md:flex-row gap-4 mb-4">
                 <div className="flex-shrink-0">
                   <span 
-                    className="inline-flex items-center px-4 py-1 font-bold text-xs tracking-extrawide text-editorial-cream opacity-80"
+                    className="inline-flex items-center px-4 py-1 font-semibold text-sm tracking-extrawide text-editorial-cream opacity-80"
                     style={{ backgroundColor: fallacyColor, height: '1.5rem' }}
                   >
                     {currentArticle.fallacy || 'FALLACY'}
@@ -201,7 +200,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
                       style={{ backgroundColor: fallacyColor }}
                     />
                     <p 
-                      className="leading-relaxed text-xs ml-3 italic font-bold"
+                      className="leading-relaxed text-sm ml-3 italic font-semibold"
                       style={{ color: fallacyColor, opacity: darkMode ? 0.9 : 1 }}
                     >
                       {fallacyDefinition}
@@ -211,13 +210,13 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
               </div>
 
               {/* Content Wrapper */}
-              <div className="flex-grow space-y-4 text-sm">
+              <div className="flex-grow space-y-4 text-md">
 
                 {/* Analysis Section */}
                 <div className="relative">
-                  <p className="leading-relaxed mb-2 text-black font-light">
+                  <p className="leading-medium mb-2 text-editorial-charcoal font-light">
                     {currentArticle.explanation}
-                    <a href={currentArticle.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="inline-flex items-center ml-2 text-editorial-orange underline hover:text-editorial-charcoal transition-colors duration-200">
+                    <a href={currentArticle.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="inline-flex items-center ml-2 text-editorial-orange underline hover:text-editorial-charcoal transition-colors hover:font-semibold duration-200">
                       <span className="mr-1">Read original article</span>
                       <LinkIcon className="w-4 h-4" />
                     </a>

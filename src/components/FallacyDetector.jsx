@@ -44,7 +44,7 @@ const FallacyDetector = () => {
   ];
 
   return (
-    <section className="bg-beige-100 py-40 md:py-40 shadow-md">
+    <section className="bg-beige-100 py-24 md:py-32 lg:py-48 shadow-md">
       <div className="container mx-auto px-6 max-w-7xl">
         
         {/* Top Section: Title and Description */}
@@ -58,7 +58,7 @@ const FallacyDetector = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-12">
           {/* Headline Instruction spanning both columns */}
           <div className="lg:col-span-2">
-            <h1 className="font-light text-md md:text-xl text-editorial-charcoal mb-6 text-center">
+            <h1 className="font-light text-md md:text-xl lg:text-2xl text-editorial-charcoal mb-6 text-center">
               Discover fallacies used in recent news headlines and compare them by news outlet or topic.
             </h1>
           </div>
