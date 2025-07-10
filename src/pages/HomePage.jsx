@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const HomePage = () => {
   return (
-    <div className="bg-editorial-cream">
+    <div className="bg-beige-100">
       <Hero />
       <FallacyDetector />
       <CourseSpotlight />

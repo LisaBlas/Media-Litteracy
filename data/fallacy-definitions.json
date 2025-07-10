@@ -2,106 +2,106 @@
   "False Dichotomy": {
     "definition": "Presenting only two options when more exist.",
     "example": "You're either with us or against us.",
-    "color": "#606C38"
+    "color": "#2e5266"
   },
   "Ad Hominem": {
     "definition": "Attacking the person instead of their argument.",
     "example": "What would you know about economics? You never even graduated college.",
-    "color": "#BB9457"
+    "color": "#41292c"
   },
   "Straw Man": {
     "definition": "Misrepresenting someone's position to make it easier to attack.",
     "example": "She wants to reduce military spending — I guess she wants to leave us defenseless.",
-    "color": "#BC6C25"
+    "color": "#402039"
   },
   "Appeal to Authority": {
     "definition": "Using an authority's opinion in place of evidence.",
     "example": "This diet must work — a famous actor said it changed their life.",
-    "color": "#544A50"
+    "color": "#41292c"
   },
   "Bandwagon": {
     "definition": "Claiming something is true simply because many believe it.",
     "example": "Everyone on social media supports this candidate, so they must be the best choice.",
-    "color": "#A26755"
+    "color": "#41292c"
   },
   "Appeal to Ignorance": {
     "definition": "Assuming a claim is true/false just because it hasn't been disproven.",
     "example": "No one has proven aliens *don't* exist, so they must be real.",
-    "color": "#3D405B"
+    "color": "#2e5266"
   },
   "Slippery Slope": {
     "definition": "Asserting a minor action will lead to extreme consequences without evidence.",
     "example": "If we allow kids to choose their own meals, soon they'll never listen to any rules.",
-    "color": "#81B29A"
+    "color": "#567568"
   },
   "Circular Reasoning": {
     "definition": "Using the conclusion as a premise.",
     "example": "The law is just because it's the law.",
-    "color": "#E07A5F"
+    "color": "#402039"
   },
   "Hasty Generalization": {
     "definition": "Making broad claims from insufficient examples.",
     "example": "I met two rude tourists from that country, so everyone there must be rude.",
-    "color": "#6F1D1B"
+    "color": "#567568"
   },
   "Red Herring": {
     "definition": "Introducing unrelated info to distract from the real issue.",
     "example": "Why worry about climate change when unemployment is still a problem?",
-    "color": "#16A085"
+    "color": "#402039"
   },
   "False Causality": {
     "definition": "Assuming causation from sequence alone.",
     "example": "I wore my lucky socks and we won the game — they must have helped.",
-    "color": "#27AE60"
+    "color": "#567568"
   },
   "Equivocation": {
     "definition": "Using a word in different senses across premises.",
     "example": "A feather is light. What is light can't be dark. So a feather can't be dark.",
-    "color": "#2ECC71"
+    "color": "#2e5266"
   },
   "No True Scotsman": {
     "definition": "Redefining a group to exclude counterexamples.",
     "example": "No true environmentalist would drive a gas-powered car.",
-    "color": "#F1C40F"
+    "color": "#41292c"
   },
   "Tu Quoque (You too!)": {
     "definition": "Dismissing criticism by charging hypocrisy.",
     "example": "You can't tell me to quit smoking — you used to smoke, too!",
-    "color": "#F39C12"
+    "color": "#41292c"
   },
   "Appeal to Emotion": {
     "definition": "Manipulating feelings instead of using logic.",
     "example": "You should give me the job — I've had such a rough year and really need it.",
-    "color": "#E91E63"
+    "color": "#41292c"
   },
   "Loaded Question": {
     "definition": "Asking a question that presumes something unproven.",
     "example": "Why are you trying to ruin this project?",
-    "color": "#C0392B"
+    "color": "#402039"
   },
   "Poisoning the Well": {
     "definition": "Presenting negative information to discredit someone before they speak.",
     "example": "Before you listen to her argument, just remember she's been wrong about everything before.",
-    "color": "#A93226"
+    "color": "#41292c"
   },
   "Cherry-picking": {
     "definition": "Only using data that supports your argument and ignoring the rest.",
     "example": "This one study shows the supplement works — ignore the other ten that say it doesn't.",
-    "color": "#FF5722"
+    "color": "#2e5266"
   },
   "Texas Sharpshooter": {
     "definition": "Focusing on similarities while ignoring differences to support a point.",
     "example": "These towns all had the same cancer rate and drank tap water — it must be the water.",
-    "color": "#795548"
+    "color": "#567568"
   },
   "Gambler's Fallacy": {
     "definition": "Believing that past events affect future probability in random situations.",
     "example": "The coin has landed heads five times — tails is due next.",
-    "color": "#607D8B"
+    "color": "#567568"
   },
   "Middle Ground": {
     "definition": "Assuming the middle position between two extremes is always correct.",
     "example": "Some say vaccines save lives, others say they're harmful — the truth must be somewhere in between.",
-    "color": "#9E9E9E"
+    "color": "#2e5266"
   }
 }

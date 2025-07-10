@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FunnelIcon, XMarkIcon } from '@heroicons/react/24/solid';
+import { FunnelIcon, XMarkIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/solid';
 import axios from 'axios';
 import ArticleCard from '../components/ArticleCard';
 import FilterSection from '../components/FilterSection';
@@ -14,6 +14,7 @@ const ArticlesPage = () => {
     date: null,
     source: null,
     fallacy: null,
+    topic: null,
   });
 
   useEffect(() => {
@@ -37,17 +38,20 @@ const ArticlesPage = () => {
   if (error) return <div className="text-center p-8 text-red-500">{error}</div>;
 
   return (
-    <div className="relative container mx-auto px-4 py-12 lg:py-20 lg:px-40">
+    <div className="relative container mx-auto px-4 py-12 lg:py-20 lg:px-40 bg-beige-100">
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-4xl lg:text-6xl font-playfair font-bold text-editorial-charcoal">Fact or Fallacy?</h1>
-        <span className="ml-4 px-3 py-1 text-sm font-semibold bg-editorial-orange text-editorial-cream whitespace-nowrap">Interactive tool</span>
+        <h1 className="text-4xl lg:text-6xl font-playfair font-bold text-editorial-charcoal">Fact or Fallacy - Headline Analyzer</h1>
+        <span className="ml-4 px-3 py-1 text-sm font-semibold bg-editorial-charcoal text-editorial-cream whitespace-nowrap inline-flex items-center gap-1">
+          <WrenchScrewdriverIcon className="h-4 w-4 mr-1" aria-hidden="true" />
+           More Tools...
+        </span>
       </div>
       {/* Subtle underline */}
-      <div className="w-full h-px bg-editorial-charcoal mb-12"></div> 
+      <div className="w-full h-px bg-gray-300 mb-12"></div> 
       {/* Desktop / Tablet layout */}
       <div className="hidden md:grid grid-cols-3 gap-16 border border-beige-100 shadow-lg p-10">
         {/* Sidebar filters */}
-        <aside className="col-span-1">
+        <aside className="col-span-1 sticky top-24 self-start">
           <FilterSection
             headlines={articles}
             setFilteredHeadlines={setFilteredArticles}
@@ -92,7 +96,6 @@ const ArticlesPage = () => {
               aria-label="Close filters"
             >
               <XMarkIcon className="h-5 w-5" />
-              <span>Close</span>
             </button>
             <FilterSection
               headlines={articles}

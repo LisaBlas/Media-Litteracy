@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import fallacyDefinitions from '../../data/fallacy-definitions.json';
-import { ChevronDownIcon } from '@heroicons/react/24/solid';
+import { ChevronDownIcon, FunnelIcon } from '@heroicons/react/24/solid';
 
 const FilterSection = ({ 
   headlines, 
@@ -8,7 +8,7 @@ const FilterSection = ({
   activeFilters, 
   setActiveFilters 
 }) => {
-  const [openCategories, setOpenCategories] = useState({ date: true, source: false, fallacy: false });
+  const [openCategories, setOpenCategories] = useState({ date: true, source: false, fallacy: false, topic: false });
 
   const allFallacies = Object.keys(fallacyDefinitions);
   const allSources = [...new Set(headlines.map(h => h.source))];
@@ -21,6 +21,10 @@ const FilterSection = ({
     source: {
       label: 'Source',
       options: allSources,
+    },
+    topic: {
+      label: 'Topic',
+      options: [...new Set(headlines.map(h => h.topic).filter(Boolean))],
     },
     fallacy: {
       label: 'Fallacy',
@@ -65,6 +69,11 @@ const FilterSection = ({
       if (activeFilters.fallacy) {
         filtered = filtered.filter(h => h.fallacy && h.fallacy === activeFilters.fallacy);
       }
+
+      // Topic filter
+      if (activeFilters.topic) {
+        filtered = filtered.filter(h => h.topic && h.topic === activeFilters.topic);
+      }
       
       setFilteredHeadlines(filtered);
     };
@@ -91,10 +100,30 @@ const FilterSection = ({
     setOpenCategories(prev => ({ ...prev, [category]: !prev[category] }));
   };
 
+  const hasActiveFilters = Object.values(activeFilters).some(Boolean);
+
+  const clearAllFilters = () => {
+    setActiveFilters({ date: null, source: null, fallacy: null, topic: null });
+  };
+
   return (
     <div className="text-editorial-charcoal">
       {/* Header for medium and large screens */}
-      <h2 className="hidden md:block text-2xl font-bold font-playfair mb-4 text-editorial-charcoal">Filter by:</h2>
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center">
+          <FunnelIcon className="hidden md:block h-5 w-5 text-editorial-charcoal mr-2" aria-hidden="true" />
+          <h2 className="text-2xl font-bold font-playfair text-editorial-charcoal">Filter by:</h2>
+        </div>
+        {hasActiveFilters && (
+          <button
+            onClick={clearAllFilters}
+            className="text-sm font-sans text-gray-500 hover:text-gray-700 focus:outline-none"
+            aria-label="Clear all filters"
+          >
+            Clear All
+          </button>
+        )}
+      </div>
       {Object.entries(filters).map(([key, { label, options }]) => (
         <div key={key} className="mb-4 pb-4 border-b border-gray-300 last:border-b-0">
           <div className="flex justify-between items-center cursor-pointer font-sans" onClick={() => toggleCategory(key)}>

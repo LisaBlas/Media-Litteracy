@@ -109,7 +109,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
 
   return (
     <motion.div
-      className="relative w-full h-90 border-2 rounded-lg overflow-hidden shadow-lg" style={{ borderColor: fallacyColor }}
+      className="relative w-full h-90 overflow-hidden shadow-lg" style={{ borderColor: fallacyColor }}
       ref={cardRef}
       variants={cardVariants}
       initial="initial"
@@ -122,7 +122,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
     >
       {/* Editorial Front Face */}
       <div 
-        className={`w-full h-full card-background-pattern bg-editorial-beige ${darkMode ? 'bg-slate-800 border-slate-600 text-slate-100' : 'bg-editorial-cream border-editorial-charcoal text-editorial-charcoal'} p-4 flex flex-col justify-between cursor-pointer`}
+        className={`w-full h-full card-background-pattern bg-editorial-cream ${darkMode ? 'bg-slate-800 border-slate-600 text-slate-100' : 'bg-editorial-cream border-editorial-charcoal text-editorial-charcoal'} p-4 flex flex-col justify-between cursor-pointer`}
         onClick={handleReveal}
         onKeyDown={handleKeyDown}
         tabIndex={0}
@@ -147,17 +147,25 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
           </div>
           
             
-          <h3 className={`font-work-sans font-bold text-2xl leading-tight mb-6 mt-1 ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal'}`}>
+          <h3 className={`font-work-sans font-bold text-2xl text-editorial-charcoal leading-tight mb-6 mt-1 ${darkMode ? 'text-slate-100' : 'text-editorial-charcoal'}`}>
             "{currentArticle.title}"
           </h3>
         </div>
         <div className="flex items-center self-end opacity-80">
-          <p className="text-xs font-mono mr-2 leading-extratight">Click to reveal</p>
+          <p
+            className="text-xs font-mono mr-2 leading-extratight"
+            style={{ color: fallacyColor }}
+          >
+            Click to reveal
+          </p>
           <motion.div 
             animate={{ rotate: isHovered ? 360 : 0 }}
             transition={{ duration: 0.4 }}
           >
-            <EyeIcon className={`w-5 h-5 ${darkMode ? 'text-slate-400' : 'text-editorial-charcoal opacity-60'}`} />
+            <EyeIcon
+              className="w-5 h-5"
+              style={{ color: fallacyColor, opacity: darkMode ? 0.8 : 1 }}
+            />
           </motion.div>
         </div>
       </div>
@@ -187,7 +195,7 @@ const ArticleCard = ({ article, index, darkMode = false }) => {
               <div className="flex flex-col md:flex-row gap-4 mb-4">
                 <div className="flex-shrink-0">
                   <span 
-                    className="inline-flex items-center px-4 py-1 font-semibold text-sm tracking-extrawide text-editorial-cream opacity-80"
+                    className="inline-flex items-center px-4 py-1 font-semibold text-sm tracking-wider text-editorial-cream opacity-80"
                     style={{ backgroundColor: fallacyColor, height: '1.5rem' }}
                   >
                     {currentArticle.fallacy || 'FALLACY'}

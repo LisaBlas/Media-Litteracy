@@ -9,6 +9,7 @@
       "description": "The U.K. economy shrank sharply in April as global trade tariffs and domestic tax rises kicked in, data showed Thursday.",
       "url": "https://www.cnbc.com/2025/06/12/uk-economy-shrank-sharply-in-april-as-trump-tariffs-kicked-in.html",
       "source": "CNBC",
+      "topic": "Economy",
       "publishedAt": "2025-06-12T10:03:22Z",
       "image": "https://image.cnbcfm.com/api/v1/image/108108612-17406808382025-02-27t182635z_956173787_rc243dape335_rtrmadp_0_usa-britain.jpeg?v=1749720305&w=1920&h=1080",
       "containsFallacy": true,
@@ -20,6 +21,7 @@
       "description": "Reaction to the chancellor's Spending Review dominates the front pages on Thursday.",
       "url": "https://www.bbc.com/news/articles/cz70x93pjr7o",
       "source": "BBC",
+      "topic": "Economy",
       "publishedAt": "2025-06-12T04:33:16Z",
       "image": "https://ichef.bbci.co.uk/news/1024/branded_news/8804/live/989ba2e0-4714-11f0-84b6-6bf0f66205f1.png",
       "containsFallacy": true,
@@ -34,6 +36,7 @@
       "image": "https://bdc2020.o0bc.com/wp-content/uploads/2025/06/Mideast_Wars_US_Iran_94105-685db363680cc-768x432.jpg",
       "publishedAt": "2025-06-26T21:15:00Z",
       "source": "Boston.com",
+      "topic": "Media",
       "containsFallacy": true,
       "fallacy": "Poisoning the Well",
       "explanation": "The headline suggests that Hegseth's criticism of his colleague's reporting is inherently biased or invalid because of their past association, potentially prejudicing the audience against the colleague's work without substantive evidence.",
@@ -47,8 +50,9 @@
       "image": "https://cdn.vox-cdn.com/thumbor/iqQF4p957-zWHFmyJseTpHr96j8=/0x0:3900x2042/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/26039197/2220184010.jpg",
       "publishedAt": "2025-06-26T18:19:06Z",
       "source": "SB Nation",
+      "topic": "Sports",
       "containsFallacy": true,
-      "fallacy": "Appeal to Emotion / Pity",
+      "fallacy": "Appeal to Emotion",
       "explanation": "The headline uses emotionally charged language ('devastating injury news') to evoke sympathy or concern, which could influence the audience's perception without providing substantive information.",
       "analyzedAt": "2025-06-27T10:12:18.917Z"
     },
@@ -60,8 +64,9 @@
       "image": "https://www.nydailynews.com/wp-content/uploads/2023/12/DNFL-P3-20200828-083929.jpg?w=1024&h=683",
       "publishedAt": "2025-06-25T21:16:32Z",
       "source": "New York Daily News",
+      "topic": "Immigration",
       "containsFallacy": true,
-      "fallacy": "Appeal to Emotion / Pity",
+      "fallacy": "Appeal to Emotion",
       "explanation": "The headline uses emotionally charged language ('horrific') to evoke a strong emotional response rather than presenting objective facts or evidence.",
       "analyzedAt": "2025-06-27T10:12:36.063Z"
     },
@@ -70,6 +75,7 @@
       "description": "Less than a year ago, Pete Hegseth and Jennifer Griffin were colleagues at Fox News Channel.",
       "url": "https://www.clickondetroit.com/entertainment/2025/06/26/pete-hegseth-attacks-old-fox-news-colleagues-reporting-on-iran-strikes-intelligence-evaluation/",
       "source": "WDIV ClickOnDetroit",
+      "topic": "Media",
       "publishedAt": "2025-06-26T20:49:20Z",
       "image": "https://res.cloudinary.com/graham-media-group/image/upload/f_auto/q_auto/c_thumb,w_700/v1/media/gmg/TRRPANBMUZHNZMVFRSJTEKRR7Y.jpg?_a=DATAg1eAZAA0",
       "containsFallacy": true,
@@ -81,6 +87,7 @@
       "description": "The technology market is a multi-national world that spans continents and corporations. Which household names trace roots back to Chinese investment?",
       "url": "https://www.slashgear.com/1890416/popular-tech-companies-in-usa-owned-by-china/",
       "source": "SlashGear",
+      "topic": "Technology",
       "publishedAt": "2025-06-25T14:30:00Z",
       "image": "https://www.slashgear.com/img/gallery/10-tech-brands-so-popular-in-america-you-probably-didnt-realize-theyre-owned-by-china/l-intro-1750336448.jpg",
       "containsFallacy": true,
@@ -161,7 +168,7 @@
       "publishedAt": "2025-06-25T19:01:06Z",
       "image": "https://townsquare.media/site/204/files/2025/06/attachment-Untitled-design-2025-06-25T062724.511.jpg?w=1200&q=75&format=natural",
       "containsFallacy": true,
-      "fallacy": "Appeal to Emotion / Pity",
+      "fallacy": "Appeal to Emotion",
       "explanation": "The headline uses the age of the menu item (87 years) and the impending disappearance to evoke an emotional response, potentially manipulating the reader's feelings to care about the item's removal."
     },
     {
@@ -194,7 +201,7 @@
       "publishedAt": "2025-06-27T10:00:00Z",
       "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/newspress-collage-cjt4wn4by-1750970349438_720.jpg?quality=75&strip=all&w=720",
       "containsFallacy": true,
-      "fallacy": "Appeal to Emotion / Pity",
+      "fallacy": "Appeal to Emotion",
       "explanation": "The headline uses emotionally charged language ('Sad last days', 'killed') to evoke sympathy or pity, which may distract from objective analysis of the event."
     },
     {
@@ -216,7 +223,7 @@
       "publishedAt": "2025-06-25T18:24:48Z",
       "image": "https://nypost.com/wp-content/uploads/sites/2/2025/06/hand-holding-e-cigarette-vape-103754488.jpg?quality=75&strip=all&w=1024",
       "containsFallacy": true,
-      "fallacy": "Appeal to Emotion / Pity",
+      "fallacy": "Appeal to Emotion",
       "explanation": "The headline uses emotionally charged language ('urgent warning', 'hidden risk') to provoke concern or fear, which may appeal to emotions rather than presenting clear, logical evidence."
     },
     {
@@ -322,7 +329,7 @@
       "publishedAt": "2025-06-16T07:59:58Z",
       "image": "https://d.newsweek.com/en/full/2662091/ocean-acidification.jpg",
       "containsFallacy": true,
-      "fallacy": "Appeal to Emotion / Pity",
+      "fallacy": "Appeal to Emotion",
       "explanation": "The headline uses emotionally charged language ('Evil Twin') to evoke fear or concern, which is an appeal to emotion rather than presenting factual evidence.",
       "analyzedAt": "2025-06-28T12:19:57.820Z"
     },
