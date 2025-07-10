@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const controlNavbar = () => {
@@ -39,10 +40,27 @@ const Navbar = () => {
   }, [lastScrollY, isOpen]);
 
   const scrollToSection = (id) => {
-    setIsOpen(false);
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleHomeClick = () => {
+    setIsOpen(false);
+    if (window.location.pathname !== '/') {
+      navigate('/');
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handleAboutClick = () => {
+    setIsOpen(false);
+    if (window.location.pathname !== '/') {
+      navigate('/#about');
+    } else {
+      scrollToSection('about');
     }
   };
 
@@ -51,15 +69,17 @@ const Navbar = () => {
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <div className="flex items-center">
-        <h1 className="text-xl font-bold font-playfair">Doublethink</h1>
+        <Link to="/" onClick={handleHomeClick} className="text-xl font-bold font-playfair focus:outline-none">
+          Doublethink
+        </Link>
       </div>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-6 font-mono text-editorial-charcoal">
-        <Link to="/" className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Home</Link>
-        <Link to="/articles" className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Articles</Link>
-        <a href="#about" onClick={() => scrollToSection('about')} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">About</a>
-        <Link to="/course" className="bg-editorial-orange hover:opacity-90 text-white py-2 px-4 transition-all font-normal hover:font-bold">
+        <button onClick={handleHomeClick} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Home</button>
+        <Link to="/articles" className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Tools</Link>
+        <Link to="/#about" onClick={() => setIsOpen(false)} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">About</Link>
+        <Link to="/#course" className="bg-editorial-orange hover:opacity-90 text-white py-2 px-4 transition-all font-normal hover:font-bold">
           Learn
         </Link>
       </div>
@@ -74,10 +94,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full border-t-2 border-editorial-orange bg-editorial-cream flex flex-col items-center space-y-4 py-4 shadow-md">
-          <Link to="/" onClick={() => setIsOpen(false)} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Home</Link>
-          <Link to="/articles" onClick={() => setIsOpen(false)} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Articles</Link>
-          <a href="#about" onClick={() => scrollToSection('about')} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">About</a>
-          <Link to="/course" onClick={() => setIsOpen(false)} className="bg-editorial-orange hover:opacity-90 text-white py-2 px-4 transition-all font-normal">
+          <button onClick={handleHomeClick} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Home</button>
+          <Link to="/articles" onClick={() => setIsOpen(false)} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">Tools</Link>
+          <Link to="/#about" onClick={() => setIsOpen(false)} className="hover:text-editorial-orange transition-all font-normal hover:font-bold">About</Link>
+          <Link to="/#course" onClick={() => setIsOpen(false)} className="bg-editorial-orange hover:opacity-90 text-white py-2 px-4 transition-all font-normal">
             Learn
           </Link>
         </div>

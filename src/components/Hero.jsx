@@ -54,14 +54,14 @@ const Hero = () => {
         You don’t need to be an expert to think critically. All you need is a curious mind and the right tools to start spotting fallacies and biases. 
         </p>
         <div className="flex justify-center gap-3 sm:gap-4">
-          <button 
-            onClick={scrollToCards}
+          <Link 
+            to="/#tool"
             className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-xs sm:text-sm py-3 px-6 transition-colors duration-100 transform hover:scale-105"
           >
             Explore our first Tool
-          </button>
+          </Link>
           <Link 
-            to="/course"
+            to="/#course"
             className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-xs sm:text-sm py-3 px-6 transition-colors duration-100 transform hover:scale-105"
           >
             Discover our Course

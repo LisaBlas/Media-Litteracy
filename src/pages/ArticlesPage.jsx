@@ -43,7 +43,7 @@ const ArticlesPage = () => {
         <h1 className="text-4xl lg:text-6xl font-playfair font-bold text-editorial-charcoal">Fact or Fallacy - Headline Analyzer</h1>
         <span className="ml-4 px-3 py-1 text-sm font-semibold bg-editorial-charcoal text-editorial-cream whitespace-nowrap inline-flex items-center gap-1">
           <WrenchScrewdriverIcon className="h-4 w-4 mr-1" aria-hidden="true" />
-           More Tools...
+           New Tool!
         </span>
       </div>
       {/* Subtle underline */}
@@ -77,10 +77,10 @@ const ArticlesPage = () => {
       {/* Mobile filter toggle button */}
       <button
         onClick={() => setMobileFiltersOpen(true)}
-        className="md:hidden fixed bottom-6 right-6 bg-editorial-orange p-4 rounded-full shadow-lg text-editorial-cream focus:outline-none"
+        className="md:hidden fixed bottom-24 right-4 bg-editorial-orange p-3 rounded-full shadow-lg text-editorial-cream focus:outline-none z-40"
         aria-label="Open filters"
       >
-        <FunnelIcon className="h-6 w-6" />
+        <FunnelIcon className="h-5 w-5" />
       </button>
 
       {/* Mobile filter drawer */}

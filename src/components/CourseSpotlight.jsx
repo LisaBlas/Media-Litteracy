@@ -12,7 +12,7 @@ const CourseSpotlight = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="min-h-screen flex items-center bg-editorial-orange overflow-x-hidden py-24 md:py-32 lg:py-48">
+    <section id="course" className="min-h-screen flex items-center bg-editorial-orange overflow-x-hidden py-24 md:py-32 lg:py-52">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-16">
           

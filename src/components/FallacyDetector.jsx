@@ -44,7 +44,7 @@ const FallacyDetector = () => {
   ];
 
   return (
-    <section className="bg-beige-100 py-24 md:py-32 lg:py-48 shadow-md">
+    <section id="tool" className="bg-beige-100 py-24 md:py-32 lg:py-52 shadow-md">
       <div className="container mx-auto px-6 max-w-7xl">
         
         {/* Top Section: Title and Description */}
@@ -87,9 +87,9 @@ const FallacyDetector = () => {
             <div>
               <button 
                 onClick={() => navigate('/articles')}
-                className="w-80 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-xs sm:text-sm py-3 px-6 transition-colors duration-100 transform hover:scale-105"
+                className="w-36 text-center text-editorial-orange border-editorial-orange border-2 font-mono hover:bg-editorial-orange hover:text-editorial-cream font-mono text-xs sm:text-sm py-3 px-6 transition-colors duration-100 transform hover:scale-105"
               >
-                Explore the Tool
+                Try it now
               </button>
             </div>
 

@@ -34,7 +34,7 @@ const pillars = [
 
 const ResourcesCommunity = () => {
   return (
-    <section className="min-h-screen flex items-center bg-editorial-cream py-12">
+    <section id="about" className="min-h-screen flex items-center bg-editorial-cream py-12">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl">
         {/* Left Column */}
         <div>
@@ -42,7 +42,7 @@ const ResourcesCommunity = () => {
             About us
           </h2>
           <h2 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-editorial-charcoal mb-4">
-            Who we are and
+            BleepBloop Studio
           </h2>
           <h3 className="text-xl md:text-2xl text-editorial-orange font-light mb-2">
             Using great Design and AI Tools for Good
